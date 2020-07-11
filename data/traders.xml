@@ -1,0 +1,2422 @@
+<hashtable>
+  <entry>
+    <string>baghdad</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>baghdad</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Bazaar merchant in Baghdad</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/bazaar_merchant.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A bazaar merchant in Baghdad.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10310</string>
+        <string>10320</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10770</string>
+        <string>12000</string>
+        <string>12001</string>
+        <string>12002</string>
+        <string>12003</string>
+        <string>12004</string>
+        <string>12030</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10310</string>
+        <string>10320</string>
+        <string>10710</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>10770</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        <string>12000</string>
+        <string>12001</string>
+        <string>12002</string>
+        <string>12003</string>
+        <string>12004</string>
+        <string>12030</string>
+        <string>13000</string>
+        <string>13010</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>latakia</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>latakia</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Shipwright in Al-ladiqiyah</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/shipman.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.8</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>The shipwright in Al-ladiqiyah port. </string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10320</string>
+        <string>10360</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10360</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>baku</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>baku</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Shipwright in Baku</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/shipman.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>The shipwright in Baku port. </string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10320</string>
+        <string>10360</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10360</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>amsterdammarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>amsterdammarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/amsterdam_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6.8</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.8</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Amsterdam marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10120</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10220</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10120</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10220</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>lisboamarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>lisboamarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/lisboa_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>5.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.3</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Lisbon marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10770</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>10770</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>budapestmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>budapestmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Budapest</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/budapest_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>3.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Budapest marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>hamburgmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>hamburgmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/hamburg_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>8.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Hamburg marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>londonmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>londonmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in London</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/london_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>9.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.5</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the London marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>viennamarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>viennamarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Vienna</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/vienna_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>8.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>3.3</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Vienna marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10770</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>venicemarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>venicemarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Venice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/venice_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>5.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>3.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Venice marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10720</string>
+        <string>10733</string>
+        <string>10751</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10720</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>parismarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>parismarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Paris</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/paris_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6.9</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.5</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Paris marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10720</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>moscowmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>moscowmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Moscow</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/moscow_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Moscow marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>madridmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>madridmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Madrid</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/madrid_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>5.8</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.2</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Madrid marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10720</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>constantinopolmarket</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>constantinopolmarket</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Market merchant in Constantinople</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/constantinopol_merchant.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>5.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>2.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A merchant in the Constantinople marketplace.</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10732</string>
+        <string>10745</string>
+        <string>10770</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10100</string>
+        <string>10110</string>
+        <string>10200</string>
+        <string>10210</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10740</string>
+        <string>10741</string>
+        <string>10742</string>
+        <string>10743</string>
+        <string>10744</string>
+        <string>10745</string>
+        <string>10750</string>
+        <string>10751</string>
+        <string>10760</string>
+        <string>10770</string>
+        <string>11600</string>
+        <string>11601</string>
+        <string>11602</string>
+        <string>11603</string>
+        <string>11604</string>
+        <string>11610</string>
+        <string>11611</string>
+        <string>11620</string>
+        <string>11630</string>
+        <string>11640</string>
+        <string>11650</string>
+        <string>11651</string>
+        <string>11652</string>
+        <string>11660</string>
+        <string>11661</string>
+        <string>11670</string>
+        <string>11671</string>
+        <string>11672</string>
+        <string>11673</string>
+        <string>11680</string>
+        <string>11681</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>baghdaddrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>baghdaddrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Baghdad</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/drug_dealer.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>3.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>2.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Baghdad</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>amsterdamdrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>amsterdamdrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/amsterdam_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>7</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>parisdrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>parisdrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Paris</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/paris_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>9.5</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Paris</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>londondrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>londondrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in London</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/london_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>13.1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>7.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in London</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>lisboadrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>lisboadrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/lisboa_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6.1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>hamburgdrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>hamburgdrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/hamburg_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>12</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>constantinopoldrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>constantinopoldrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Constantinople</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/drug_dealer.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>5.2</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>3.7</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Constantinople</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>budapestdrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>budapestdrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Budapest</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/budapest_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>7</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Budapest</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>venicedrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>venicedrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Venice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/venice_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>3.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Venice</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>viennadrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>viennadrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Vienna</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/vienna_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>8</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>4.9</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Vienna</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>madriddrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>madriddrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Madrid</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/madrid_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>6.0</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>5.1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Madrid</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>moscowdrugs</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>moscowdrugs</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug dealer in Moscow</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/moscow_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>12.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>7.2</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>A shady drug dealer in Moscow</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10120</string>
+        <string>10130</string>
+        <string>10220</string>
+        <string>10230</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>baghdadpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>baghdadpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Baghdad</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/bar_owner.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>2.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Baghdad port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10770</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>constantinopolpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>constantinopolpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Constantinopol</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/constantinopol_merchant.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>2.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Constantinopol port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10320</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>hamburgpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>hamburgpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/hamburg_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Hamburg port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>lisboapub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>lisboapub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/lisboa_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Lisbon port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>londonpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>londonpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in London</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/london_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in London port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>madridpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>madridpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Madrid</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/madrid_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Madrid port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>moscowpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>moscowpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Moscow</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/moscow_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Moscow port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>parispub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>parispub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Paris</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/paris_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Paris port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>venicepub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>venicepub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Venice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/venice_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Venice port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>viennapub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>viennapub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Vienna</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/vienna_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Vienna port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>bakupub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>bakupub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Baku</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/constantinopol_merchant.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>2.2</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Baku</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        <string>10320</string>
+        <string>10750</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        <string>10730</string>
+        <string>10731</string>
+        <string>10732</string>
+        <string>10733</string>
+        <string>10750</string>
+        <string>10751</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>amsterdampub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>amsterdampub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/amsterdam_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>10.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.4</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Amsterdam port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>workerpurveyor</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>workerpurveyor</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>an experienced purveyor of arts</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/purveyor.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>16030</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>16030</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>workermerchant</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>workermerchant</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>an experienced merchant</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/merchant.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>16010</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>16010</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>workersoldier</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>workersoldier</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>an experienced soldier</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/soldier03.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>16020</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>16020</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>workerfarmer</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>workerfarmer</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>an experienced farmer</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/farmer2.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>16000</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>16000</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>baghdadpoems</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>baghdadpoems</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>poet in Baghdad</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/poet.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>1</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.5</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10800</string>
+        <string>10801</string>
+        <string>10802</string>
+        <string>10803</string>
+        <string>10804</string>
+        <string>10805</string>
+        <string>10806</string>
+        <string>10807</string>
+        <string>10808</string>
+        <string>10809</string>
+        <string>10832</string>
+        <string>10833</string>
+        <string>10834</string>
+        <string>10835</string>
+        <string>10836</string>
+        <string>10837</string>
+        <string>10838</string>
+        <string>10839</string>
+        <string>10840</string>
+        <string>10841</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>budapestpub</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>budapestpub</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Tavern keeper in Budapest</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/navigation/characters/budapest_male.png</string>
+      </entry>
+      <entry>
+        <string>Buy factor</string>
+        <string>9.4</string>
+      </entry>
+      <entry>
+        <string>Sell factor</string>
+        <string>0.6</string>
+      </entry>
+      <entry>
+        <string>Description</string>
+        <string>Tavern keeper in Budapest port</string>
+      </entry>
+      <entry>
+        <string>Buy items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+      <entry>
+        <string>Sell items</string>
+        <vector>
+        <string>10050</string>
+        </vector>
+      </entry>
+    </hashtable>
+  </entry>
+</hashtable>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Spicetrade packaging" default="dist" basedir="./">
+	<property name="dist" location="dist" />
+	<property name="ext" location="ext" />
+	<property name="tmp" location="tmp" />
+	<property name="jar" value="Spicetrade-1.2.jar" />
+
+	<target name="init" description="Initialize the build environment, empties the dist/ directories.">
+		<tstamp>
+			<format property="DSTAMP" pattern="yyyy-mm-dd H:M:ss" />
+		</tstamp>
+		<echo>${DSTAMP} Initializing the build environment</echo>
+
+		<delete dir="${dist}" includeEmptyDirs="true" />
+		<mkdir dir="${dist}" />
+
+		<delete dir="${tmp}" includeEmptyDirs="true" />
+		<mkdir dir="${tmp}" />
+
+		<unzip src="${ext}/bsh-2.0b1.jar" dest="${tmp}" />
+		<unzip src="${ext}/tritonus_jorbis.jar" dest="${tmp}" />
+		<unzip src="${ext}/tritonus_share.jar" dest="${tmp}" />
+		<unzip src="${ext}/xpp3-1.1.3.4d_b4_min.jar" dest="${tmp}" />
+		<unzip src="${ext}/xstream-1.0.2.jar" dest="${tmp}" />
+	</target>
+
+	<target name="dist" depends="init" description="Generate the distribution package. This package can be found under dist directory.">
+		<echo>Generating the distribution</echo>
+
+		<jar destfile="${dist}/${jar}">
+			<zipfileset dir="./" excludes="build.xml, dist/**/*, ext/**/*, tmp/**/*, .*, **/*.java, spicetrade.sav" />
+			<zipfileset dir="${tmp}" prefix="" />
+			<manifest>
+				<attribute name="Built-By" value="Juha Holopainen" />
+				<attribute name="Implementation-Title" value="Spice Trade" />
+				<attribute name="Implementation-Version" value="1.2" />
+				<attribute name="Implementation-Vendor" value="spicetrade.org" />
+				<attribute name="Implementation-URL" value="http://www.spicetrade.org/" />
+				<attribute name="Main-Class" value="org.spicetrade.Game" />
+			</manifest>
+		</jar>
+	</target>
+</project>

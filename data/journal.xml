@@ -1,0 +1,2578 @@
+<hashtable>
+  <entry>
+    <string>nadir1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Your first pilgrimage</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir ask you to pray in Al-Qadirya Shrine, Mauseloum of Imam Mustansir and Shrine of Ali</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did pilgrimage to Najaf, Baghdad and Anjudan. </string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Najir’s jars again </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to choose one of his jars again</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>This was my second try with Nadir’s jars.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Your 2nd pilgrimage</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir ask you to pray in the Tomb of Mevlana and Naissa Mosque</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did pilgrimage to Konya and Al-ladhaqiyah.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir11</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir11</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Nadir’s goblets</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir11.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to choose one the goblets</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I fearlessly drunk from the goblet</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Your 3rd pilgrimage</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir5.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir ask you to pray in Blue Mosque </string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did pilgrimage to Constantinople.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir6</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir6</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Najir’s jars once more</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to choose one of his jars once more</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>This was my third try with Nadir’s jars.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir8</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir8</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Najir’s jars last time </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to choose one of his jars last time</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>This was my last try with Nadir’s jars.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir7</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir7</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Your 4th pilgrimage</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir7.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir ask you to pray in Dzhuma Mosque</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did pilgrimage to Baku.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave7</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave7</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Ilu-Shuma</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave7.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Grave of Grave of Ilu-Shuma</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of ancient king Ilu-Shuma</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Ashurbanipal </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Ashurbanipal </string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of god king Ashurbanipal.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Eriba-Adad </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>I found the grave of mighty king Eriba-Adad.</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string></string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Puzur-Ashur III</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave4.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Grave of Puzur-Ashur III</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of mighty king Puzur-Ashur III.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Sargon II</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave5.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Grave of Grave of Sargon II</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of Assyrian god king Sargon II.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave6</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave6</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Shalim-Ahu</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave6.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Grave of Grave of Shalim-Ahu</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of Assyrian god king Shalim-Ahu.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>grave1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>grave1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grave of Tiglath-Pileser I</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/grave1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find grave of Tiglath-Pileser I</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the grave of Assyrian king Tiglath-Pileser I.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir9</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir9</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Honour to Dzalalladdin Rumi</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir9.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to visit the Tomb of Mevalana</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did pilgrimage to Konya.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir10</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir10</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Hermitage</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir10.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir asked you to spend three months in hermitage, in the mountains near Al-ladhiqiyah</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I fasted and prayed three months in hermitage.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>mahdi1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>mahdi1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>First meeting with Mahdi</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/mahdi1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get contact with Mahdi</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I was honoured to find way to talk to Mahdi.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>hafaza1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>hafaza1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>The Shrine of Hafaza</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/hafaza1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to build shrine to Hafaza</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built the shrine named to Hafaza.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>field1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>field1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Too small field</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/field1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to buy more land</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I bought more land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>field2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>field2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Too little business</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/field2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to grow spice and try to sell them in Bazaar</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I grew spices and sold them in Bazaar.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Travel permit</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/permits_150.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get a travel permit from the Palace of Baghdad</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I applied for the travel permit and I got it.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit11</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit11</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Permit to build shrine</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/hafaza1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Before starting the building you have to get permit to build</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got permit to build shrine</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Exporting permit</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/permits_150.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to got exporting permit before you can export your goods</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got permit to export goods to Europe.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Journey in Constantinople</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit5.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to visit in city of Constantinople</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I visited Constantinople.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit6</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit6</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Journey in Europe</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit6.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to visit in Europe</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I visited first time in Europe.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit7</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit7</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grand Tour of European cities</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit6.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to visit in ten cities in Europe</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did my grand tour in Europe and visited in ten cities.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit8</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit8</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grand Tour of European churches</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit8.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to visit in ten European churches</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I visited in every church in Europe I managed to get in.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit9</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit9</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Grand Tour of European museums</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit9.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to visit in ten European museums</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I visited in every possible museum in Europe.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have stop enemies trying to conquest your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I won enemies who tried to conquer my lands.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Dry season!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get contact with Hafaza/Iblis to get rain</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>Hafaza helped me to get rain on my fields.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Rats!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get contact with Hafaza/Iblis to rid off rats</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>Hafaza/Iblis helped me to get rid off rats.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>witch1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>witch1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Drug sacrifice </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/witch.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get drugs to witch</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I bought drugs to get contact to Yima.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>yima1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>yima1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Annual drug sacrifice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/yima1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to do your annual drug sacrifice to Yima.</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I sacrificed drugs to Yima once a month.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>iblis1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>iblis1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Iblis’s new demand!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/iblis1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to sacrifice somebody of your blood to Iblis</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I sacrificed my wife/child to Iblis.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>marriage1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>marriage1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Doctor’s advice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You must get a wife for yourself!</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I met my wife.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>marriage2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>marriage2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Demand from father of the bride</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You need more money to get married</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I worked hard to get enough money to get married.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>marriage3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>marriage3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Second demand from father</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to conquest the fortress next to Anjudan</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I conquested the fortress near Anjudan to please my father of bride.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>marriage4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>marriage4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Third demand from father</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage4.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to find one of the graves of Assyrian god kings</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found to grave of Assyrian god king.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>marriage5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>marriage5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Weddings</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage5.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to arrange your own wedding</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got married and arranged huge parties.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Baghdad needs museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to build museum</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built museum in Baghdad.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Baghdad needs library</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to build library </string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built library in Baghdad.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Museums to Europe</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to build museum in some European city</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built museum in Europe.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Libraries to Europe</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to build library in some European city</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built library in Europe.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Books!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to poem books to your library</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I bought lots of books to my library.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city6</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city6</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Works of art!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to buy works of art to your museum</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I bought works of art in price of 1 000 000 silver dirhams.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city7</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city7</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Books to Europe!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to poem books to your European library</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I ordered 5643 books to my European libraries.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city8</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city8</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Works of art to Europe!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to buy works of art to your European museum</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I bought works of art in price of 2 500 000 silver dirhams and send them to European museums.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city9</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city9</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Advice from stranger!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You will get piece of map if you go to city of !city</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got tip from stranger and found one piece of map.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city10</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city10</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Parties!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city10.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to arrange party to people of city !city</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I arrange parties which lasted two weeks.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>city11</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>city11</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enlarge your business</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city11.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to establish shops abroad</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I established my first shop abroad.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>yima2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>yima2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Bad deeds</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/yima2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to do bad deeds to contact to Yima’s master</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did many bad things!</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit10</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit10</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Permit to build library</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Before starting building you have to get a permit to build</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got a permit to build library.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building permit for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/city1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to got building permit from palace before you can build museum</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I got permit to build museum in city of X.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>iblis2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>iblis2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Iblis’s demand!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/iblis2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to kill the owner of the The Cross Key Hotel</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I killed the owner of one hotel in London</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>nadir2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>nadir2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Najir’s jars </string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/nadir2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Nadir ask you to choose one his jars</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>My first try with Nadir’s jars.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>recruiter1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>recruiter1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Delicate delivery</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/recruiter1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to deliver a mysterious vase to the tavern of Baku.</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I did some shady business.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>recruiter2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>recruiter2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Heavy delivery</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/recruiter2.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to smuggle drugs to Baghdad.</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I smuggled stuff to get money.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>recruiter3</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>recruiter3</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Visit Sheitan's bazaar</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/recruiter3.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to go to a meeting in the port of Baghdad</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I met some very powerful persons</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permit12</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permit12</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Travel permit to Europe</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permit5.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to get a travel permit from Constantinople's Palace before travelling to Europe</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I applied for a travel permit to travel to Europe and I got it.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>abdullah2</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>abdullah2</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Umm</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Abdullah introduced me to Umm</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I conquered the heart of Umm</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>abdullah1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>abdullah1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Loan from Abdullah</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/old_book.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have loaned some money from uncle Abdullah</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I payed my loan back to my uncle</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>hassan1</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>hassan1</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Umm</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/marriage1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>Uncle Hassan told me, that I need to bring the buckle of the guardian god Ningizzia</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I found the buckle</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifebudapest</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifebudapest</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Budapest</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifebudapest.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You married Aliz von Alsó-Szopor Ladislaus</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You married Aliz von Alsó-Szopor Ladislaus</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitmadrid</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitmadrid</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitmadrid.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Madrid</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Madrid</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitvenice</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitvenice</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitvenice.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Venice</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Venice</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitlisboa</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitlisboa</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitlisbon.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Lisbon</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitbudapest</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitbudapest</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitbudapest.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Budapest</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Budapest</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitvienna</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitvienna</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitvienna.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Vienna</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Vienna</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitmoscow</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitmoscow</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitmoscow.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Moscow</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Moscow</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permithamburg</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permithamburg</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permithamburg.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Hamburg</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitlondon</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitlondon</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitlondon.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in London</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in London</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitamsterdam</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitamsterdam</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitamsterdam.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Amsterdam</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>permitparis</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>permitparis</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Building invitation for museum</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/permitparis.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to build a museum in Paris</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I built a museum in Paris</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifevienna</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifevienna</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifevienna.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Klara Recke v. der Horst</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Klara Recke v. der Horst</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifevenice</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifevenice</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Venice</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifevenice.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Contessa Bianca D’alimonte</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Contessa Bianca D’alimonte</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifemadrid</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifemadrid</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Madrid</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifemadrid.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Teresa García-Ramírez</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Teresa García-Ramírez</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifelisboa</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifelisboa</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifelisboa.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Marie Amalie DeSousa</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Marie Amalie DeSousa</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifeparis</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifeparis</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Paris</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifeparis.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Maria de La Chesnaye-Desbois</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Maria de La Chesnaye-Desbois</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifehamburg</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifehamburg</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifehamburg.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Susanne von Wuerttemberg</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Susanne von Wuerttemberg</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifemoscow</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifemoscow</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Moscow</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifemoscow.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Sofia-Maria Karlovna Skavronskaia</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Sofia-Maria Karlovna Skavronskaia</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifelondon</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifelondon</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in London</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifelondon.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have married Lady Louisa May Alcott</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You have married Lady Louisa May Alcott</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifeamsterdam</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifeamsterdam</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifeamsterdam.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You married Caroline of Nassau-Weiburg</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You married Caroline of Nassau-Weiburg</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchbudapest</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchbudapest</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchbudapest.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Budapest</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Budapest</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchvienna</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchvienna</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchvienna.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Vienna</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Vienna</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchvenice</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchvenice</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchvenice.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Venice</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Venice</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchmadrid</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchmadrid</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchmadrid.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Madrid</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Madrid</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchlisboa</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchlisboa</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchlisboa.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Lisbon</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Lisbon</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchparis</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchparis</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchparis.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Paris</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Paris</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchhamburg</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchhamburg</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchhamburg.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Hamburg</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Hamburg</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchmoscow</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchmoscow</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchmoscow.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Moscow</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Moscow</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchlondon</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchlondon</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchlondon.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in London</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in London</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>churchamsterdam</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>churchamsterdam</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Opening a mosque</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/churchamsterdam.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have been invited to open a new mosque in Amsterdam</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I opened a new mosque in Amsterdam</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>wifeconstantinopol</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>wifeconstantinopol</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Wife in Constantinopol</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/wifeconstantinopol.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You married Emine Hatun bint Mehmed</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>You married Emine Hatun bint Mehmed</string>
+      </entry>
+    </hashtable>
+  </entry>
+
+  <entry>
+    <string>random4</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random4</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random5</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random5</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random6</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random6</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random7</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random7</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random8</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random8</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random9</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random9</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random10</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random10</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random11</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random11</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+  <entry>
+    <string>random12</string>
+    <hashtable>
+      <entry>
+        <string>Name</string>
+        <string>random12</string>
+      </entry>
+      <entry>
+        <string>Display</string>
+        <string>Enemies!</string>
+      </entry>
+      <entry>
+        <string>Picture</string>
+        <string>/pics/objects/book_of_life/random1.png</string>
+      </entry>
+      <entry>
+        <string>Text</string>
+        <string>You have to stop enemies who are trying to conquer your lands</string>
+      </entry>
+      <entry>
+        <string>Endtext</string>
+        <string>I beat the enemies who were trying to conquer my land.</string>
+      </entry>
+    </hashtable>
+  </entry>
+</hashtable>

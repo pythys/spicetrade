@@ -1,0 +1,20 @@
+<hashtable>
+  <entry>
+    <string>10000</string>
+    <com.spicetrade.tools.HelpItem>
+      <name>Basic food</name>
+      <id>10000</id>
+      <description>This is your daily nourishment, consisting of blah blah yadda yadda</description>
+      <picture>/pics/basicfood.gif</picture>
+    </com.spicetrade.tools.HelpItem>
+  </entry>
+  <entry>
+    <string>10100</string>
+    <com.spicetrade.tools.HelpItem>
+      <name>Sahram seeds</name>
+      <id>10100</id>
+      <description>Lots of sahram onions. Blah blah.</description>
+      <picture>/pics/sahramseeds.gif</picture>
+    </com.spicetrade.tools.HelpItem>
+  </entry>
+</hashtable>

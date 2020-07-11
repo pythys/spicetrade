@@ -1,0 +1,30 @@
+<com.spicetrade.Player>
+  <attr>
+    <entry>
+      <string>Money</string>
+      <string>0</string>
+    </entry>
+    <entry>
+      <string>Name</string>
+      <string>Abu Mansur 'abd ar-Rahman al-Qazzaz</string>
+    </entry>
+    <entry>
+      <string>Timeunit</string>
+      <string>AH</string>
+    </entry>
+    <entry>
+      <string>Moneyunit</string>
+      <string>Dirham</string>
+    </entry>
+    <entry>
+      <string>Wife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>Children</string>
+      <string></string>
+    </entry>
+  </attr>
+  <place>home</place>
+  <year>500</year>
+</com.spicetrade.Player>
