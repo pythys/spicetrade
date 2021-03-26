@@ -9,6 +9,7 @@ repositories {
 dependencies {
     implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.16'
     implementation group: 'org.beanshell', name: 'bsh', version: '2.0b5'
+    implementation group: 'org.jcraft', name: 'jorbis', version: '0.0.17'
 }
 
 mainClassName = 'org.spicetrade.Game'
