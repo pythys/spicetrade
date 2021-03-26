@@ -1,3 +1,14 @@
 plugins {
-    id 'java'
+    id 'application'
 }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.16'
+    implementation group: 'org.beanshell', name: 'bsh', version: '2.0b5'
+}
+
+mainClassName = 'org.spicetrade.Game'

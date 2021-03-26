@@ -102,9 +102,9 @@ public class Sounds {
 
     public void stopAll() {
         Sound sound = null;
-        Enumeration enum = sounds.elements();
-        while (enum.hasMoreElements()) {
-            sound = (Sound) enum.nextElement();
+        Enumeration enumeration = sounds.elements();
+        while (enumeration.hasMoreElements()) {
+            sound = (Sound) enumeration.nextElement();
             sound.stop();
             sounds.remove(sound.name);
         }
