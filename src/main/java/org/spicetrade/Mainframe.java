@@ -2438,7 +2438,7 @@ public class Mainframe extends Frame {
             FileDialog fd = new FileDialog(this, "Save game", FileDialog.SAVE);
             fd.setDirectory(".");
             fd.setFile("spicetrade.sav");
-            fd.show();
+            fd.setVisible(true);
             // FIX: 12.4.2005 Changed the loading and save routine so that the directory information is used also
             String file = fd.getDirectory() + fd.getFile();
             if (file == null) return;
@@ -2483,7 +2483,7 @@ public class Mainframe extends Frame {
             FileDialog fd = new FileDialog(this, "Load game", FileDialog.LOAD);
             fd.setDirectory(".");
             fd.setFile("spicetrade.sav");
-            fd.show();
+            fd.setVisible(true);
             // FIX: 12.4.2005 Changed the loading and save routine so that the directory information is used also
             String file = fd.getDirectory() + fd.getFile();            
             if (fd.getFile() == null) return;
