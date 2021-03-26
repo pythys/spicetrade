@@ -7,9 +7,12 @@ repositories {
 }
 
 dependencies {
+    // https://github.com/pdudits/soundlibs
+    implementation group: 'com.googlecode.soundlibs', name: 'jorbis', version: '0.0.17.4'
+    implementation group: 'com.googlecode.soundlibs', name: 'tritonus-share', version: '0.3.7.4'
     implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.16'
     implementation group: 'org.beanshell', name: 'bsh', version: '2.0b5'
-    implementation group: 'org.jcraft', name: 'jorbis', version: '0.0.17'
+    implementation group: 'xpp3', name: 'xpp3', version: '1.1.4c'
 }
 
 mainClassName = 'org.spicetrade.Game'
