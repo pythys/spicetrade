@@ -81,7 +81,7 @@ public class MapEntry {
     }
 
     public String getDescription(int type) {
-        return "Travel to " + nice + "§" + "This will take you " + getLength(type) + " days.";
+        return "Travel to " + nice + "\u00A7" + "This will take you " + getLength(type) + " days.";
     }
     
     public int getLength(int type) {

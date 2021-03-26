@@ -487,7 +487,7 @@ public class Drawable extends Rectangle {
 
         while (a < b) {
             if (fontMetrics.stringWidth(leftover.toString()) < width) {
-                if (line.charAt(a) != '§')
+                if (line.charAt(a) != '\u00A7')
                     leftover.append(line.charAt(a));
                 else {
                     if (fontMetrics.stringWidth(leftover.toString()) > size)

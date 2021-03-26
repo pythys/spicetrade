@@ -660,7 +660,7 @@ public class Player {
         try {
             Mainframe mf = Mainframe.me;
             if (journal.has("field2"))
-                journal.done("field2", "§- I sold some spices in " + nicecity);
+                journal.done("field2", "\u00A7- I sold some spices in " + nicecity);
             money += price;
             mf.sounds.playSound("/music/fx_hit.ogg");
             removeItem(id);
@@ -966,19 +966,19 @@ public class Player {
 
                 if (value < 1) {
                     if (mf.rB(0, 25 - randomEffect)) {
-                        journal.put("yima1", "§- I was cursed by Yima");
+                        journal.put("yima1", "\u00A7- I was cursed by Yima");
                         journal.open("random2");
                         this.logo = "logoEvil";
                     } else if (mf.rB(25, 50 - randomEffect)) {
-                        journal.put("yima1", "§- I was cursed by Yima");
+                        journal.put("yima1", "\u00A7- I was cursed by Yima");
                         journal.open("random3");
                         this.logo = "logoEvil";
                     } else if (mf.rB(50, 65 - randomEffect)) {
-                        journal.put("yima1", "§- I was cursed by Yima");
+                        journal.put("yima1", "\u00A7- I was cursed by Yima");
                         journal.open("random1");
                         this.logo = "logoEvil";
                     } else if (mf.rB(65, 70 - randomEffect)) {
-                        journal.put("yima1", "§- I was cursed by Yima");
+                        journal.put("yima1", "\u00A7- I was cursed by Yima");
                         addAddiction("plague", 10);
                         this.logo = "logoEvil";
                     }
@@ -1007,7 +1007,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit2";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1016,7 +1016,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit3";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1025,7 +1025,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit4";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1034,7 +1034,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit10";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1043,7 +1043,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit11";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1052,7 +1052,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the sultan's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the sultan's official");
         }
         permit = "permit12";
         if (journal.has(permit) && !journal.get(permit).equals("") && journal.get(permit).charAt(0) == '!') {
@@ -1061,7 +1061,7 @@ public class Player {
             value--;
             journal.put(permit, "!" + value);
             if (value <= 0)
-                journal.put(permit, "§- The permit can be retrieved from the king's official");
+                journal.put(permit, "\u00A7- The permit can be retrieved from the king's official");
         }
 
         // Umm
@@ -1069,7 +1069,7 @@ public class Player {
             // FIX 13.5.2005 Getting married to Umm needed some changes to make it foolproof(er)
             String parse = (String) journal.get("abdullah2").substring(1, 2);
             String other = (String) journal.get("abdullah2").substring(2, ((String) journal.get("abdullah2")).length());
-            journal.put("abdullah2", other + "§- I waited one month to see Umm again");
+            journal.put("abdullah2", other + "\u00A7- I waited one month to see Umm again");
         }
 
         // culture
@@ -1138,7 +1138,7 @@ public class Player {
                             }
                         }
 
-                        journal.add("permit" + cities[i], "§- They destroyed my museum and my collections");
+                        journal.add("permit" + cities[i], "\u00A7- They destroyed my museum and my collections");
                         add("removemuseum" + cities[i]);
                     }
                 }
@@ -1197,7 +1197,7 @@ public class Player {
                                 mf.doActionOnEntering = "mf.gotoDialog(\"3329\");";
 
                         // destroy mosque
-                        journal.add("church" + cities[i], "§- The mosque is gone and a church stands in it's place");
+                        journal.add("church" + cities[i], "\u00A7- The mosque is gone and a church stands in it's place");
                         add("removemosque" + cities[i]);
                     }
                 }
@@ -1385,34 +1385,34 @@ public class Player {
         int army = r.nextInt(9);
         if (!journal.isDone("random1") && hasItem("16020") && age > 18) {
             add("foreignarmy", armies[0]);
-            journal.open("random1", "§- The army of " + mf.armies.getName(armies[0]) + " is attacking your country!");
+            journal.open("random1", "\u00A7- The army of " + mf.armies.getName(armies[0]) + " is attacking your country!");
         } else if (!journal.isDone("random4") && journal.isDone("random1") && hasItem("16020") && age > 20) {
             add("foreignarmy", armies[1]);
-            journal.open("random4", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random4", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random5") && journal.isDone("random4") && hasItem("16020") && age > 23) {
             add("foreignarmy", armies[2]);
-            journal.open("random5", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random5", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random6") && journal.isDone("random5") && hasItem("16020") && age > 24) {
             add("foreignarmy", armies[3]);
-            journal.open("random6", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random6", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random7") && journal.isDone("random6") && hasItem("16020") && age > 27) {
             add("foreignarmy", armies[4]);
-            journal.open("random7", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random7", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random8") && journal.isDone("random7") && hasItem("16020") && age > 29) {
             add("foreignarmy", armies[5]);
-            journal.open("random8", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random8", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random9") && journal.isDone("random8") && hasItem("16020") && age > 34) {
             add("foreignarmy", armies[6]);
-            journal.open("random9", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random9", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random10") && journal.isDone("random9") && hasItem("16020") && age > 35) {
             add("foreignarmy", armies[7]);
-            journal.open("random10", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random10", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random11") && journal.isDone("random10") && hasItem("16020") && age > 39) {
             add("foreignarmy", armies[8]);
-            journal.open("random11", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random11", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         } else if (!journal.isDone("random12") && journal.isDone("random11") && hasItem("16020") && age > 44) {
             add("foreignarmy", armies[9]);
-            journal.open("random12", "§- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
+            journal.open("random12", "\u00A7- The army of " + mf.armies.getName(armies[1]) + " is attacking your country!");
         }
 
         int allCulture = 0;

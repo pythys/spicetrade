@@ -53,6 +53,6 @@ public class LogItem {
     }
     
     public String toString() {
-        return (getDate() + "§" + getText());
+        return (getDate() + "\u00A7" + getText());
     }
 }
