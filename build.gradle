@@ -7,13 +7,9 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.github.trilarion:java-vorbis-support:1.2.1'
     implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.16'
     implementation group: 'org.beanshell', name: 'bsh', version: '2.0b5'
-
-    // Not sure if they are needed
-    runtimeOnly group: 'com.googlecode.soundlibs', name: 'jorbis', version: '0.0.17.4'
-    runtimeOnly group: 'com.googlecode.soundlibs', name: 'tritonus-share', version: '0.3.7.4'
-    runtimeOnly group: 'xpp3', name: 'xpp3', version: '1.1.4c'
 }
 
 mainClassName = 'org.spicetrade.Game'
