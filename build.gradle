@@ -17,9 +17,14 @@ dependencies {
 }
 
 mainClassName = 'org.spicetrade.Game'
+
 tasks.withType(JavaCompile) {
     // TODO options.compilerArgs << "-Xlint:unchecked"
     options.compilerArgs << "-Xlint:deprecation"
+}
+
+tasks.withType(Jar) {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 jar {
