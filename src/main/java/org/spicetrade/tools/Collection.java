@@ -24,6 +24,7 @@ import com.thoughtworks.xstream.XStream;
 import java.util.Hashtable;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.spicetrade.Mainframe;
 
 public class Collection {
@@ -42,6 +43,8 @@ public class Collection {
         collection = new Hashtable();
         String xml = null;
         XStream xstream = new XStream();
+        XStream.setupDefaultSecurity(xstream);
+        xstream.addPermission(AnyTypePermission.ANY);
         try {
             if (Mainframe.DEBUG == 1) System.out.println("Reading XML file: " + s);
             xml = Mainframe.me.tools.readFile(s);

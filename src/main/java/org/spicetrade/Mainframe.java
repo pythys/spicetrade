@@ -41,6 +41,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Vector;
 
+import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.spicetrade.tools.Drawable;
 import org.spicetrade.tools.Item;
 import org.spicetrade.tools.LogItem;
@@ -160,6 +161,8 @@ public class Mainframe extends Frame {
         bsh = new Interpreter();
         bshimport = "import org.spicetrade.*;\nimport org.spicetrade.tools.*;\n";
         xstream = new XStream();
+        XStream.setupDefaultSecurity(xstream);
+        xstream.addPermission(AnyTypePermission.ANY);
         tools = new Tools();
         objects = new Vector();
         panel = new Vector();
