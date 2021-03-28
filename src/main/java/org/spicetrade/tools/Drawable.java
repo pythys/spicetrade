@@ -515,7 +515,7 @@ public class Drawable extends Rectangle {
         if (fontMetrics.stringWidth(leftover.toString()) > size)
             size = fontMetrics.stringWidth(leftover.toString());
         res.add(leftover.toString());
-        res.insertElementAt(new Integer(size), 0);
+        res.insertElementAt(Integer.valueOf(size), 0);
         return res;
     }
 
