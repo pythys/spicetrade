@@ -27,16 +27,14 @@ import org.spicetrade.tools.Sound;
 
 public class Sounds {
 
-    Hashtable sounds = new Hashtable();
+    Hashtable<String, Sound> sounds = new Hashtable<>();
 
     public boolean musicOn = true;
-    
+
     public String lastMusic = "";
     public String currentMusic = "";
-    
-    public Sounds() {
-        super();
-    }
+
+    public Sounds() { }
 
     public void playSound(String file, boolean loop) {
         if (Mainframe.DEBUG == 1) System.out.println("starting to play: " + file + ", loop: " + loop);
@@ -57,7 +55,7 @@ public class Sounds {
     public void playSound(String file) {
         playSound(file, false);
     }
-    
+
     public void loopSound(String file) {
         playSound(file, true);
     }
@@ -87,12 +85,12 @@ public class Sounds {
             ex.printStackTrace();
         }
     }
-    
+
     public void stopSound(String file) {
         try {
             if (!isPlaying(file))
                 return;
-            Sound sound = (Sound) sounds.get(file);
+            Sound sound = sounds.get(file);
             sound.stop();
             sounds.remove(file);
         } catch (Exception ex) {
@@ -101,14 +99,14 @@ public class Sounds {
     }
 
     public void stopAll() {
-        Sound sound = null;
-        Enumeration enumeration = sounds.elements();
+        Sound sound;
+        Enumeration<Sound> enumeration = sounds.elements();
         while (enumeration.hasMoreElements()) {
-            sound = (Sound) enumeration.nextElement();
+            sound = enumeration.nextElement();
             sound.stop();
             sounds.remove(sound.name);
         }
-        sounds = new Hashtable();
+        sounds = new Hashtable<>();
     }
 
     public boolean has(String file) {
@@ -117,7 +115,7 @@ public class Sounds {
     
     public boolean isPlaying(String file) {
         if(has(file)) {
-            Sound sound = (Sound)sounds.get(file);
+            Sound sound = sounds.get(file);
             return sound.playing;
         } else return false;
     }
