@@ -23,131 +23,72 @@ package org.spicetrade.tools;
 import java.io.IOException;
 import java.net.URL;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.*;
 
-import org.spicetrade.Mainframe;
-
-/**
- * @author holjuh
- *  
- */
 public class Sound implements Runnable {
 
+    public String name = "";
+    public volatile boolean playing;
+
+    private boolean loop;
     private Thread thread = null;
 
-    AudioInputStream audioInputStream = null;
-
-    AudioFormat sourceFormat = null;
-
-    AudioFormat audioFormat = null;
-
-    SourceDataLine line = null;
-
-    private static final int EXTERNAL_BUFFER_SIZE = 128000;
-
-    byte[] abData = new byte[EXTERNAL_BUFFER_SIZE];
-
-    byte[] bytes;
-
-    boolean loop = false;
-    
-    public String name = "";
-
-    public boolean playing = false;
-    
-    public void start(String afile) {        
+    public void start(String afile) {
         start(afile, false);
     }
 
     public void start(String afile, boolean loop) {
-        this.name = afile;
         if (thread == null) {
-            thread = new Thread(this, (afile + String.valueOf(System.currentTimeMillis())));
-
+            thread = new Thread(this, (afile + System.currentTimeMillis()));
+            this.name = afile;
             this.loop = loop;
-
-            try {
-                URL url = getClass().getResource(afile);
-                audioInputStream = AudioSystem.getAudioInputStream(url.openStream());
-
-                if (audioInputStream == null) {
-                    System.out.println("Cannot play sound: " + afile);
-                }
-                sourceFormat = audioInputStream.getFormat();
-                AudioFormat.Encoding targetEncoding = AudioFormat.Encoding.PCM_SIGNED;
-                audioInputStream = AudioSystem.getAudioInputStream(targetEncoding, audioInputStream);
-                audioFormat = audioInputStream.getFormat();
-
-                DataLine.Info info = new DataLine.Info(SourceDataLine.class, audioFormat);
-
-                line = (SourceDataLine) AudioSystem.getLine(info);
-                line.open(audioFormat);
-            } catch (LineUnavailableException e) {
-                Mainframe mf = Mainframe.me;
-                mf.sounds.musicOn = false;               
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            line.start();
-
             thread.start();
         }
     }
 
     public void run() {
-        Thread myThread = Thread.currentThread();
-        while (thread == myThread)
+        do {
             try {
-                do {
-                    playing = true;
-                    int nBytesRead = 0;
-                    if (Mainframe.DEBUG == 1) System.out.println("Playing: " + name + " and looping is " + loop + " - " + new java.util.Date(System.currentTimeMillis()));
-                    while (nBytesRead != -1) {
-                        try {
-                            nBytesRead = audioInputStream.read(abData, 0, abData.length);
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                        if (nBytesRead >= 0) {
-                            int nBytesWritten = line.write(abData, 0, nBytesRead);
-                        }
-
-                        Thread.sleep(400);
+                URL url = getClass().getResource(this.name);
+                AudioInputStream fileIn = AudioSystem.getAudioInputStream(url.openStream());
+                if (fileIn == null) { return; }
+                AudioFormat sourceFormat = fileIn.getFormat();
+                AudioFormat targetFormat = new AudioFormat(
+                        AudioFormat.Encoding.PCM_SIGNED,
+                        sourceFormat.getSampleRate(),
+                        16,
+                        sourceFormat.getChannels(),
+                        sourceFormat.getChannels() * 2,
+                        sourceFormat.getSampleRate(),
+                        false);
+                AudioInputStream dataIn = AudioSystem.getAudioInputStream(targetFormat, fileIn);
+                DataLine.Info info = new DataLine.Info(SourceDataLine.class, targetFormat);
+                SourceDataLine line = (SourceDataLine) AudioSystem.getLine(info);
+                if (line == null) { return; }
+                this.playing = true;
+                line.open();
+                line.start();
+                byte[] buffer = new byte[4096];
+                int nBytesRead = 0;
+                while (nBytesRead != -1 && playing) {
+                    nBytesRead = dataIn.read(buffer, 0, buffer.length);
+                    if (nBytesRead != -1) {
+                        line.write(buffer, 0, nBytesRead);
                     }
-                    URL url = getClass().getResource(name);
-                    audioInputStream = AudioSystem.getAudioInputStream(url.openStream());
-                    sourceFormat = audioInputStream.getFormat();
-                    AudioFormat.Encoding targetEncoding = AudioFormat.Encoding.PCM_SIGNED;
-                    audioInputStream = AudioSystem.getAudioInputStream(targetEncoding, audioInputStream);
-                    audioFormat = audioInputStream.getFormat();
-
-                    DataLine.Info info = new DataLine.Info(SourceDataLine.class, audioFormat);
-
-                    line = (SourceDataLine) AudioSystem.getLine(info);
-                    line.open(audioFormat);
-                    line.start();
-                } while (loop);
-                stop();
-            } catch (InterruptedException e) {
-            } catch (Exception ex) {
-                ex.printStackTrace();
+                }
+                line.drain();
+                line.stop();
+                line.close();
+                dataIn.close();
+                fileIn.close();
+            } catch (IOException | UnsupportedAudioFileException | LineUnavailableException e) {
+                System.out.println("Unable to play audio file: " + this.name);
             }
+        } while (this.loop);
     }
 
     public void stop() {
-        try {
-            loop = false;
-            thread = null;
-            line.close();
-            playing = false;
-            System.gc();
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        this.loop = false;
+        this.playing = false;
     }
 }
