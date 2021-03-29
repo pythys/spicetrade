@@ -85,6 +85,7 @@ public class Sound implements Runnable {
                 System.out.println("Unable to play audio file: " + this.name);
             }
         } while (this.loop);
+        this.playing = false;
     }
 
     public void stop() {
