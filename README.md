@@ -5,7 +5,8 @@
    Spice Trade video game, created originally by
    Kalle Hamm, Juha Holopainen, Dzamil Kamanger, Sade Kahra,
    Goran Mrdja and Michiko Isogai.
-   and maintained by Taher Alkhateeb <taher@pythys.com>
+
+   Maintained by Taher Alkhateeb <taher@pythys.com>
 
 ## Description
 
@@ -27,3 +28,15 @@
    beat out the Europeans in the spice trade?
    Could Europe have been different?
    How? You decide!
+
+## Revival Initiative
+
+   This game almost went out of existence and the original website spicetrade.org
+   went offline. Thankfully the maintainer had a copy of the original source code
+   which was upgraded to more modern versions of Java and now people can continue
+   to enjoy this game.
+
+   This initiative was taken because otherwise that game would no longer exist in
+   source code form, and hence never have the ability to fix bugs and make
+   improvements.
+
