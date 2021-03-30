@@ -83,6 +83,7 @@ public class Sound implements Runnable {
                 fileIn.close();
             } catch (IOException | UnsupportedAudioFileException | LineUnavailableException e) {
                 System.out.println("Unable to play audio file: " + this.name);
+                stop();
             }
         } while (this.loop);
         this.playing = false;
