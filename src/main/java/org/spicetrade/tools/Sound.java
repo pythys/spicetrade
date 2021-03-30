@@ -51,7 +51,7 @@ public class Sound implements Runnable {
             try {
                 URL url = getClass().getResource(this.name);
                 AudioInputStream fileIn = AudioSystem.getAudioInputStream(url.openStream());
-                if (fileIn == null) { return; }
+                if (fileIn == null) { stop(); return; }
                 AudioFormat sourceFormat = fileIn.getFormat();
                 AudioFormat targetFormat = new AudioFormat(
                         AudioFormat.Encoding.PCM_SIGNED,
@@ -64,7 +64,7 @@ public class Sound implements Runnable {
                 AudioInputStream dataIn = AudioSystem.getAudioInputStream(targetFormat, fileIn);
                 DataLine.Info info = new DataLine.Info(SourceDataLine.class, targetFormat);
                 SourceDataLine line = (SourceDataLine) AudioSystem.getLine(info);
-                if (line == null) { return; }
+                if (line == null) { stop(); return; }
                 this.playing = true;
                 line.open();
                 line.start();
