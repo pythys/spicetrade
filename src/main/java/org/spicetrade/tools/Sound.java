@@ -86,7 +86,7 @@ public class Sound implements Runnable {
                 stop();
             }
         } while (this.loop);
-        this.playing = false;
+        stop();
     }
 
     public void stop() {
