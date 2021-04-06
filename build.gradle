@@ -9,7 +9,6 @@ buildscript {
 apply plugin: 'application'
 apply plugin: 'io.github.fvarrui.javapackager.plugin'
 
-
 repositories {
     mavenCentral()
 }
@@ -48,5 +47,5 @@ jar {
 task packageSpicetrade(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
     dependsOn build
     mainClass = mainClassName
-    jrePath = file("${System.properties['user.home']}/.sdkman/candidates/java/current/jre")
+    jrePath = file(System.properties['java.home'])
 }
