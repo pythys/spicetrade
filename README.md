@@ -1,14 +1,8 @@
 # Spicetrade
 
+Maintained by Taher Alkhateeb <taher@pythys.com>
+
 ## General
-
-   Spice Trade video game, created originally by
-   Kalle Hamm, Juha Holopainen, Dzamil Kamanger, Sade Kahra,
-   Goran Mrdja and Michiko Isogai.
-
-   Maintained by Taher Alkhateeb <taher@pythys.com>
-
-## Description
 
    Colonize Europe!
 
