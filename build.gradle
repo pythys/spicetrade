@@ -6,8 +6,16 @@ buildscript {
         classpath 'io.github.fvarrui:javapackager:1.5.1'
     }
 }
+apply plugin: 'groovy'
 apply plugin: 'application'
 apply plugin: 'io.github.fvarrui.javapackager.plugin'
+
+sourceSets {
+    main {
+        java { srcDirs = [] }
+        groovy { srcDirs += ['src/main/java'] }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -17,6 +25,7 @@ dependencies {
     implementation 'com.github.trilarion:java-vorbis-support:1.2.1'
     implementation group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.16'
     implementation group: 'org.beanshell', name: 'bsh', version: '2.0b5'
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.7'
 }
 
 mainClassName = 'org.spicetrade.Game'
