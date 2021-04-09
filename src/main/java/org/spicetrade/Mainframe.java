@@ -20,6 +20,11 @@
 
 package org.spicetrade;
 
+import bsh.Interpreter;
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.AnyTypePermission;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.FileDialog;
@@ -41,7 +46,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Vector;
 
-import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.spicetrade.tools.Drawable;
 import org.spicetrade.tools.Item;
 import org.spicetrade.tools.LogItem;
@@ -50,10 +54,6 @@ import org.spicetrade.tools.Settings;
 import org.spicetrade.tools.Spicebean;
 import org.spicetrade.tools.Task;
 import org.spicetrade.tools.Tools;
-
-import bsh.Interpreter;
-
-import com.thoughtworks.xstream.XStream;
 
 /**
  * Spice Trade The frame for the application, essentially this runs the whole
