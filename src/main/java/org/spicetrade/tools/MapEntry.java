@@ -31,51 +31,39 @@ import bsh.Interpreter;
 public class MapEntry {
 
     public String name = "";
-
     public String nice = "";
-
     public String description = "";
-
     public String condition = "";
-
     public boolean european = false;
-
     public int x = 0;
-
     public int y = 0;
-
     public int width = 20;
-
     public int height = 20;
-    
     public int days1 = 0; // feet
     public String action1 = "";
-
     public int days2 = 0; // horse
-
     public int days3 = 0; // caravan
-
     public int days4 = 0; // flying
     public String action2 = "";
-
     public int days5 = 0; // boat
     public String action3 = "";
-
     public static final int TRANSPORT1 = 0;
-
     public static final int TRANSPORT2 = 1;
-
     public static final int TRANSPORT3 = 2;
-
     public static final int TRANSPORT4 = 3;
-
     public static final int TRANSPORT5 = 4;
-
     public static final int TRANSPORT6 = 5;
-
     public static final int TRANSPORT7 = 6;
     
-    public static final String[] TRANSPORTS = { "walk", "horse", "caravan", "suleiman", "boat", "borak", "dog" };
+    public static final String[] TRANSPORTS = {
+            "walk",
+            "horse",
+            "caravan",
+            "suleiman",
+            "boat",
+            "borak",
+            "dog"
+    };
 
     public MapEntry() {
     }

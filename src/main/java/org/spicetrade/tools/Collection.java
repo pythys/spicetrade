@@ -21,10 +21,11 @@
 package org.spicetrade.tools;
 
 import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.security.AnyTypePermission;
+
 import java.util.Hashtable;
 import java.util.Vector;
 
-import com.thoughtworks.xstream.security.AnyTypePermission;
 import org.spicetrade.Mainframe;
 
 public class Collection {

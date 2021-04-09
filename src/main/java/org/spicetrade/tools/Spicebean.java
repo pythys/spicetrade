@@ -27,19 +27,12 @@ import bsh.Interpreter;
 public class Spicebean {
 
     public String condition;
-
     public String name;
-
     public String action;
-
     public String picture;
-
     public int x;
-
     public int y;
-
     public int width;
-
     public int height;
 
     public Spicebean() {

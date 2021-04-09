@@ -25,39 +25,22 @@ import org.spicetrade.Mainframe;
 public class Item extends Spicebean {
 
     public String id;
-
     public String description;
-
     public String help;
-
     public String helpId;
-
     public String pictureBig;
-
     public String pictureStatus;
-
     public String who;
-
     public String where;
-
     public int price;
-
     public int happiness;
-
     public int monthlyCost;
-
     public int health;
-
     public int force;
-
     public int culture;
-
     public int economy;
-
     public int amount;
-
     public int random;
-
     public boolean inventory;
 
     public Item() {

@@ -28,65 +28,35 @@ import org.spicetrade.*;
 public class Drawable extends Rectangle {
 
     public static final int STATUS = 0;
-
     public static final int BUTTON = 1;
-
     public static final int LABEL = 2;
-
     public static final int IMAGE = 3;
-
     public static final int PANEL = 4;
-
     public static final int FLYOVER = 5;
-
     public static final int TIMAGE = 6;
-
     public static final int LINE = 7;
-
     public static final int CIRCLE = 8;
-
     public static final int RECTANGLE = 9;
-
     public static final int MPANEL = 10;
-
     public static final int BPANEL = 12;
-
     public int type;
-
     public int x;
-
     public int y;
-
     public int x2;
-
     public int y2;
-
     public int width;
-
     public int height;
-
     public int xarc;
-
     public int yarc;
-
     public float alpha;
-
     public Font font = null;
-
     public Color color = null;
-
     public Image image;
-
     public Image image2;
-
     public String text;
-
     public Vector textVector = null;
-
     public int textWidth = 0;
-
     public String action;
-
     public String niceText;
 
     public Drawable(int x, int y, int x2, int y2, int type) {

@@ -32,25 +32,15 @@ import bsh.Interpreter;
 public class Task implements Runnable {
 
     String action = "";
-
     int times = 1;
-
     int counter = 1;
-
     int delay = 0;
-    
     int delayBefore = 0;
-
     Interpreter bshint = new Interpreter();
-
     Thread task = null;
-
     boolean gotoPlace = false;
-
     String doAfter = "";
-
     boolean paused = false;
-    
     Hashtable attr = new Hashtable();
 
     public Task(String action, int times, boolean gotoPlace, String doAfter, int delay) {
