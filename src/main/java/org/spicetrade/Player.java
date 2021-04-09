@@ -32,96 +32,88 @@ import org.spicetrade.tools.MapEntry;
 public class Player {
 
     public Hashtable attr;
-
     public Vector soldItems;
-
     public Vector items;
-
     public Vector log;
-
     public boolean fullScreen = false;
-    
     public int x;
-
     public int y;
-
     public int xHomeCountry;
-
     public int yHomeCountry;
-
     public int year;
-
     public int month;
-
     public int day;
-
     public int age;
-
     public String ageType;
-
     public double health;
-
     public int money;
-
     public int happiness;
-
     public int moral;
-
     public int force;
-
     public int baseForce;
-
     public int culture;
-
     public int economy;
-
     public int wifes;
-
     public int children;
-
     public String place;
-
     public String city;
-
     public String nicecity;
-
     public String lastPlace;
-
     public String logo;
-
     public String lastWords;
-
     public boolean inGame;
-
     public boolean inBattle;
-
     public boolean inGameOver;
-
     public int transport;
-
     public Journal journal;
-
     public boolean addictedHashish;
-
     public boolean addictedOpium;
-
     public boolean sickPlague;
-
     public boolean sickGeneral;
-
     public boolean sickPoisoned;
-
     public int deathType = 0;
-
     public int difficulty = 1;
-
     public String statusFace = "/pics/navigation/abus/abu_young01.png";
 
-    public final static String[] cities = { "baghdad", "anjoudan", "najaf", "latakia", "konya", "baku", "constantinopol", "venice", "madrid", "lisboa",
-            "budapest", "vienna", "moscow", "hamburg", "amsterdam", "london", "paris" };
+    public final static String[] cities = {
+            "baghdad",
+            "anjoudan",
+            "najaf",
+            "latakia",
+            "konya",
+            "baku",
+            "constantinopol",
+            "venice",
+            "madrid",
+            "lisboa",
+            "budapest",
+            "vienna",
+            "moscow",
+            "hamburg",
+            "amsterdam",
+            "london",
+            "paris"
+    };
 
-    public final static String[] niceCities = { "Baghdad", "Anjoudan", "Najaf", "al-Ladiqiyah", "Konya", "Baku", "Constantinople", "Venice", "Madrid",
-            "Lisbon", "Budapest", "Vienna", "Moscow", "Hamburg", "Amsterdam", "London", "Paris" };
+    public final static String[] niceCities = {
+            "Baghdad",
+            "Anjoudan",
+            "Najaf",
+            "al-Ladiqiyah",
+            "Konya",
+            "Baku",
+            "Constantinople",
+            "Venice",
+            "Madrid",
+            "Lisbon",
+            "Budapest",
+            "Vienna",
+            "Moscow",
+            "Hamburg",
+            "Amsterdam",
+            "London",
+            "Paris"
+    };
 
     public Player() {
         this(1);
