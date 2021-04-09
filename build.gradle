@@ -12,6 +12,7 @@ apply plugin: 'io.github.fvarrui.javapackager.plugin'
 
 sourceSets {
     main {
+        // joint-compilation
         java { srcDirs = [] }
         groovy { srcDirs += ['src/main/java'] }
     }

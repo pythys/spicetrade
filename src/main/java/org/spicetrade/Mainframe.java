@@ -81,81 +81,43 @@ import com.thoughtworks.xstream.XStream;
 public class Mainframe extends Frame {
 
     public Interpreter bsh;
-
     public XStream xstream;
-
     public Player player;
-
     public Dialogs dialogs;
-
     public Places places;
-
     public Market market;
-
     public Sounds sounds;
-
     public Tools tools;
-
     public Actions actions;
-
     public Armies armies;
-
     public Traders traders;
-
     public Task timer2;
-
-    //public Task idleTimer;
-
     public Map map;
-
     public Hashtable images;
-
     public Vector objects;
-
     public Vector panel;
-
     public Vector glass;
-
     public Font font;
-
     public Font fontBold;
-
     public boolean isModal;
-
     public int converter;
-
     public boolean isStatus;
-
     public boolean showMapHomeCity;
-
     public boolean showMapGlobe;
-
     public boolean showStatus;
-
     public boolean idle;
-
     public Drawable flyover;
-
     public String dialog;
-
     public String bshimport;
-
     public Random random;
-
     public int nextInt;
-
     public String doActionOnEntering;
-
-    public static Mainframe me = null;
-
     public Timer timer = null;
-
     public Image offscreen;
-
     public Graphics bg;
 
-    public static final int DEBUG = 0;
-//    public static final int DEBUG = 1; // a flood of debug data, beware ;-)
+    public static Mainframe me = null;
+    public static final int DEBUG = 0; // DEBUG = 1; for verbose mode
 
     public Mainframe() {
         bsh = new Interpreter();
@@ -408,7 +370,6 @@ public class Mainframe extends Frame {
 
     public void gotoPlace(String to, boolean modal) {
         // entering a place
-        //        idleTimer.reset();
         if (Mainframe.DEBUG == 1)
             System.out.println("gotoPlace(to, modal) " + System.currentTimeMillis());
         if (!to.equals(player.place) && !to.equals("menu") && !to.equals("settings") && !to.equals("intro") && !to.equals("intro2") && !to.equals("credits")) {
@@ -485,7 +446,6 @@ public class Mainframe extends Frame {
 
     public void gotoDialog(String to, int x, int y) {
         // entering a dialog
-        //        idleTimer.reset();
         player.addLog("!" + to, "mf.gotoDialog(\"" + to + "\", " + x + ", " + y + ");", player.day + player.month * 30 + player.year * 360);
         if (Mainframe.DEBUG == 1)
             System.out.println("gotoDialog " + to + ": " + System.currentTimeMillis());
@@ -2646,8 +2606,6 @@ public class Mainframe extends Frame {
                 paintGlass();
                 idle = false;
             }
-
-            //            idleTimer.reset();
 
             Vector v = null;
             if (isModal)
