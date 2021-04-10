@@ -95,7 +95,7 @@ public class Tools {
 
             br.close();
         } catch (Exception ex) {
-            // ex.printStackTrace();
+            ex.printStackTrace();
         }
         return ret.toString();
     }

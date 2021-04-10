@@ -46,12 +46,8 @@ public class Collection {
         XStream xstream = new XStream();
         XStream.setupDefaultSecurity(xstream);
         xstream.addPermission(AnyTypePermission.ANY);
-        try {
-            if (Mainframe.DEBUG == 1) System.out.println("Reading XML file: " + s);
-            xml = Mainframe.me.tools.readFile(s);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+        if (Mainframe.DEBUG == 1) System.out.println("Reading XML file: " + s);
+        xml = Mainframe.me.tools.readFile(s);
         if (Mainframe.DEBUG == 1) System.out.println("Creating the collection hashtable from XML: " + s);
         collection = (Hashtable) xstream.fromXML(xml);
     }
@@ -64,9 +60,9 @@ public class Collection {
             for (int i = 0, j = v.size(); i < j; i++) {
                 if (v.elementAt(i) instanceof MapEntry) {
                     if (((MapEntry) v.elementAt(i)).isActive(Mainframe.me.bsh))
-                        res.add((MapEntry) v.elementAt(i));
+                        res.add(v.elementAt(i));
                 } else
-                    res.add((String) v.elementAt(i));
+                    res.add(v.elementAt(i));
             }
 
             return res;
@@ -86,9 +82,9 @@ public class Collection {
             for (int i = 0, j = v.size(); i < j; i++) {
                 if (v.elementAt(i) instanceof Spicebean) {
                     if (((Spicebean) v.elementAt(i)).isActive())
-                        res.add((Spicebean) v.elementAt(i));
+                        res.add(v.elementAt(i));
                 } else
-                    res.add((String) v.elementAt(i));
+                    res.add(v.elementAt(i));
             }
 
             return res;
@@ -102,8 +98,7 @@ public class Collection {
         if (Mainframe.DEBUG == 2) System.out.println("Getting string: " + s2 + " from hashtable: " + s1);
         try {
             Hashtable h = (Hashtable) collection.get(s1);
-            String s = (String) h.get(s2);
-            return s;
+            return (String) h.get(s2);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -123,7 +118,7 @@ public class Collection {
         }
         return i;
     }
-    
+
     public double getDouble(String s1, String s2) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting double: " + s2 + " from hashtable: " + s1);
         double d = 0;
