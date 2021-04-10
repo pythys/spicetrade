@@ -30,7 +30,7 @@ import org.spicetrade.Mainframe;
 
 public class Collection {
 
-    public transient Hashtable collection;
+    protected transient Hashtable collection;
 
     public Collection(String s) {
         readXML(s);
