@@ -25,8 +25,7 @@ import java.util.Vector;
 import org.spicetrade.tools.Collection;
 import org.spicetrade.tools.Spicebean;
 
-public class Dialogs extends Collection
-{
+public class Dialogs extends Collection {
 
     public static final String xml = "/data/dialogs.xml"; 
     
@@ -38,18 +37,15 @@ public class Dialogs extends Collection
         this.refresh(xml);
     }
 
-    public String getTitle(String place)
-    {
+    public String getTitle(String place) {
         return getString(place, "Name");
     }
 
-    public String getText(String place)
-    {
+    public String getText(String place) {
         return getString(place, "Text");
     }
 
-    public Vector<Spicebean> getChoices(String place)
-    {
+    public Vector<Spicebean> getChoices(String place) {
         return getVector(place, "Choices");
     }
 }

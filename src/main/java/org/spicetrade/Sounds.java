@@ -28,9 +28,7 @@ import org.spicetrade.tools.Sound;
 public class Sounds {
 
     Hashtable<String, Sound> sounds = new Hashtable<>();
-
     public boolean musicOn = true;
-
     public String lastMusic = "";
     public String currentMusic = "";
 

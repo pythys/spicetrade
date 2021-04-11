@@ -26,8 +26,7 @@ import java.util.Vector;
 import org.spicetrade.tools.Collection;
 import org.spicetrade.tools.Item;
 
-public class Market extends Collection
-{
+public class Market extends Collection {
 
     public static final String xml = "/data/items.xml"; 
     
@@ -39,30 +38,24 @@ public class Market extends Collection
         this.refresh(xml);
     }
     
-    public Item getItem(String id)
-    {
+    public Item getItem(String id) {
         Item i = null;
-        try
-        {
+        try {
             i = (Item)getObject(id);
             return i;
         }
-        catch(Exception ex)
-        {
+        catch(Exception ex) {
             ex.printStackTrace();
         }
         return i;
     }
 
-    public int getPrice(String id)
-    {
-        try
-        {
+    public int getPrice(String id) {
+        try {
             Item i = getItem(id);
             return i.price;
         }
-        catch(Exception ex)
-        {
+        catch(Exception ex) {
             ex.printStackTrace();
         }
         return 0;

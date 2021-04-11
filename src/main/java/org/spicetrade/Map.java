@@ -29,7 +29,6 @@ import org.spicetrade.tools.MapEntry;
 public class Map extends Collection {
 
     public static final String background = "/pics/maps/world_maps/world.jpg";
-
     public static final String xml = "/data/map.xml";
 
     public Map() {
