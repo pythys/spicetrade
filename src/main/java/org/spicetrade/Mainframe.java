@@ -649,8 +649,8 @@ public class Mainframe extends Frame {
         panel.add(new Drawable(793, 548, 200, 20, Drawable.LABEL, player.money + " silver dirhams", statusFont, Color.BLACK));
 
         // first we need to know what items we can buy and sell
-        Vector buyItems = traders.getBuyItems(who);
-        Vector sellItems = traders.getSellItems(who);
+        Vector<Item> buyItems = traders.getBuyItems(who);
+        Vector<Item> sellItems = traders.getSellItems(who);
 
         if (Mainframe.DEBUG == 1)
             System.out.println("Inventory: " + player.items.toString());
@@ -693,9 +693,9 @@ public class Mainframe extends Frame {
                         + name + "\", " + price + ", " + (pageLeft + 1) + ", " + pageRight + ");", "Goto next page"));
         }
 
-        for (Iterator iter = buyItems.iterator(); iter.hasNext();) {
+        for (Item buyItem : buyItems) {
             counter++;
-            Item item = (Item) iter.next();
+            Item item = buyItem;
             if (counter > (pageLeft * per) && (counter <= (pageLeft * per + per) && (counter < buyItems.size() + 1))) {
                 p = traders.getBuyPrice(who, item.id);
                 image = getImage(item.picture);
@@ -744,9 +744,9 @@ public class Mainframe extends Frame {
                         + id + "\", \"" + name + "\", " + price + ", " + pageLeft + ", " + (pageRight + 1) + ");", "Goto next page"));
         }
 
-        for (Iterator iter = sellItems.iterator(); iter.hasNext();) {
+        for (Item sellItem : sellItems) {
             counter++;
-            Item item = (Item) iter.next();
+            Item item = sellItem;
             if (counter > (pageRight * per) && (counter <= (pageRight * per + per) && counter < sellItems.size() + 1)) {
                 p = traders.getSellPrice(who, item.id);
                 image = getImage(item.picture);
@@ -906,25 +906,23 @@ public class Mainframe extends Frame {
 
             if (abuHit < 5)
                 abuLog += "\u00A7- You barely scratch the enemy";
-            else if (abuHit >= 5 && abuHit < 15)
+            else if (abuHit < 15)
                 abuLog += "\u00A7- You feebly hit the enemy";
-            else if (abuHit >= 15 && abuHit < 25)
+            else if (abuHit < 25)
                 abuLog += "\u00A7- You hit the enemy";
-            else if (abuHit >= 25 && abuHit < 50)
+            else if (abuHit < 50)
                 abuLog += "\u00A7- You hit the enemy hard";
-            else if (abuHit >= 50)
-                abuLog += "\u00A7- You score a devastating hit";
+            else abuLog += "\u00A7- You score a devastating hit";
 
             if (enemyHit < 5)
                 enemyLog += "\u00A7- The enemy slaps you";
-            else if (enemyHit >= 5 && enemyHit < 15)
+            else if (enemyHit < 15)
                 enemyLog += "\u00A7- You are slightly wounded by the enemy";
-            else if (enemyHit >= 15 && enemyHit < 25)
+            else if (enemyHit < 25)
                 enemyLog += "\u00A7- The enemy hits you";
-            else if (enemyHit >= 25 && enemyHit < 50)
+            else if (enemyHit < 50)
                 enemyLog += "\u00A7- You get a bad wound from the enemy";
-            else if (enemyHit >= 50)
-                enemyLog += "\u00A7- The enemy strikes you with enourmous power";
+            else enemyLog += "\u00A7- The enemy strikes you with enourmous power";
 
             player.health = abu;
 
@@ -992,14 +990,14 @@ public class Mainframe extends Frame {
             // permit to europe
             objects.add(new Drawable(0, 0, getHeight(), getWidth(), Drawable.IMAGE, getImage(map.getBackground())));
             MapEntry entry = new MapEntry();
-            Vector entries = map.getEntries(player.city, player.transport, (player.hasItem("10630") && player.transport != MapEntry.TRANSPORT3));
+            Vector<MapEntry> entries = map.getEntries(player.city, player.transport, (player.hasItem("10630") && player.transport != MapEntry.TRANSPORT3));
             for (int i = 0, j = entries.size(); i < j; i++) {
                 entry = (MapEntry) entries.elementAt(i);
                 objects.add(new Drawable(entry.x - 10, entry.y - 10, entry.width, entry.height, Drawable.IMAGE, getImage("pixel", true), null, entry
                         .getAction(player.transport), "Go to " + entry.nice, entry.getDescription(player.transport), 0, null, null));
             }
 
-            Vector items = player.items;
+            Vector<Item> items = player.items;
             Item item = null;
 
             // right side of the window
@@ -1010,7 +1008,7 @@ public class Mainframe extends Frame {
             int x = 50; 
 
             for (int i = 0, j = items.size(); i < j; i++) {
-                item = (Item) items.elementAt(i);
+                item = items.elementAt(i);
                 if (item.isActive()) {
                     Image image = getImage(item.picture);
                     if (item.name.toLowerCase().equals(MapEntry.TRANSPORTS[player.transport]))
@@ -1112,7 +1110,7 @@ public class Mainframe extends Frame {
         try {
             objects.add(new Drawable(0, 0, getHeight(), getWidth(), Drawable.IMAGE, getImage(places.getBackground(to))));
             Spicebean sb = new Spicebean();
-            Vector pictures = places.getPictures(to);
+            Vector<Spicebean> pictures = places.getPictures(to);
             for (int i = 0, j = pictures.size(); i < j; i++) {
                 sb = (Spicebean) pictures.elementAt(i);
                 if (Mainframe.DEBUG == 2)
@@ -1123,7 +1121,7 @@ public class Mainframe extends Frame {
                     objects.add(new Drawable(sb.x, sb.y, 0, 0, 3, getImage(sb.picture)));
             }
 
-            Vector items = player.items;
+            Vector<Item> items = player.items;
             Item item = null;
 
             int x = 25;
@@ -1214,7 +1212,7 @@ public class Mainframe extends Frame {
 
     public void paintDialog(int x, int y) {
         try {
-            Vector actions = dialogs.getChoices(dialog);
+            Vector<Spicebean> actions = dialogs.getChoices(dialog);
             String idialog = "/pics/navigation/characters/" + dialogs.getTitle(dialog).toLowerCase().replaceAll(" ", "_") + ".png";
             // draw the panel and the text
             Drawable d = new Drawable(x + 200, y + 56, getWidth() / 2 - 160, 150, Drawable.LABEL, dialogs.getText(dialog));
@@ -1258,7 +1256,7 @@ public class Mainframe extends Frame {
             Color color = Color.WHITE;
 
             // ADD 10.04.2005 -- Want to see the book of life events in the order they happen in
-            Vector tasks = player.journal.tasks;
+            Vector<String> tasks = player.journal.tasks;
             String task = "";
 
             if (page == 0) {
@@ -1299,9 +1297,9 @@ public class Mainframe extends Frame {
                 d1.x -= (d1.textWidth / 2);
                 panel.add(d1);
             } else {
-                task = (String)tasks.elementAt(page-1);
+                task = tasks.elementAt(page-1);
                 int when = Integer.parseInt((String) player.journal.timestamp.get(task));
-                int year = (int) (when / 360) + 17 - 500;
+                int year = (when / 360) + 17 - 500;
                 String time = ", age of " + year;
                 Image image = getImage(player.journal.getPicture(task));
                 String taskText = player.journal.getString(task, "Endtext");
@@ -1470,9 +1468,9 @@ public class Mainframe extends Frame {
                 panel.add(new Drawable(177, y, 300, 20, Drawable.LABEL, "- lands", statusFont, Color.BLACK));
                 int x = 253;
                 String[] lands = { "12050", "14000", "14005", "14010", "14015", "14020", "14025", "14030", "14035", "14040", "14045" };
-                for (int i = 0, j = lands.length; i < j; i++)
-                    if (player.hasItem(lands[i], 1, false)) {
-                        Item item = (Item) market.getItem(lands[i]);
+                for (String land : lands)
+                    if (player.hasItem(land, 1, false)) {
+                        Item item = (Item) market.getItem(land);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 5, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1481,9 +1479,9 @@ public class Mainframe extends Frame {
 
                 String[] spices = { "10110", "10100", "10120", "10130", "10210", "10200", "10220", "10230" };
                 x = 253;
-                for (int i = 0, j = spices.length; i < j; i++)
-                    if (player.hasItem(spices[i], 1, false)) {
-                        Item item = (Item) market.getItem(spices[i]);
+                for (String spice : spices)
+                    if (player.hasItem(spice, 1, false)) {
+                        Item item = (Item) market.getItem(spice);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 22, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1500,9 +1498,9 @@ public class Mainframe extends Frame {
                 String[] art3 = { "10820" };
                 String[] art4 = { "10830", "10831" };
                 x = 253;
-                for (int i = 0, j = art1.length; i < j; i++)
-                    if (player.hasItem(art1[i], 1, false)) {
-                        Item item = (Item) market.getItem(art1[i]);
+                for (String s : art1)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 53, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1510,9 +1508,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = art2.length; i < j; i++)
-                    if (player.hasItem(art2[i], 1, false)) {
-                        Item item = (Item) market.getItem(art2[i]);
+                for (String s : art2)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 53, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1520,9 +1518,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = art3.length; i < j; i++)
-                    if (player.hasItem(art3[i], 1, false)) {
-                        Item item = (Item) market.getItem(art3[i]);
+                for (String s : art3)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 53, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1530,9 +1528,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = art4.length; i < j; i++)
-                    if (player.hasItem(art4[i], 1, false)) {
-                        Item item = (Item) market.getItem(art4[i]);
+                for (String s : art4)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 53, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1553,9 +1551,9 @@ public class Mainframe extends Frame {
                 String[] treasures7 = { "11670", "11671", "11672", "11673" };
                 String[] treasures8 = { "11680", "11680" };
                 x = 253;
-                for (int i = 0, j = treasures1.length; i < j; i++)
-                    if (player.hasItem(treasures1[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures1[i]);
+                for (String s : treasures1)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1563,9 +1561,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures2.length; i < j; i++)
-                    if (player.hasItem(treasures2[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures2[i]);
+                for (String s : treasures2)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1573,9 +1571,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures3.length; i < j; i++)
-                    if (player.hasItem(treasures3[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures3[i]);
+                for (String s : treasures3)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1583,9 +1581,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures4.length; i < j; i++)
-                    if (player.hasItem(treasures4[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures4[i]);
+                for (String s : treasures4)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1593,9 +1591,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures5.length; i < j; i++)
-                    if (player.hasItem(treasures5[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures5[i]);
+                for (String s : treasures5)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1603,9 +1601,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures6.length; i < j; i++)
-                    if (player.hasItem(treasures6[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures6[i]);
+                for (String s : treasures6)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1613,9 +1611,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures7.length; i < j; i++)
-                    if (player.hasItem(treasures7[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures7[i]);
+                for (String s : treasures7)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1623,9 +1621,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = treasures8.length; i < j; i++)
-                    if (player.hasItem(treasures8[i], 1, false)) {
-                        Item item = (Item) market.getItem(treasures8[i]);
+                for (String s : treasures8)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 82, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1645,9 +1643,9 @@ public class Mainframe extends Frame {
                 String[] luxury6 = { "10710" };
                 String[] luxury7 = { "10740", "10741", "10742", "10743", "10744", "10745" };
                 x = 253;
-                for (int i = 0, j = luxury1.length; i < j; i++)
-                    if (player.hasItem(luxury1[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury1[i]);
+                for (String s : luxury1)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1655,9 +1653,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury2.length; i < j; i++)
-                    if (player.hasItem(luxury2[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury2[i]);
+                for (String s : luxury2)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1665,9 +1663,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury3.length; i < j; i++)
-                    if (player.hasItem(luxury3[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury3[i]);
+                for (String s : luxury3)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1675,9 +1673,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury4.length; i < j; i++)
-                    if (player.hasItem(luxury4[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury4[i]);
+                for (String s : luxury4)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1685,9 +1683,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury5.length; i < j; i++)
-                    if (player.hasItem(luxury5[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury5[i]);
+                for (String s : luxury5)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1695,9 +1693,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury6.length; i < j; i++)
-                    if (player.hasItem(luxury6[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury6[i]);
+                for (String s : luxury6)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1705,9 +1703,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = luxury7.length; i < j; i++)
-                    if (player.hasItem(luxury7[i], 1, false)) {
-                        Item item = (Item) market.getItem(luxury7[i]);
+                for (String s : luxury7)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 112, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1727,9 +1725,9 @@ public class Mainframe extends Frame {
                 String[] buildings6 = { "12020" };
                 String[] buildings7 = { "12040" };
                 x = 253;
-                for (int i = 0, j = buildings1.length; i < j; i++)
-                    if (player.hasItem(buildings1[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings1[i]);
+                for (String s : buildings1)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1737,9 +1735,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings2.length; i < j; i++)
-                    if (player.hasItem(buildings2[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings2[i]);
+                for (String s : buildings2)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1747,9 +1745,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings3.length; i < j; i++)
-                    if (player.hasItem(buildings3[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings3[i]);
+                for (String s : buildings3)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1757,9 +1755,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings4.length; i < j; i++)
-                    if (player.hasItem(buildings4[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings4[i]);
+                for (String s : buildings4)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1767,9 +1765,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings5.length; i < j; i++)
-                    if (player.hasItem(buildings5[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings5[i]);
+                for (String s : buildings5)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1777,9 +1775,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings6.length; i < j; i++)
-                    if (player.hasItem(buildings6[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings6[i]);
+                for (String s : buildings6)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1787,9 +1785,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = buildings7.length; i < j; i++)
-                    if (player.hasItem(buildings7[i], 1, false)) {
-                        Item item = (Item) market.getItem(buildings7[i]);
+                for (String s : buildings7)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 143, 20, 25, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1809,9 +1807,9 @@ public class Mainframe extends Frame {
                 String[] licenses5 = { "10650", "10651", "10652", "10653", "10654", "10655", "10656", "10657", "10658", "10659", "10660" };
                 increment = 40;
                 x = 450;
-                for (int i = 0, j = licenses1.length; i < j; i++)
-                    if (player.hasItem(licenses1[i], 1, false)) {
-                        Item item = (Item) market.getItem(licenses1[i]);
+                for (String s : licenses1)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 10, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1819,9 +1817,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = licenses2.length; i < j; i++)
-                    if (player.hasItem(licenses2[i], 1, false)) {
-                        Item item = (Item) market.getItem(licenses2[i]);
+                for (String s : licenses2)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 10, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1829,9 +1827,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = licenses3.length; i < j; i++)
-                    if (player.hasItem(licenses3[i], 1, false)) {
-                        Item item = (Item) market.getItem(licenses3[i]);
+                for (String s : licenses3)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 10, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1839,9 +1837,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = licenses4.length; i < j; i++)
-                    if (player.hasItem(licenses4[i], 1, false)) {
-                        Item item = (Item) market.getItem(licenses4[i]);
+                for (String s : licenses4)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 10, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1849,9 +1847,9 @@ public class Mainframe extends Frame {
                         foundp = true;
                         break;
                     }
-                for (int i = 0, j = licenses5.length; i < j; i++)
-                    if (player.hasItem(licenses5[i], 1, false)) {
-                        Item item = (Item) market.getItem(licenses5[i]);
+                for (String s : licenses5)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 10, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1866,9 +1864,9 @@ public class Mainframe extends Frame {
                 // Maps
                 String[] maps = { "11500", "11510", "11520", "11530" };
                 x = 450;
-                for (int i = 0, j = maps.length; i < j; i++)
-                    if (player.hasItem(maps[i], 1, false)) {
-                        Item item = (Item) market.getItem(maps[i]);
+                for (String s : maps)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 60, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1882,9 +1880,9 @@ public class Mainframe extends Frame {
                 // Workers
                 String[] workers = { "16000", "16010", "16020", "16030" };
                 x = 450;
-                for (int i = 0, j = workers.length; i < j; i++)
-                    if (player.hasItem(workers[i], 1, false)) {
-                        Item item = (Item) market.getItem(workers[i]);
+                for (String worker : workers)
+                    if (player.hasItem(worker, 1, false)) {
+                        Item item = (Item) market.getItem(worker);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 130, 40, 40, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1901,9 +1899,9 @@ public class Mainframe extends Frame {
                 x = 723;
                 increment = 13;
 
-                for (int i = 0, j = amulets.length; i < j; i++)
-                    if (player.hasItem(amulets[i], 1, false)) {
-                        Item item = (Item) market.getItem(amulets[i]);
+                for (String amulet : amulets)
+                    if (player.hasItem(amulet, 1, false)) {
+                        Item item = (Item) market.getItem(amulet);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y - 6, 10, 20, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1917,9 +1915,9 @@ public class Mainframe extends Frame {
 
                 String[] drinks = { "11030", "11031", "11040" };
                 x = 723;
-                for (int i = 0, j = drinks.length; i < j; i++)
-                    if (player.hasItem(drinks[i], 1, false)) {
-                        Item item = (Item) market.getItem(drinks[i]);
+                for (String drink : drinks)
+                    if (player.hasItem(drink, 1, false)) {
+                        Item item = (Item) market.getItem(drink);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 24, 10, 20, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1934,9 +1932,9 @@ public class Mainframe extends Frame {
                 String[] buckles = { "11050", "11051", "11052", "11053", "11054", "11055", "11056" };
                 x = 723;
                 increment = 20;
-                for (int i = 0, j = buckles.length; i < j; i++)
-                    if (player.hasItem(buckles[i], 1, false)) {
-                        Item item = (Item) market.getItem(buckles[i]);
+                for (String buckle : buckles)
+                    if (player.hasItem(buckle, 1, false)) {
+                        Item item = (Item) market.getItem(buckle);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 54, 13, 22, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1951,9 +1949,9 @@ public class Mainframe extends Frame {
                 String[] rosary = { "11020", "11025" };
                 x = 723;
                 increment = 50;
-                for (int i = 0, j = rosary.length; i < j; i++)
-                    if (player.hasItem(rosary[i], 1, false)) {
-                        Item item = (Item) market.getItem(rosary[i]);
+                for (String s : rosary)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 87, 60, 50, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1971,9 +1969,9 @@ public class Mainframe extends Frame {
                 String[] flying = { "10335", "10345", "10355" };
                 x = 723;
                 increment = 50;
-                for (int i = 0, j = flying.length; i < j; i++)
-                    if (player.hasItem(flying[i], 1, false)) {
-                        Item item = (Item) market.getItem(flying[i]);
+                for (String s : flying)
+                    if (player.hasItem(s, 1, false)) {
+                        Item item = (Item) market.getItem(s);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 105, 60, 50, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -1988,9 +1986,9 @@ public class Mainframe extends Frame {
                 String[] others = { "11700", "13000" };
                 x = 723;
                 increment = 40;
-                for (int i = 0, j = others.length; i < j; i++)
-                    if (player.hasItem(others[i], 1, false)) {
-                        Item item = (Item) market.getItem(others[i]);
+                for (String other : others)
+                    if (player.hasItem(other, 1, false)) {
+                        Item item = (Item) market.getItem(other);
                         Image image = getImage(item.pictureStatus);
                         panel.add(new Drawable(x, y + 150, 60, 50, Drawable.IMAGE, image, "mf.gotoStatus(3,\"" + item.helpId + "\", " + page + ", " + state
                                 + ", 0);", item.name + "\u00A7" + item.description));
@@ -2010,7 +2008,7 @@ public class Mainframe extends Frame {
                 int _x = 150;
                 int per = 16;
                 Item item = null;
-                Vector inventory = player.getInventory();
+                Vector<Item> inventory = player.getInventory();
                 int i = page * per;
                 int j = inventory.size() - 1;
                 if (j >= per) {
@@ -2023,11 +2021,11 @@ public class Mainframe extends Frame {
                     int k = 0;
                     String strPage = "";
                     _y = 312;
-                    for (int l = (int) ((inventory.size() - 1) / per); k <= l; k++) {
+                    for (int l = ((inventory.size() - 1) / per); k <= l; k++) {
                         if (k == l)
                             strPage = String.valueOf(k + 1);
                         else
-                            strPage = String.valueOf(k + 1) + ",";
+                            strPage = (k + 1) + ",";
                         if (page == k)
                             panel.add(new Drawable(290 + (k * 20), 340, 18, 20, Drawable.LABEL, strPage, "mf.gotoStatus(1, \"\", " + String.valueOf(k) + ", "
                                     + state + ", 0);", "Goto page " + String.valueOf(k + 1), fontBold, Color.RED));
@@ -2051,7 +2049,7 @@ public class Mainframe extends Frame {
                         _x += 94;
                         _y = 360;
                     }
-                    item = (Item) inventory.get(l);
+                    item = inventory.get(l);
                     Image image = getImage(item.picture);
                     i++;
                     panel.add(new Drawable(_x + (47 - (image.getWidth(this) / 2)), _y + (50 - (image.getHeight(this) / 2)), 70, 70, Drawable.IMAGE,
@@ -2076,7 +2074,7 @@ public class Mainframe extends Frame {
                     if (task == null) continue;
                     additional = player.journal.get(task);
                     if (!additional.equals("") && additional.charAt(0) == '!')
-                        if (additional.indexOf("\u00A7") == -1)
+                        if (!additional.contains("\u00A7"))
                             additional = "";
                         else
                             additional = additional.substring(additional.indexOf("\u00A7"), additional.length());
@@ -2138,7 +2136,7 @@ public class Mainframe extends Frame {
                     String[] alphabet = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W",
                             "X", "Y", "Z" };
 
-                    Vector helps = market.getHelp(alphabet[more]);
+                    Vector<Item> helps = market.getHelp(alphabet[more]);
 
                     Color hcolor = Color.BLACK;
                     for (int k = 0, l = alphabet.length; k < l; k++) {
@@ -2152,8 +2150,7 @@ public class Mainframe extends Frame {
 
                     _y = 340;
                     _x = 177;
-                    for (Iterator iter = helps.iterator(); iter.hasNext();) {
-                        Item help = (Item) iter.next();
+                    for (Item help : helps) {
                         panel.add(new Drawable(_x, _y, 230, 20, Drawable.LABEL, help.name, "mf.gotoStatus(" + state + ", \"" + help.id + "\", " + page + ", "
                                 + state + ", 0);", statusFontBold, Color.BLACK));
                         _y += 30;
@@ -2540,7 +2537,7 @@ public class Mainframe extends Frame {
                 Thread.sleep(1000);
             if (Mainframe.DEBUG == 1)
                 System.out.print(e.getPoint().x + "," + e.getPoint().y + ";");
-            Vector v = null;
+            Vector<Drawable> v = null;
             boolean foundp = false;
             if (isModal)
                 v = panel;
@@ -2550,7 +2547,7 @@ public class Mainframe extends Frame {
             Drawable d = null;
             String text = null;
             for (int i = v.size() - 1; i >= this.converter; i--) {
-                d = (Drawable) v.elementAt(i);
+                d = v.elementAt(i);
                 if (!d.contains(e.getPoint()) || d.action == null)
                     continue;
                 if (Mainframe.DEBUG == 1)
@@ -2574,7 +2571,7 @@ public class Mainframe extends Frame {
 
             if (!foundp && !isModal)
                 for (int i = glass.size() - 1; i >= 0; i--) {
-                    d = (Drawable) glass.elementAt(i);
+                    d = glass.elementAt(i);
                     if (!d.contains(e.getPoint()) || d.action == null)
                         continue;
                     if (Mainframe.DEBUG == 1)
@@ -2607,7 +2604,7 @@ public class Mainframe extends Frame {
                 idle = false;
             }
 
-            Vector v = null;
+            Vector<Drawable> v = null;
             if (isModal)
                 v = panel;
             else
@@ -2628,7 +2625,7 @@ public class Mainframe extends Frame {
             flyover = null;
 
             for (int i = v.size() - 1; i >= this.converter; i--) {
-                d = (Drawable) v.elementAt(i);
+                d = v.elementAt(i);
                 if (!d.contains(e.getPoint()) || d.action == null) {
                     this.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
                     continue;

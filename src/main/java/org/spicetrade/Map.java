@@ -44,13 +44,12 @@ public class Map extends Collection {
         return background;
     }
 
-    public Vector getEntries(String place, int transport, boolean european) {
-        Vector ret = new Vector();
-        Vector entries = getVector(place);
-        int length = 0;
+    public Vector<MapEntry> getEntries(String place, int transport, boolean european) {
+        Vector<MapEntry> ret = new Vector<>();
+        Vector<MapEntry> entries = getVector(place);
 
-        for (Iterator iter = entries.iterator(); iter.hasNext();) {
-            MapEntry entry = (MapEntry) iter.next();
+        for (Object o : entries) {
+            MapEntry entry = (MapEntry) o;
             if (!(!european && entry.european))
                 if (entry.getLength(transport) > 0)
                     ret.add(entry);

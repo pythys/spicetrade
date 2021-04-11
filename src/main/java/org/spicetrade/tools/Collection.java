@@ -30,7 +30,7 @@ import org.spicetrade.Mainframe;
 
 public class Collection {
 
-    protected transient Hashtable collection;
+    protected transient Hashtable<String,Object> collection;
 
     public Collection(String s) {
         readXML(s);
@@ -41,7 +41,7 @@ public class Collection {
     }
 
     public void readXML(String s) {
-        collection = new Hashtable();
+        collection = new Hashtable<>();
         String xml = null;
         XStream xstream = new XStream();
         XStream.setupDefaultSecurity(xstream);
@@ -52,7 +52,7 @@ public class Collection {
         collection = (Hashtable) xstream.fromXML(xml);
     }
     
-    public Vector getVector(String s1) {
+    public <T> Vector<T> getVector(String s1) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting vector: " + s1);
         Vector res = new Vector();
         try {

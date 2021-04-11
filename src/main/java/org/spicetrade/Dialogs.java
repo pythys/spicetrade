@@ -23,6 +23,7 @@ package org.spicetrade;
 import java.util.Vector;
 
 import org.spicetrade.tools.Collection;
+import org.spicetrade.tools.Spicebean;
 
 public class Dialogs extends Collection
 {
@@ -47,7 +48,7 @@ public class Dialogs extends Collection
         return getString(place, "Text");
     }
 
-    public Vector getChoices(String place)
+    public Vector<Spicebean> getChoices(String place)
     {
         return getVector(place, "Choices");
     }

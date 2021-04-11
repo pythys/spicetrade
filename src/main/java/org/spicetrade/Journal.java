@@ -34,7 +34,7 @@ public class Journal extends Collection {
     Hashtable timestamp;
     
     // ADD 10.04.2005 -- Want to see the book of life events in the order they happen in
-    Vector tasks = new Vector();
+    Vector<String> tasks = new Vector<>();
 
     public static final String xml = "/data/journal.xml";
 
