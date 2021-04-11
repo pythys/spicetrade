@@ -20,7 +20,6 @@
 
 package org.spicetrade;
 
-import java.util.Iterator;
 import java.util.Vector;
 
 import org.spicetrade.tools.Collection;
@@ -74,22 +73,22 @@ public class Traders extends Collection {
         return ret;
     }
 
-    public Vector getBuyItems(String who) {
+    public Vector<Item> getBuyItems(String who) {
         return getItems("Buy items", who, false);
     }
 
-    public Vector getSellItems(String who) {
+    public Vector<Item> getSellItems(String who) {
         return getItems("Sell items", who, true);
     }
 
-    public Vector getItems(String what, String who, boolean selling) {
+    public Vector<Item> getItems(String what, String who, boolean selling) {
         Mainframe mf = Mainframe.me;
-        Vector res = new Vector();
+        Vector<Item> res = new Vector<>();
         try {
-            Vector v = getVector(who, what);
+            Vector<?> v = getVector(who, what);
             Item item = new Item();
-            for (Iterator iter = v.iterator(); iter.hasNext();) {
-                String s = (String) iter.next();
+            for (Object o : v) {
+                String s = (String) o;
                 item = mf.market.getItem(s);
                 if (!selling && (item.id.equals("10100") || item.id.equals("10110") || item.id.equals("10120") || item.id.equals("10130") || item.id.equals("10200") || item.id.equals("10210") || item.id.equals("10220") || item.id.equals("10230")) && !mf.player.has(item.id))
                     res.add(item);
@@ -99,9 +98,9 @@ public class Traders extends Collection {
                     res.add(item);
             }
             if (!selling) {
-                Vector soldItems = mf.player.getSoldItems(who);
-                for (Iterator iterator = soldItems.iterator(); iterator.hasNext();) {
-                    Item soldItem = (Item) iterator.next();
+                Vector<?> soldItems = mf.player.getSoldItems(who);
+                for (Object o : soldItems) {
+                    Item soldItem = (Item) o;
                     res.add(soldItem);
                 }
             }
