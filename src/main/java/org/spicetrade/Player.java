@@ -21,7 +21,6 @@
 package org.spicetrade;
 
 import java.util.Hashtable;
-import java.util.Iterator;
 import java.util.Random;
 import java.util.Vector;
 
@@ -31,10 +30,10 @@ import org.spicetrade.tools.MapEntry;
 
 public class Player {
 
-    public Hashtable attr;
-    public Vector soldItems;
-    public Vector items;
-    public Vector log;
+    public Hashtable<String,String> attr;
+    public Vector<Item> soldItems;
+    public Vector<Item> items;
+    public Vector<LogItem> log;
     public boolean fullScreen = false;
     public int x;
     public int y;
@@ -121,11 +120,11 @@ public class Player {
 
     public Player(int difficulty) {
         this.difficulty = difficulty;
-        attr = new Hashtable();
-        soldItems = new Vector();
-        items = new Vector();
+        attr = new Hashtable<>();
+        soldItems = new Vector<>();
+        items = new Vector<>();
         journal = new Journal();
-        log = new Vector();
+        log = new Vector<>();
         x = 0;
         y = 0;
         xHomeCountry = 0;
@@ -477,7 +476,7 @@ public class Player {
         String c = "";
         if (has(n))
             c = get(n);
-        return (c.indexOf(v) != -1);
+        return (c.contains(v));
     }
 
     public void addWife(String name) {
@@ -501,7 +500,7 @@ public class Player {
             return;
         String all = (String) attr.get("wifes");
         if (all.indexOf(name) == 0)
-            if (all.indexOf(",") == -1)
+            if (!all.contains(","))
                 all = "";
             else
                 all = all.substring(all.indexOf(","), all.length());
@@ -532,7 +531,7 @@ public class Player {
             return;
         String all = (String) attr.get("children");
         if (all.indexOf(name) == 0)
-            if (all.indexOf(",") == -1)
+            if (!all.contains(","))
                 all = "";
             else
                 all = all.substring(all.indexOf(","), all.length());
@@ -557,8 +556,8 @@ public class Player {
         this.money -= amount;
     }
 
-    public Vector getInventory() {
-        Vector inventory = new Vector();
+    public Vector<Item> getInventory() {
+        Vector<Item> inventory = new Vector<>();
         Item item = null;
 
         for (int i = 0, j = items.size(); i < j; i++) {
@@ -626,8 +625,7 @@ public class Player {
     public boolean hasSold(String id, String who) {
         boolean ret = false;
 
-        for (Iterator iter = soldItems.iterator(); iter.hasNext();) {
-            Item item = (Item) iter.next();
+        for (Item item : soldItems) {
             if (item.id.equals(id)) {
                 if (who == null || who.equals(item.who)) {
                     ret = true;
@@ -661,13 +659,12 @@ public class Player {
         }
     }
 
-    public Vector getSoldItems(String who) {
-        Vector res = new Vector();
+    public Vector<Item> getSoldItems(String who) {
+        Vector<Item> res = new Vector<>();
 
         try {
-            for (Iterator iter = soldItems.iterator(); iter.hasNext();) {
-                Item item = (Item) iter.next();
-                if (item.who != null && who.equals(item.who))
+            for (Item item : soldItems) {
+                if (who.equals(item.who))
                     res.add(item);
             }
         } catch (Exception ex) {
@@ -700,14 +697,14 @@ public class Player {
         Item item = null;
         int count = 0;
         boolean res = false;
-        for (int i = 0, j = items.size(); i < j; i++) {
-            item = (Item) items.get(i);
+        for (Item value : items) {
+            item = (Item) value;
             if (item.id.equals(id))
                 count++;
         }
 
-        for (int i = 0, j = soldItems.size(); i < j; i++) {
-            item = (Item) soldItems.get(i);
+        for (Item soldItem : soldItems) {
+            item = (Item) soldItem;
             if (item.id.equals(id))
                 count++;
         }
@@ -724,11 +721,13 @@ public class Player {
     public boolean hasAnyItems(String[] ids) {
         Item item = null;
         boolean res = false;
-        for (int i = 0, j = items.size(); i < j; i++) {
-            item = (Item) items.get(i);
-            for (int k = 0, l = ids.length; k < l; k++)
-                if (item.id.equals(ids[k]))
+        for (Item value : items) {
+            item = (Item) value;
+            for (String id : ids)
+                if (item.id.equals(id)) {
                     res = true;
+                    break;
+                }
         }
 
         return res;
@@ -737,13 +736,10 @@ public class Player {
     public boolean hasAllItems(String[] ids) {
         Item item = null;
         boolean res = false;
-        for (int i = 0, j = items.size(); i < j; i++) {
-            item = (Item) items.get(i);
-            for (int k = 0, l = ids.length; k < l; k++)
-                if (item.id.equals(ids[k]))
-                    res = true;
-                else
-                    res = false;
+        for (Item value : items) {
+            item = (Item) value;
+            for (String id : ids)
+                res = item.id.equals(id);
         }
 
         return res;
@@ -796,7 +792,7 @@ public class Player {
         if (exact)
             ret = (where.equals(place));
         else
-            ret = (place.indexOf(where) != -1);
+            ret = (place.contains(where));
 
         if (Mainframe.DEBUG == 1)
             System.out.println("(" + place + ") inplace: " + where + ", exact: " + exact + " = " + ret);
@@ -845,37 +841,17 @@ public class Player {
                     this.health -= 0.3;
                 break;
             case MapEntry.TRANSPORT2: // horse
-                if (this.difficulty == 1)
+                case MapEntry.TRANSPORT3: // caravan
+                case MapEntry.TRANSPORT5: // boat
+                    if (this.difficulty == 1)
                     this.health -= 0.4;
                 else
                     this.health -= 0.2;
                 break;
-            case MapEntry.TRANSPORT3: // caravan
-                if (this.difficulty == 1)
-                    this.health -= 0.4;
-                else
-                    this.health -= 0.2;
-                break;
-            case MapEntry.TRANSPORT4: // suleiman
-                if (this.difficulty == 1)
-                    this.health -= 0.2;
-                else
-                    this.health -= 0.1;
-                break;
-            case MapEntry.TRANSPORT5: // boat
-                if (this.difficulty == 1)
-                    this.health -= 0.4;
-                else
-                    this.health -= 0.2;
-                break;
-            case MapEntry.TRANSPORT6: // borak
-                if (this.difficulty == 1)
-                    this.health -= 0.2;
-                else
-                    this.health -= 0.1;
-                break;
-            case MapEntry.TRANSPORT7: // dog
-                if (this.difficulty == 1)
+                case MapEntry.TRANSPORT4: // suleiman
+                case MapEntry.TRANSPORT6: // borak
+                case MapEntry.TRANSPORT7: // dog
+                    if (this.difficulty == 1)
                     this.health -= 0.2;
                 else
                     this.health -= 0.1;
@@ -926,8 +902,7 @@ public class Player {
 
         int randomEffect = 0;
         force = baseForce;
-        for (Iterator iter = items.iterator(); iter.hasNext();) {
-            Item item = (Item) iter.next();
+        for (Item item : items) {
             if (item.id.length() == 5) {
                 health = health + item.health;
                 money = money + item.monthlyCost;
@@ -1065,182 +1040,190 @@ public class Player {
         }
 
         // culture
-        for (int i = 0, j = cities.length; i < j; i++) {
-            Vector museumItems = null;
-            if (has("museum" + cities[i])) {
-                if (cities[i].equals("baghdad")) {
+        for (String s : cities) {
+            Vector<Item> museumItems = null;
+            if (has("museum" + s)) {
+                if (s.equals("baghdad")) {
                     museumItems = itemsVector("museum");
-                    for (Iterator iter = museumItems.iterator(); iter.hasNext();) {
-                        Item item = (Item) iter.next();
-                        for (int k = 0, l = cities.length; k < l; k++) {
-                            addCulture(cities[l], item.culture / 2);
+                    for (Item item : museumItems) {
+                        for (String city : cities) {
+                            addCulture(city, item.culture / 2);
                         }
                     }
                 } else {
-                    museumItems = itemsVector(cities[i] + "museum");
-                    for (Iterator iter = museumItems.iterator(); iter.hasNext();) {
-                        Item item = (Item) iter.next();
-                        for (int k = 0, l = cities.length; k < l; k++) {
-                            addCulture(cities[l], item.culture / 4);
+                    museumItems = itemsVector(s + "museum");
+                    for (Item item : museumItems) {
+                        for (String city : cities) {
+                            addCulture(city, item.culture / 4);
                         }
-                        addCulture(cities[i], item.culture);
+                        addCulture(s, item.culture);
                     }
                 }
             }
 
-            if (getCulture(cities[i]) < 0) {
+            if (getCulture(s) < 0) {
                 boolean destroy = false;
                 // they don't appreciate you
-                if (has("museum" + cities[i]) && !journal.contains("permit" + cities[i], "destroyed")) {
+                if (has("museum" + s) && !journal.contains("permit" + s, "destroyed")) {
                     if (mf.doActionOnEntering.equals("")) {
-                        if (cities[i].equals("amsterdam"))
+                        if (s.equals("amsterdam"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3340\");";
-                        else if (cities[i].equals("venice"))
+                        else if (s.equals("venice"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3341\");";
-                        else if (cities[i].equals("budapest"))
+                        else if (s.equals("budapest"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3342\");";
-                        else if (cities[i].equals("vienna"))
+                        else if (s.equals("vienna"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3343\");";
-                        else if (cities[i].equals("moscow"))
+                        else if (s.equals("moscow"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3344\");";
-                        else if (cities[i].equals("madrid"))
+                        else if (s.equals("madrid"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3345\");";
-                        else if (cities[i].equals("lisboa"))
+                        else if (s.equals("lisboa"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3346\");";
-                        else if (cities[i].equals("paris"))
+                        else if (s.equals("paris"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3347\");";
-                        else if (cities[i].equals("london"))
+                        else if (s.equals("london"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3348\");";
-                        else if (cities[i].equals("hamburg"))
+                        else if (s.equals("hamburg"))
                             mf.doActionOnEntering = "mf.gotoDialog(\"3349\");";
 
                         // destroy museum and collections in there
                         destroy = true;
-                        if (cities[i].equals("baghdad")) {
+                        if (s.equals("baghdad")) {
                             museumItems = itemsVector("museum");
-                            for (Iterator iter = museumItems.iterator(); iter.hasNext();) {
-                                Item item = (Item) iter.next();
+                            for (Item item : museumItems) {
                                 giveItem(item.id);
                             }
                         } else {
-                            museumItems = itemsVector(cities[i] + "museum");
-                            for (Iterator iter = museumItems.iterator(); iter.hasNext();) {
-                                Item item = (Item) iter.next();
+                            museumItems = itemsVector(s + "museum");
+                            for (Item item : museumItems) {
                                 giveItem(item.id);
                             }
                         }
 
-                        journal.add("permit" + cities[i], "\u00A7- They destroyed my museum and my collections");
-                        add("removemuseum" + cities[i]);
+                        journal.add("permit" + s, "\u00A7- They destroyed my museum and my collections");
+                        add("removemuseum" + s);
                     }
                 }
 
-                if (has("mosque" + cities[i])) {
-                    if ((destroy || mf.doActionOnEntering.equals("")) && !journal.contains("church" + cities[i], "mosque is gone")) {
-                        if (cities[i].equals("amsterdam"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3330\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3320\");";
-                        else if (cities[i].equals("venice"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3331\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3321\");";
-                        else if (cities[i].equals("budapest"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3332\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3322\");";
-                        else if (cities[i].equals("vienna"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3333\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3323\");";
-                        else if (cities[i].equals("moscow"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3334\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3324\");";
-                        else if (cities[i].equals("madrid"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3335\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3325\");";
-                        else if (cities[i].equals("lisboa"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3336\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3326\");";
-                        else if (cities[i].equals("paris"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3337\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3327\");";
-                        else if (cities[i].equals("london"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3338\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3328\");";
-                        else if (cities[i].equals("hamburg"))
-                            if (destroy)
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3339\");";
-                            else
-                                mf.doActionOnEntering = "mf.gotoDialog(\"3329\");";
+                if (has("mosque" + s)) {
+                    if ((destroy || mf.doActionOnEntering.equals("")) && !journal.contains("church" + s, "mosque is gone")) {
+                        switch (s) {
+                            case "amsterdam":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3330\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3320\");";
+                                break;
+                            case "venice":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3331\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3321\");";
+                                break;
+                            case "budapest":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3332\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3322\");";
+                                break;
+                            case "vienna":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3333\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3323\");";
+                                break;
+                            case "moscow":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3334\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3324\");";
+                                break;
+                            case "madrid":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3335\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3325\");";
+                                break;
+                            case "lisboa":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3336\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3326\");";
+                                break;
+                            case "paris":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3337\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3327\");";
+                                break;
+                            case "london":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3338\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3328\");";
+                                break;
+                            case "hamburg":
+                                if (destroy)
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3339\");";
+                                else
+                                    mf.doActionOnEntering = "mf.gotoDialog(\"3329\");";
+                                break;
+                        }
 
                         // destroy mosque
-                        journal.add("church" + cities[i], "\u00A7- The mosque is gone and a church stands in it's place");
-                        add("removemosque" + cities[i]);
+                        journal.add("church" + s, "\u00A7- The mosque is gone and a church stands in it's place");
+                        add("removemosque" + s);
                     }
                 }
 
-            } else if (getCulture(cities[i]) > 49 && !has("museum" + cities[i])) {
+            } else if (getCulture(s) > 49 && !has("museum" + s)) {
                 // they really like you and want you to build a museum
-                if (!has("museum" + cities[i]) && !journal.has("permit" + cities[i]) && !journal.isDone("permit" + cities[i])
+                if (!has("museum" + s) && !journal.has("permit" + s) && !journal.isDone("permit" + s)
                         && mf.doActionOnEntering.equals(""))
-                    if (cities[i].equals("amsterdam"))
+                    if (s.equals("amsterdam"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3300\");";
-                    else if (cities[i].equals("venice"))
+                    else if (s.equals("venice"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3301\");";
-                    else if (cities[i].equals("budapest"))
+                    else if (s.equals("budapest"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3302\");";
-                    else if (cities[i].equals("vienna"))
+                    else if (s.equals("vienna"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3303\");";
-                    else if (cities[i].equals("moscow"))
+                    else if (s.equals("moscow"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3304\");";
-                    else if (cities[i].equals("madrid"))
+                    else if (s.equals("madrid"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3305\");";
-                    else if (cities[i].equals("lisboa"))
+                    else if (s.equals("lisboa"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3306\");";
-                    else if (cities[i].equals("paris"))
+                    else if (s.equals("paris"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3307\");";
-                    else if (cities[i].equals("london"))
+                    else if (s.equals("london"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3308\");";
-                    else if (cities[i].equals("hamburg"))
+                    else if (s.equals("hamburg"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3309\");";
-            } else if (getCulture(cities[i]) > 79) {
+            } else if (getCulture(s) > 79) {
                 // they worship you and will change their churches to mosques
-                if (!has("mosque" + cities[i]) && !journal.has("church" + cities[i]) && !journal.isDone("church" + cities[i])
+                if (!has("mosque" + s) && !journal.has("church" + s) && !journal.isDone("church" + s)
                         && mf.doActionOnEntering.equals(""))
-                    if (cities[i].equals("amsterdam"))
+                    if (s.equals("amsterdam"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3310\");";
-                    else if (cities[i].equals("venice"))
+                    else if (s.equals("venice"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3311\");";
-                    else if (cities[i].equals("budapest"))
+                    else if (s.equals("budapest"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3312\");";
-                    else if (cities[i].equals("vienna"))
+                    else if (s.equals("vienna"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3313\");";
-                    else if (cities[i].equals("moscow"))
+                    else if (s.equals("moscow"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3314\");";
-                    else if (cities[i].equals("madrid"))
+                    else if (s.equals("madrid"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3315\");";
-                    else if (cities[i].equals("lisboa"))
+                    else if (s.equals("lisboa"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3316\");";
-                    else if (cities[i].equals("paris"))
+                    else if (s.equals("paris"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3317\");";
-                    else if (cities[i].equals("london"))
+                    else if (s.equals("london"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3318\");";
-                    else if (cities[i].equals("hamburg"))
+                    else if (s.equals("hamburg"))
                         mf.doActionOnEntering = "mf.gotoDialog(\"3319\");";
             }
         }
@@ -1408,8 +1391,7 @@ public class Player {
         }
 
         int allCulture = 0;
-        for (int i = 0, j = cities.length; i < j; i++)
-            allCulture += getCulture(cities[i]);
+        for (String s : cities) allCulture += getCulture(s);
         this.culture = allCulture / cities.length;
 
         String[] shopCities = { "amsterdam", "budapest", "constantinopol", "hamburg", "lisboa", "london", "madrid", "moscow", "paris", "venice", "vienna" };
@@ -1430,8 +1412,7 @@ public class Player {
         if (this.difficulty == 0) // easy level
             baseForce += 2;
         // reset map piece counters
-        for (int i = 0, j = cities.length; i < j; i++)
-            attr.remove(cities[i] + "mappiece");
+        for (String s : cities) attr.remove(s + "mappiece");
 
         // culture
         String[] ccities = { "venice", "lisboa", "paris", "hamburg", "moscow", "budapest", "vienna", "madrid", "london", "amsterdam" };
@@ -1562,31 +1543,28 @@ public class Player {
         value += amount;
         attr.put(addiction, String.valueOf(value));
 
-        if (addiction.equals("hashish")) {
-            if (value > 20 && mf.rB(0, 60))
-                this.addictedHashish = true;
-            else if (value < 20)
-                this.addictedHashish = false;
-        } else if (addiction.equals("opium")) {
-            if (value > 20 && mf.rB(0, 80))
-                this.addictedOpium = true;
-            else if (value < 20)
-                this.addictedOpium = false;
-        } else if (addiction.equals("sick")) {
-            if (value > 0)
-                this.sickGeneral = true;
-            else if (value <= 0)
-                this.sickGeneral = false;
-        } else if (addiction.equals("poisoned")) {
-            if (value > 0)
-                this.sickPoisoned = true;
-            else if (value <= 0)
-                this.sickPoisoned = false;
-        } else if (addiction.equals("plague")) {
-            if (value > 0)
-                this.sickPlague = true;
-            else if (value <= 0)
-                this.sickPlague = false;
+        switch (addiction) {
+            case "hashish":
+                if (value > 20 && mf.rB(0, 60))
+                    this.addictedHashish = true;
+                else if (value < 20)
+                    this.addictedHashish = false;
+                break;
+            case "opium":
+                if (value > 20 && mf.rB(0, 80))
+                    this.addictedOpium = true;
+                else if (value < 20)
+                    this.addictedOpium = false;
+                break;
+            case "sick":
+                this.sickGeneral = value > 0;
+                break;
+            case "poisoned":
+                this.sickPoisoned = value > 0;
+                break;
+            case "plague":
+                this.sickPlague = value > 0;
+                break;
         }
 
         this.logo = "logoIntro";
@@ -1602,21 +1580,27 @@ public class Player {
     }
 
     public void removeAddiction(String addiction) {
-        if (addiction.equals("hashish")) {
-            attr.remove(addiction);
-            addictedHashish = false;
-        } else if (addiction.equals("opium")) {
-            attr.remove(addiction);
-            addictedOpium = false;
-        } else if (addiction.equals("sick")) {
-            attr.remove(addiction);
-            sickGeneral = false;
-        } else if (addiction.equals("poisoned")) {
-            attr.remove(addiction);
-            sickPoisoned = false;
-        } else if (addiction.equals("plague")) {
-            attr.remove(addiction);
-            sickPlague = false;
+        switch (addiction) {
+            case "hashish":
+                attr.remove(addiction);
+                addictedHashish = false;
+                break;
+            case "opium":
+                attr.remove(addiction);
+                addictedOpium = false;
+                break;
+            case "sick":
+                attr.remove(addiction);
+                sickGeneral = false;
+                break;
+            case "poisoned":
+                attr.remove(addiction);
+                sickPoisoned = false;
+                break;
+            case "plague":
+                attr.remove(addiction);
+                sickPlague = false;
+                break;
         }
         this.logo = "logoIntro";
         chooseFace();
@@ -1652,8 +1636,7 @@ public class Player {
     }
 
     public boolean itemHere(String id) {
-        for (Iterator iter = items.iterator(); iter.hasNext();) {
-            Item item = (Item) iter.next();
+        for (Item item : items) {
             if (item.id.equals(id) && item.here())
                 return true;
         }
@@ -1666,8 +1649,7 @@ public class Player {
 
     public int itemsHere(String place) {
         int counter = 0;
-        for (Iterator iter = items.iterator(); iter.hasNext();) {
-            Item item = (Item) iter.next();
+        for (Item item : items) {
             if (item.here(place))
                 counter++;
         }
@@ -1676,11 +1658,10 @@ public class Player {
         return counter;
     }
 
-    public Vector itemsVector(String place) {
-        Vector ret = new Vector();
+    public Vector<Item> itemsVector(String place) {
+        Vector<Item> ret = new Vector<>();
         int counter = 0;
-        for (Iterator iter = items.iterator(); iter.hasNext();) {
-            Item item = (Item) iter.next();
+        for (Item item : items) {
             if (item.here(place))
                 ret.add(item);
         }
@@ -1725,8 +1706,7 @@ public class Player {
             String[] shops = { "amsterdam", "budapest", "constantinopol", "hamburg", "lisboa", "london", "madrid", "moscow", "paris", "venice", "vienna" };
 
             if (where.equals("all")) {
-                for (int i = 0, j = shops.length; i < j; i++) {
-                    String string = shops[i];
+                for (String string : shops) {
                     if (has(where + "shop")) {
                         String parse = (String) attr.get(where + "shop");
                         int value = Integer.parseInt(parse);
