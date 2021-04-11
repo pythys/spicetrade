@@ -66,8 +66,8 @@ public class Actions extends Collection {
 
             if (size > 1) {
                 // so we have more than one node in the line
-                div = (double)((double)days / (double)size);
-                start = (int[]) coords.elementAt(where - 1);
+                div = (double)days / (double)size;
+                start = (int[]) coords.elementAt(0);
                 end = (int[]) coords.elementAt(where);
 
                 // I know.. casting to double like this is pretty bad, but before, when I did not do this, I got
