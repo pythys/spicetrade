@@ -444,10 +444,10 @@ public class Drawable extends Rectangle {
         }
     }
 
-    private Vector chop(String text, int width, Graphics2D g2) {
-        StringBuffer line = new StringBuffer();
-        StringBuffer leftover = new StringBuffer();
-        Vector res = new Vector();
+    private Vector<Object> chop(String text, int width, Graphics2D g2) {
+        StringBuilder line = new StringBuilder();
+        StringBuilder leftover = new StringBuilder();
+        Vector<Object> res = new Vector<>();
         FontMetrics fontMetrics = g2.getFontMetrics();
         int size = 0;
         line.setLength(0);
@@ -485,14 +485,14 @@ public class Drawable extends Rectangle {
         if (fontMetrics.stringWidth(leftover.toString()) > size)
             size = fontMetrics.stringWidth(leftover.toString());
         res.add(leftover.toString());
-        res.insertElementAt(Integer.valueOf(size), 0);
+        res.insertElementAt(size, 0);
         return res;
     }
 
-    private Vector chop2(String text, int width, Graphics2D g2) {
-        StringBuffer line = new StringBuffer();
-        StringBuffer leftover = new StringBuffer();
-        Vector res = new Vector();
+    private Vector<String> chop2(String text, int width, Graphics2D g2) {
+        StringBuilder line = new StringBuilder();
+        StringBuilder leftover = new StringBuilder();
+        Vector<String> res = new Vector<>();
         FontMetrics fontMetrics = g2.getFontMetrics();
         line.setLength(0);
         line.append(text);
@@ -519,7 +519,6 @@ public class Drawable extends Rectangle {
 
     private int stringSize(String text, Graphics2D g2) {
         FontMetrics fontMetrics = g2.getFontMetrics();
-        int size = fontMetrics.stringWidth(text);
-        return size;
+        return fontMetrics.stringWidth(text);
     }
 }

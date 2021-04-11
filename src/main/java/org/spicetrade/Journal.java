@@ -27,11 +27,11 @@ import org.spicetrade.tools.Collection;
 
 public class Journal extends Collection {
 
-    Hashtable tasksOpen;
+    Hashtable<String,String> tasksOpen;
 
-    Hashtable tasksClosed;
+    Hashtable<String,String> tasksClosed;
 
-    Hashtable timestamp;
+    Hashtable<String,String> timestamp;
     
     // ADD 10.04.2005 -- Want to see the book of life events in the order they happen in
     Vector<String> tasks = new Vector<>();
@@ -40,9 +40,9 @@ public class Journal extends Collection {
 
     public Journal() {
         super(xml);
-        tasksOpen = new Hashtable();
-        tasksClosed = new Hashtable();
-        timestamp = new Hashtable();
+        tasksOpen = new Hashtable<>();
+        tasksClosed = new Hashtable<>();
+        timestamp = new Hashtable<>();
     }
 
     public void refresh() {
@@ -65,11 +65,8 @@ public class Journal extends Collection {
 
     public boolean contains(String task, String value) {
         String compare = get(task);
-        if (Mainframe.DEBUG == 1) System.out.println("Checking if task " + task + " contains " + value + " == " + !(compare.indexOf(value) == -1));
-        if (compare.indexOf(value) == -1)
-            return false;
-        else
-            return true;
+        if (Mainframe.DEBUG == 1) System.out.println("Checking if task " + task + " contains " + value + " == " + compare.contains(value));
+        return compare.contains(value);
     }
 
     public String get(String task) {

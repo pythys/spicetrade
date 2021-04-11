@@ -40,6 +40,7 @@ public class Collection {
         readXML(s);        
     }
 
+    @SuppressWarnings("unchecked")
     public void readXML(String s) {
         collection = new Hashtable<>();
         String xml = null;
@@ -51,12 +52,13 @@ public class Collection {
         if (Mainframe.DEBUG == 1) System.out.println("Creating the collection hashtable from XML: " + s);
         collection = (Hashtable) xstream.fromXML(xml);
     }
-    
+
+    @SuppressWarnings("unchecked")
     public <T> Vector<T> getVector(String s1) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting vector: " + s1);
-        Vector res = new Vector();
+        Vector<T> res = new Vector<>();
         try {
-            Vector v = (Vector) collection.get(s1);
+            Vector<T> v = (Vector<T>) collection.get(s1);
             for (int i = 0, j = v.size(); i < j; i++) {
                 if (v.elementAt(i) instanceof MapEntry) {
                     if (((MapEntry) v.elementAt(i)).isActive(Mainframe.me.bsh))
@@ -72,13 +74,14 @@ public class Collection {
         return null;
     }
 
+    @SuppressWarnings("unchecked")
     public <T> Vector<T> getVector(String s1, String s2) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting vector: " + s2 + " from hashtable: " + s1);
-        Hashtable ht = new Hashtable();
-        Vector res = new Vector();
+        Hashtable<?,?> ht;
+        Vector<T> res = new Vector<>();
         try {
-            ht = (Hashtable) collection.get(s1);
-            Vector v = (Vector) ht.get(s2);
+            ht = (Hashtable<?,?>) collection.get(s1);
+            Vector<T> v = (Vector<T>) ht.get(s2);
             for (int i = 0, j = v.size(); i < j; i++) {
                 if (v.elementAt(i) instanceof Spicebean) {
                     if (((Spicebean) v.elementAt(i)).isActive())
@@ -97,7 +100,7 @@ public class Collection {
     public String getString(String s1, String s2) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting string: " + s2 + " from hashtable: " + s1);
         try {
-            Hashtable h = (Hashtable) collection.get(s1);
+            Hashtable<?,?> h = (Hashtable<?,?>) collection.get(s1);
             return (String) h.get(s2);
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -109,7 +112,7 @@ public class Collection {
         if (Mainframe.DEBUG == 2) System.out.println("Getting int: " + s2 + " from hashtable: " + s1);
         int i = 0;
         try {
-            Hashtable h = (Hashtable) collection.get(s1);
+            Hashtable<?,?> h = (Hashtable<?,?>) collection.get(s1);
             String s = (String) h.get(s2);
             i = Integer.parseInt(s);
             return i;
@@ -123,7 +126,7 @@ public class Collection {
         if (Mainframe.DEBUG == 2) System.out.println("Getting double: " + s2 + " from hashtable: " + s1);
         double d = 0;
         try {
-            Hashtable h = (Hashtable) collection.get(s1);
+            Hashtable<?,?> h = (Hashtable<?,?>) collection.get(s1);
             String s = (String) h.get(s2);
             d = Double.parseDouble(s);
             return d;
@@ -136,8 +139,7 @@ public class Collection {
     public Object getObject(String s1) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting object: " + s1);
         try {
-            Object o = collection.get(s1);
-            return o;
+            return collection.get(s1);
         } catch (Exception ex) {
             ex.printStackTrace();
         }

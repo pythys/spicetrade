@@ -32,7 +32,7 @@ dependencies {
 mainClassName = 'org.spicetrade.Game'
 
 tasks.withType(GroovyCompile) {
-    // TODO options.compilerArgs << "-Xlint:unchecked"
+    options.compilerArgs << "-Xlint:unchecked"
     options.compilerArgs << "-Xlint:deprecation"
 }
 

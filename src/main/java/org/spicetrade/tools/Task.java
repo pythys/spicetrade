@@ -38,7 +38,7 @@ public class Task implements Runnable {
     boolean gotoPlace = false;
     String doAfter = "";
     boolean paused = false;
-    Hashtable attr = new Hashtable();
+    Hashtable<String,String> attr = new Hashtable<>();
 
     public Task(String action, int times, boolean gotoPlace, String doAfter, int delay) {
         this(action, times, gotoPlace, doAfter, delay, 0);
@@ -62,12 +62,12 @@ public class Task implements Runnable {
     }
     
     public String get(String n) {
-        if(has(n)) return (String)attr.get(n); else return null;
+        if(has(n)) return attr.get(n); else return null;
     }
 
     public int getInt(String n) {
         try {
-            if(has(n)) return Integer.parseInt((String)attr.get(n));            
+            if(has(n)) return Integer.parseInt(attr.get(n));
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -79,7 +79,7 @@ public class Task implements Runnable {
     }        
     
     public boolean contains(String n, String v) {
-        if (!has(n)) return false;else return (get(n).indexOf(v) != -1);
+        if (!has(n)) return false;else return (get(n).contains(v));
     }
     
     public void start() {

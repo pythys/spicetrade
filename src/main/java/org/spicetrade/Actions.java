@@ -234,20 +234,20 @@ public class Actions extends Collection {
     public void perform(String action, String text, int i, int x, int y, int width, int height, boolean fade) {
         // This is the action/movement panel logic
         f.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-        Vector actions = new Vector();
-        Vector icons = this.getVector(action, "Icons");
+        Vector<Image> actions = new Vector<>();
+        Vector<String> icons = this.getVector(action, "Icons");
 
         // fade means that we have two pictures and fade from the first to the second
         // this is used when the churches turn into mosques etc..
         if (fade) {
-            actions.add((Image) f.tools.loadImage(f, (String) icons.elementAt(0)));
-            actions.add((Image) f.tools.loadImage(f, (String) icons.elementAt(1)));
-            f.panel.add(new Drawable(x, y, width, height, Drawable.MPANEL, (Image) actions.elementAt(0), (Image) actions.elementAt(1), "", text, null,
+            actions.add(f.tools.loadImage(f, icons.elementAt(0)));
+            actions.add(f.tools.loadImage(f, icons.elementAt(1)));
+            f.panel.add(new Drawable(x, y, width, height, Drawable.MPANEL, actions.elementAt(0), actions.elementAt(1), "", text, null,
                     ((float) (i * 5) / 100), null, null));
         } else {
             // this is the other kind of action, where we loop through the pictures, one by one
             for (int a = 0, b = icons.size(); a < b; a++) {
-                actions.add((Image) f.tools.loadImage(f, (String) icons.elementAt(a)));
+                actions.add(f.tools.loadImage(f, icons.elementAt(a)));
             }
 
             int act = i % actions.size();
@@ -255,24 +255,23 @@ public class Actions extends Collection {
                 act = 0;
             if (text != null && !text.equals("")) {
                 // regular panel
-                f.panel.add(new Drawable(x, y, width, height, Drawable.MPANEL, (Image) actions.elementAt(act), "", text));
+                f.panel.add(new Drawable(x, y, width, height, Drawable.MPANEL, actions.elementAt(act), "", text));
             } else {
                 // just show the picture.. this is used for the growing "animations"
-                f.panel.add(new Drawable(x, y, 0, 0, Drawable.IMAGE, (Image) actions.elementAt(act)));
+                f.panel.add(new Drawable(x, y, 0, 0, Drawable.IMAGE, actions.elementAt(act)));
             }
         }
 
         // get the events for the action and see if one of them would like to be triggered
         // again, this "event" mechanism is too simple.. will see if I have the energy to refactor these to a more logical
         // structure
-        Vector events = this.getVector(action, "Events");
+        Vector<Spicebean> events = this.getVector(action, "Events");
         Mainframe mf = Mainframe.me;
         mf.nextInt = mf.random.nextInt(100);
-        for (Iterator iter = events.iterator(); iter.hasNext();) {
-            Spicebean sb = (Spicebean) iter.next();
+        for (Spicebean event : events) {
             if (Mainframe.DEBUG == 1)
-                System.out.println("Doing event: " + sb.action + ", condition: " + sb.condition);
-            sb.doAction();
+                System.out.println("Doing event: " + event.action + ", condition: " + event.condition);
+            event.doAction();
             break;
         }
     }
