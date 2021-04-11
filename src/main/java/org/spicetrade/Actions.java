@@ -205,10 +205,10 @@ public class Actions extends Collection {
 
     public void perform(String action, int i, int x, int y, boolean done, int after, boolean fade) {
         try {
-            // Regular actions (like drowing something etc..
+            // Regular actions (like drawing something etc...)
             f.isModal = true;
             f.panel.clear();
-            perform(action, (String) this.getString(action, "Text"), i, x, y, fade);
+            perform(action, this.getString(action, "Text"), i, x, y, fade);
             f.doLayout();
             f.repaint();
             if (done) {
