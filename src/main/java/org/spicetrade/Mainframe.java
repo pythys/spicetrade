@@ -193,25 +193,19 @@ public class Mainframe extends Frame {
             font = new Font("Arial", 0, 14);
             fontBold = new Font("Arial", 1, 14);
             addMouseListener(new MouseAdapter() {
-
                 public void mouseClicked(MouseEvent e) {
                     this_mouseClicked(e);
                 }
-
             });
             addMouseMotionListener(new MouseMotionAdapter() {
-
                 public void mouseMoved(MouseEvent e) {
                     this_mouseMoved(e);
                 }
-
             });
             addWindowListener(new WindowAdapter() {
-
                 public void windowClosed(WindowEvent e) {
                     this_windowClosed(e);
                 }
-
             });
             sounds.musicOn = true;
         } catch (Exception ex) {
@@ -2291,8 +2285,8 @@ public class Mainframe extends Frame {
                 panel.add(new Drawable(510, 310, 510, 570, Color.BLUE, Drawable.LINE, 1));
 
                 Font cfont = null;
-                Color left = Color.RED;
-                Color right = Color.BLUE;
+                Color left;
+                Color right;
                 Color pink = new Color(220, 0, 255);
                 for (int k = 0, l = Player.cities.length; k < l; k++) {
                     if (Player.cities[k].equals(player.city))
@@ -2335,7 +2329,7 @@ public class Mainframe extends Frame {
                 break;
             }
 
-            Color color = Color.BLACK;
+            Color color;
             if (state == 0)
                 color = Color.RED;
             else
@@ -2391,14 +2385,11 @@ public class Mainframe extends Frame {
 
     public void save() {
         try {
-            // XStream.. gotta love it! I mean, how much less code can you
-            // write?
             String save = xstream.toXML(player);
             FileDialog fd = new FileDialog(this, "Save game", FileDialog.SAVE);
             fd.setDirectory(".");
             fd.setFile("spicetrade.sav");
             fd.setVisible(true);
-            // FIX: 12.4.2005 Changed the loading and save routine so that the directory information is used also
             String file = fd.getDirectory() + fd.getFile();
             if (file == null) return;
             tools.writeFile(file, save);
@@ -2543,8 +2534,8 @@ public class Mainframe extends Frame {
             else
                 v = objects;
 
-            Drawable d = null;
-            String text = null;
+            Drawable d;
+            String text;
             for (int i = v.size() - 1; i >= this.converter; i--) {
                 d = v.elementAt(i);
                 if (!d.contains(e.getPoint()) || d.action == null)
@@ -2744,17 +2735,12 @@ public class Mainframe extends Frame {
     }
 
     class TimedTask extends TimerTask {
-        String action = "";
-
-        int times = 1;
-
+        String action;
+        int times;
         int counter = 1;
-
         Interpreter bshint = new Interpreter();
-
-        boolean gotoPlace = false;
-
-        String doAfter = "";
+        boolean gotoPlace;
+        String doAfter;
 
         public TimedTask(String action, int times, boolean gotoPlace, String doAfter) {
             this.action = action;
