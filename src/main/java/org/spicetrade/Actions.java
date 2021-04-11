@@ -45,7 +45,7 @@ public class Actions extends Collection {
         this.refresh(xml);
     }
 
-    public void perform(String action, Vector coords, int days, String to, String nicecity, int i, int x, int y, boolean done) {
+    public void perform(String action, Vector<int[]> coords, int days, String to, String nicecity, int i, int x, int y, boolean done) {
         try {
             // I'm sure there is a wonderful algorithm that does this in a more clean and elegant way, but no time to fix
             // something that seems to work ok.
@@ -53,8 +53,8 @@ public class Actions extends Collection {
             // coordinates, the number of steps (==days) in the line and the current step (==i) and then calculates
             // the lines required to be drawn
             
-            int[] start = (int[]) coords.elementAt(0);
-            int[] end = (int[]) coords.elementAt(coords.size() - 1);
+            int[] start = coords.elementAt(0);
+            int[] end = coords.elementAt(coords.size() - 1);
 
             double div = days;
             int where = 1;
@@ -63,8 +63,8 @@ public class Actions extends Collection {
             if (size > 1) {
                 // so we have more than one node in the line
                 div = (double)days / (double)size;
-                start = (int[]) coords.elementAt(0);
-                end = (int[]) coords.elementAt(where);
+                start = coords.elementAt(0);
+                end = coords.elementAt(where);
 
                 // I know.. casting to double like this is pretty bad, but before, when I did not do this, I got
                 // an overrun in the line when I had more than 10 nodes or so and don't have time to fix and test the
@@ -72,12 +72,12 @@ public class Actions extends Collection {
                 while (i > Math.round((double)days / (double)size * (double)where)) {
                     if (++where > size) {
                         where = size;
-                        start = (int[]) coords.elementAt(where - 1);
-                        end = (int[]) coords.elementAt(where);
+                        start = coords.elementAt(where - 1);
+                        end = coords.elementAt(where);
                         break;
                     }
-                    start = (int[]) coords.elementAt(where - 1);
-                    end = (int[]) coords.elementAt(where);
+                    start = coords.elementAt(where - 1);
+                    end = coords.elementAt(where);
                 }
             }
 
@@ -85,8 +85,8 @@ public class Actions extends Collection {
             double stepX = 0;
             double stepY = 0;
 
-            stepX = (double) ((end[0] - start[0]) / div);
-            stepY = (double) ((end[1] - start[1]) / div);
+            stepX = ((end[0] - start[0]) / div);
+            stepY = ((end[1] - start[1]) / div);
 
             double lineX = (start[0] + (stepX * (i - (where - 1) * div)));
             double lineY = (start[1] + (stepY * (i - (where - 1) * div)));
