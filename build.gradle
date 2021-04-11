@@ -54,13 +54,32 @@ jar {
     }
 }
 
-ext.targetPlatform = 'auto'
-
-task packageSpicetrade(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
-    dependsOn build
+javapackager {
     mainClass = mainClassName
-    jrePath = file(System.properties['java.home'])
     bundleJre = true
     generateInstaller = true
-    platform = targetPlatform
 }
+
+task copyProps(type: Copy) {
+    from 'spicetrade.properties'
+    into 'build/spicetrade'
+}
+
+task packageLinux(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+    platform = 'linux'
+    createTarball = true
+    jrePath = file(System.properties['java.home'])
+    finalizedBy copyProps
+}
+task packageMac(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+    platform = 'mac'
+    createTarball = true
+    finalizedBy copyProps
+}
+task packageWindows(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+    platform = 'windows'
+    createZipball = true
+    finalizedBy copyProps
+}
+
+task packageAll(dependsOn: [ packageLinux, packageMac, packageWindows ])
