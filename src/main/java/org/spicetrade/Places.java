@@ -20,7 +20,6 @@
 
 package org.spicetrade;
 
-import java.util.Iterator;
 import java.util.Vector;
 
 import org.spicetrade.tools.Collection;
@@ -49,15 +48,15 @@ public class Places extends Collection {
         return getString(place, "Name");
     }
 
-    public Vector getActions(String place) {
+    public Vector<Spicebean> getActions(String place) {
         return getVector(place, "Actions");
     }
 
-    public Vector getPictures(String place) {
+    public Vector<Spicebean> getPictures(String place) {
         return getVector(place, "Pictures");
     }
 
-    public Vector getEvents(String place) {
+    public Vector<Spicebean> getEvents(String place) {
         return getVector(place, "Events");
     }
 
@@ -65,14 +64,13 @@ public class Places extends Collection {
         if (Mainframe.DEBUG == 1)
             System.out.println("Getting background for: " + place);
         try {
-            Vector v = getVector(place, "Backgrounds");
+            Vector<Spicebean> v = getVector(place, "Backgrounds");
             if (v != null && v.size() > 0) {
-                for (Iterator iter = v.iterator(); iter.hasNext();) {
-                    Spicebean sb = (Spicebean) iter.next();
+                for (Spicebean sb : v) {
                     if (sb.isActive()) {
                         if (Mainframe.DEBUG == 1)
                             System.out.println("Found background: " + sb.picture);
-                        return sb.picture;                        
+                        return sb.picture;
                     }
                 }
             } else {
@@ -84,11 +82,11 @@ public class Places extends Collection {
         return "";
     }
 
-    public Vector getDrawables(String place) {
+    public Vector<Drawable> getDrawables(String place) {
         if (Mainframe.DEBUG == 1)
             System.out.println("Getting drawables for place: " + place);
-        Vector drawables = getVector(place, "Drawables");
-        Vector res = new Vector();
+        Vector<Spicebean> drawables = getVector(place, "Drawables");
+        Vector<Drawable> res = new Vector<>();
         if (drawables.isEmpty())
             return res;
         try {
@@ -96,10 +94,10 @@ public class Places extends Collection {
             bsh.set("mf", Mainframe.me);
 
             Spicebean sb = new Spicebean();
-            Drawable d = null;
+            Drawable d;
 
             for (int i = 0, j = drawables.size(); i < j; i++) {
-                sb = (Spicebean) drawables.elementAt(i);
+                sb = drawables.elementAt(i);
                 bsh.eval(Mainframe.me.bshimport + sb.action);
                 d = (Drawable) bsh.get("drawable");
                 if (d != null)
@@ -113,6 +111,6 @@ public class Places extends Collection {
     }
 
     private boolean getBoolean(Boolean b) {
-        return b.booleanValue();
+        return b;
     }
 }

@@ -1170,7 +1170,7 @@ public class Mainframe extends Frame {
             x = 210;
 
             // random drawables that get thrown on the screen
-            Vector drawables = places.getDrawables(to);
+            Vector<Drawable> drawables = places.getDrawables(to);
             for (int i = 0, j = drawables.size(); i < j; i++)
                 objects.add(drawables.elementAt(i));
 

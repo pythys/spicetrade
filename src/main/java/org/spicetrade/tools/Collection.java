@@ -71,8 +71,8 @@ public class Collection {
         }
         return null;
     }
-    
-    public Vector getVector(String s1, String s2) {
+
+    public <T> Vector<T> getVector(String s1, String s2) {
         if (Mainframe.DEBUG == 2) System.out.println("Getting vector: " + s2 + " from hashtable: " + s1);
         Hashtable ht = new Hashtable();
         Vector res = new Vector();
