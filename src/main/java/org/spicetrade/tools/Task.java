@@ -20,23 +20,22 @@
 
 package org.spicetrade.tools;
 
+import bsh.Interpreter;
 import java.util.Hashtable;
-
 import org.spicetrade.Mainframe;
 
-import bsh.Interpreter;
 
 public class Task implements Runnable {
 
-    String action = "";
-    int times = 1;
+    String action;
+    int times;
     int counter = 1;
-    int delay = 0;
-    int delayBefore = 0;
+    int delay;
+    int delayBefore;
     Interpreter bshint = new Interpreter();
     Thread task = null;
-    boolean gotoPlace = false;
-    String doAfter = "";
+    boolean gotoPlace;
+    String doAfter;
     boolean paused = false;
     Hashtable<String,String> attr = new Hashtable<>();
 
@@ -97,13 +96,9 @@ public class Task implements Runnable {
     public void run() {
         try {
             Mainframe mf = Mainframe.me;
-
             Thread myThread = Thread.currentThread();
-            
             Thread.sleep(delayBefore);
-
             if (Mainframe.DEBUG==1) System.out.println("Running thread " + this.task + " (" + myThread.hashCode() + ") - " + System.currentTimeMillis());
-            
             while (task == myThread) {
                 if (!paused) {
                     String a = action.replaceAll("!counter", String.valueOf(counter++));
@@ -117,7 +112,6 @@ public class Task implements Runnable {
                             bshint.set("mf", mf);
                             bshint.eval(mf.bshimport + a);
                         }
-
                         if (doAfter != null && !doAfter.equals("")) {
                             bshint.set("mf", mf);
                             bshint.eval(mf.bshimport + doAfter);

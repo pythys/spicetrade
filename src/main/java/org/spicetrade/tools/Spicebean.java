@@ -70,7 +70,7 @@ public class Spicebean {
             bsh.set("res", false);
             bsh.eval(Mainframe.me.bshimport + condition);
             if (Mainframe.DEBUG == 2) System.out.println(condition + " ----- is " + bsh.get("res").toString());
-            return getBoolean((Boolean) bsh.get("res"));
+            return (Boolean) bsh.get("res");
         } catch (Exception ex) {
             ex.printStackTrace();
         }
@@ -79,9 +79,5 @@ public class Spicebean {
 
     public boolean isDoable() {
         return (action != null && !action.equals(""));
-    }
-
-    private boolean getBoolean(Boolean b) {
-        return b.booleanValue();
     }
 }

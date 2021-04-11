@@ -28,11 +28,9 @@ import org.spicetrade.tools.Collection;
 public class Journal extends Collection {
 
     Hashtable<String,String> tasksOpen;
-
     Hashtable<String,String> tasksClosed;
-
     Hashtable<String,String> timestamp;
-    
+
     // ADD 10.04.2005 -- Want to see the book of life events in the order they happen in
     Vector<String> tasks = new Vector<>();
 
@@ -114,7 +112,7 @@ public class Journal extends Collection {
         if (Mainframe.DEBUG == 1) System.out.println("Removing task: " + task);
         if (has(task)) tasksOpen.remove(task);
     }
-    
+
     public void add(String task, String value) {
         put(task, get(task) + value);
     }
@@ -130,11 +128,11 @@ public class Journal extends Collection {
             stamp(task);
         }
     }
-    
+
     public String getPicture(String task) {
         return this.getString(task, "Picture");
     }
-    
+
     public void stamp(String task) {
         Mainframe mf = Mainframe.me;
         timestamp.put(task, String.valueOf(mf.player.day + (mf.player.month*30) + (mf.player.year * 360)));

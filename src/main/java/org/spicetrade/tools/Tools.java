@@ -78,7 +78,7 @@ public class Tools {
     }
 
     public String readFile(String f, boolean injar) {
-        StringBuffer ret = new StringBuffer();
+        StringBuilder ret = new StringBuilder();
         try {
             int i = 0;
             String line = "";

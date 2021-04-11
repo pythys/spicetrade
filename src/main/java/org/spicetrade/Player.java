@@ -450,7 +450,7 @@ public class Player {
 
     public String get(String s) {
         try {
-            return (String) attr.get(s);
+            return attr.get(s);
         } catch (Exception exception) {
             return null;
         }
@@ -498,7 +498,7 @@ public class Player {
     public void removeWife(String name) {
         if (!contains("wifes", name))
             return;
-        String all = (String) attr.get("wifes");
+        String all = attr.get("wifes");
         if (all.indexOf(name) == 0)
             if (!all.contains(","))
                 all = "";
@@ -529,7 +529,7 @@ public class Player {
     public void removeChild(String name) {
         if (!contains("children", name))
             return;
-        String all = (String) attr.get("children");
+        String all = attr.get("children");
         if (all.indexOf(name) == 0)
             if (!all.contains(","))
                 all = "";
@@ -558,10 +558,10 @@ public class Player {
 
     public Vector<Item> getInventory() {
         Vector<Item> inventory = new Vector<>();
-        Item item = null;
+        Item item;
 
         for (int i = 0, j = items.size(); i < j; i++) {
-            item = (Item) items.elementAt(i);
+            item = items.elementAt(i);
             if (item.inventory)
                 inventory.add(item);
         }
@@ -590,7 +590,7 @@ public class Player {
     public void buyItem(String id, int price, String who) {
         try {
             for (int i = 0, j = soldItems.size(); i < j; i++) {
-                Item item = (Item) soldItems.elementAt(i);
+                Item item = soldItems.elementAt(i);
                 if (item.who.equals(who) && item.id.equals(id)) {
                     buyItem(id, price);
                     soldItems.remove(i);
@@ -694,17 +694,17 @@ public class Player {
     }
 
     public boolean hasItem(String id, int amount, boolean givenItems) {
-        Item item = null;
+        Item item;
         int count = 0;
         boolean res = false;
         for (Item value : items) {
-            item = (Item) value;
+            item = value;
             if (item.id.equals(id))
                 count++;
         }
 
         for (Item soldItem : soldItems) {
-            item = (Item) soldItem;
+            item = soldItem;
             if (item.id.equals(id))
                 count++;
         }
@@ -719,10 +719,10 @@ public class Player {
     }
 
     public boolean hasAnyItems(String[] ids) {
-        Item item = null;
+        Item item;
         boolean res = false;
         for (Item value : items) {
-            item = (Item) value;
+            item = value;
             for (String id : ids)
                 if (item.id.equals(id)) {
                     res = true;
@@ -734,10 +734,10 @@ public class Player {
     }
 
     public boolean hasAllItems(String[] ids) {
-        Item item = null;
+        Item item;
         boolean res = false;
         for (Item value : items) {
-            item = (Item) value;
+            item = value;
             for (String id : ids)
                 res = item.id.equals(id);
         }
@@ -763,10 +763,10 @@ public class Player {
     }
 
     public void removeItem(String id) {
-        Item item = null;
+        Item item;
 
         for (int i = 0, j = items.size(); i < j; i++) {
-            item = (Item) items.get(i);
+            item = items.get(i);
             if (!item.id.equals(id))
                 continue;
             if (Mainframe.DEBUG == 1)
@@ -788,7 +788,7 @@ public class Player {
     }
 
     public boolean inPlace(String where, boolean exact) {
-        boolean ret = false;
+        boolean ret;
         if (exact)
             ret = (where.equals(place));
         else
@@ -893,8 +893,6 @@ public class Player {
             month = 1;
             nextYear();
         }
-
-        int months = age * 12 + month;
 
         Mainframe mf = Mainframe.me;
         mf.nextInt = mf.random.nextInt(100);
@@ -1660,7 +1658,6 @@ public class Player {
 
     public Vector<Item> itemsVector(String place) {
         Vector<Item> ret = new Vector<>();
-        int counter = 0;
         for (Item item : items) {
             if (item.here(place))
                 ret.add(item);
@@ -1676,7 +1673,7 @@ public class Player {
 
     public void removeCulture(String where, int amount) {
         try {
-            String parse = (String) attr.get("culture" + where);
+            String parse = attr.get("culture" + where);
             int value = Integer.parseInt(parse);
             amount = -amount;
             if (Mainframe.DEBUG == 1)
@@ -1690,7 +1687,7 @@ public class Player {
 
     public int getCulture(String where) {
         try {
-            String parse = (String) attr.get("culture" + where);
+            String parse = attr.get("culture" + where);
             int value = Integer.parseInt(parse);
             if (Mainframe.DEBUG == 1)
                 System.out.println("Getting culture of " + where + ": " + value);
@@ -1706,9 +1703,9 @@ public class Player {
             String[] shops = { "amsterdam", "budapest", "constantinopol", "hamburg", "lisboa", "london", "madrid", "moscow", "paris", "venice", "vienna" };
 
             if (where.equals("all")) {
-                for (String string : shops) {
+                for (String ignored : shops) {
                     if (has(where + "shop")) {
-                        String parse = (String) attr.get(where + "shop");
+                        String parse = attr.get(where + "shop");
                         int value = Integer.parseInt(parse);
                         if (Mainframe.DEBUG == 1)
                             System.out.println("Getting money from shop in " + where + ": " + value);
@@ -1717,7 +1714,7 @@ public class Player {
                     }
                 }
             } else if (has(where + "shop")) {
-                String parse = (String) attr.get(where + "shop");
+                String parse = attr.get(where + "shop");
                 int value = Integer.parseInt(parse);
                 if (Mainframe.DEBUG == 1)
                     System.out.println("Getting money from shop in " + where + ": " + value);
@@ -1732,7 +1729,7 @@ public class Player {
     public void putShopMoney(String where, int amount) {
         try {
             if (has(where + "shop")) {
-                String parse = (String) attr.get(where + "shop");
+                String parse = attr.get(where + "shop");
                 int value = Integer.parseInt(parse);
                 if (Mainframe.DEBUG == 1)
                     System.out.println("Putting money to shop in " + where + " (+" + amount + "): " + value);

@@ -23,7 +23,6 @@ package org.spicetrade;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Image;
-import java.util.Iterator;
 import java.util.Vector;
 
 import org.spicetrade.tools.Collection;

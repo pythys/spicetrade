@@ -54,7 +54,7 @@ public class Drawable extends Rectangle {
     public Image image;
     public Image image2;
     public String text;
-    public Vector textVector = null;
+    public Vector<Object> textVector = null;
     public int textWidth = 0;
     public String action;
     public String niceText;
@@ -182,7 +182,7 @@ public class Drawable extends Rectangle {
             else
                 g2.setFont(font);
             textVector = chop(text, width, g2);
-            textWidth = ((Integer) textVector.elementAt(0)).intValue();
+            textWidth = (Integer) textVector.elementAt(0);
         }
     }
 
@@ -266,7 +266,7 @@ public class Drawable extends Rectangle {
                 g.setColor(Color.gray);
                 g2.fillRoundRect(x + 4, y + 4, width, height, xarc, yarc);
                 g.setColor(Color.white);
-                if (action.indexOf("gotoPlace") == -1)
+                if (!action.contains("gotoPlace"))
                     g.setColor(Color.red);
                 g2.fillRoundRect(x, y, width, height, xarc, yarc);
                 g.setColor(Color.BLACK);
@@ -278,18 +278,16 @@ public class Drawable extends Rectangle {
             case 2: // label
                 increment = 18;
                 if (font != null) {
-                    switch (font.getSize()) {
-                    case 10:
+                    if (font.getSize() == 10) {
                         increment = 11;
-                        break;
                     }
                 }
 
                 _y = y + increment;
                 g.setColor(Color.BLACK);
-                if (action == null || action.equals("")) {
-                } else
+                if (action != null && !action.equals("")) {
                     g.setFont(f.fontBold);
+                }
                 if (font != null) {
                     g.setFont(font);
                     g.setColor(color);
@@ -331,7 +329,7 @@ public class Drawable extends Rectangle {
                 if (text != null) {
                     g.setColor(Color.white);
                     g2.setComposite(AlphaComposite.getInstance(3, 0.64F));
-                    g2.fillRect(x, y, ((Integer) textVector.elementAt(0)).intValue() + 5, height * (textVector.size() - 1));
+                    g2.fillRect(x, y, (Integer) textVector.elementAt(0) + 5, height * (textVector.size() - 1));
                     g.setColor(Color.BLACK);
                     g2.setComposite(old);
                     i = 1;

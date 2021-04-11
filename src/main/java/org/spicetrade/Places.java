@@ -106,11 +106,6 @@ public class Places extends Collection {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
         return res;
-    }
-
-    private boolean getBoolean(Boolean b) {
-        return b;
     }
 }
