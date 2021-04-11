@@ -23,6 +23,7 @@ package org.spicetrade;
 import java.util.Hashtable;
 import java.util.Random;
 import java.util.Vector;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.spicetrade.tools.Item;
 import org.spicetrade.tools.LogItem;
@@ -142,92 +143,23 @@ public class Player {
         attr.put("wifes", "");
         attr.put("children", "");
 
-        Random r = new Random();
-        int c = 0;
-        c = r.nextInt(100);
-        while (c < 60)
-            c = r.nextInt(100);
-        attr.put("culturebaghdad", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 40)
-            c = r.nextInt(100);
-        attr.put("cultureanjoudan", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 40)
-            c = r.nextInt(100);
-        attr.put("culturenajaf", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 40)
-            c = r.nextInt(100);
-        attr.put("culturelatakia", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 20)
-            c = r.nextInt(100);
-        attr.put("cultureconstantinopol", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 30)
-            c = r.nextInt(100);
-        attr.put("culturekonya", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 30)
-            c = r.nextInt(100);
-        attr.put("culturebaku", String.valueOf(c));
-
-        c = r.nextInt(100);
-        while (c < 30)
-            c = r.nextInt(100);
-        attr.put("culturevienna", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 30)
-            c = r.nextInt(100);
-        attr.put("culturebudapest", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 60)
-            c = r.nextInt(100);
-        attr.put("culturevenice", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 50)
-            c = r.nextInt(100);
-        attr.put("culturemadrid", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 40)
-            c = r.nextInt(100);
-        attr.put("culturelisboa", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 60)
-            c = r.nextInt(100);
-        attr.put("cultureparis", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 40)
-            c = r.nextInt(100);
-        attr.put("cultureamsterdam", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 50)
-            c = r.nextInt(100);
-        attr.put("culturehamburg", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 60)
-            c = r.nextInt(100);
-        attr.put("culturemoscow", String.valueOf(-c));
-
-        c = r.nextInt(100);
-        while (c < 60)
-            c = r.nextInt(100);
-        attr.put("culturelondon", String.valueOf(-c));
+        attr.put("culturebaghdad", genRandom(60, 100));
+        attr.put("cultureanjoudan", genRandom(40, 100));
+        attr.put("culturenajaf", genRandom(40, 100));
+        attr.put("culturelatakia", genRandom(40, 100));
+        attr.put("cultureconstantinopol", genRandom(20, 100));
+        attr.put("culturekonya", genRandom(30, 100));
+        attr.put("culturebaku", genRandom(30, 100));
+        attr.put("culturevienna", genRandom(-100, -30));
+        attr.put("culturebudapest", genRandom(-100, -30));
+        attr.put("culturevenice", genRandom(-100, -60));
+        attr.put("culturemadrid", genRandom(-100, -50));
+        attr.put("culturelisboa", genRandom(-100, -40));
+        attr.put("cultureparis", genRandom(-100, -60));
+        attr.put("cultureamsterdam", genRandom(-100, -40));
+        attr.put("culturehamburg", genRandom(-100, -50));
+        attr.put("culturemoscow", genRandom(-100, -60));
+        attr.put("culturelondon", genRandom(-100, -60));
 
         attr.put("Moneyunit", "Dirham");
         attr.put("Timeunit", "AH");
@@ -446,6 +378,11 @@ public class Player {
         Mainframe.me.showMapGlobe = false;
         inGame = false;
         transport = MapEntry.TRANSPORT1;
+    }
+
+    private String genRandom(int lower, int upper) {
+        int random = ThreadLocalRandom.current().nextInt(lower, upper);
+        return String.valueOf(random);
     }
 
     public String get(String s) {
