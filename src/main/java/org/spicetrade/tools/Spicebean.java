@@ -84,15 +84,4 @@ public class Spicebean {
     private boolean getBoolean(Boolean b) {
         return b.booleanValue();
     }
-
-//    public Image getImage() {
-//        if (picture != null)
-//            try {
-//                Image i = Mainframe.me.tools.loadImage(Mainframe.me, picture);
-//                return i;
-//            } catch (Exception ex) {
-//                ex.printStackTrace();
-//            }
-//        return null;
-//    }
 }
