@@ -24,6 +24,7 @@ import java.util.Hashtable;
 import java.util.Random;
 import java.util.Vector;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
 
 import org.spicetrade.tools.Item;
 import org.spicetrade.tools.LogItem;
@@ -440,9 +441,9 @@ public class Player {
             if (!all.contains(","))
                 all = "";
             else
-                all = all.substring(all.indexOf(","), all.length());
+                all = all.substring(all.indexOf(","));
         else
-            all = all.substring(all.indexOf(", " + name) + name.length() + 2, all.length());
+            all = all.substring(all.indexOf(", " + name) + name.length() + 2);
         attr.put("wifes", all);
         wifes--;
     }
@@ -450,7 +451,7 @@ public class Player {
     public void addChild(String name) {
         if (contains("children", name))
             return;
-        String all = (String) attr.get("children");
+        String all = attr.get("children");
         if (all == null || all.equals(""))
             all = name;
         else
@@ -471,9 +472,9 @@ public class Player {
             if (!all.contains(","))
                 all = "";
             else
-                all = all.substring(all.indexOf(","), all.length());
+                all = all.substring(all.indexOf(","));
         else
-            all = all.substring(all.indexOf(", " + name) + name.length() + 2, all.length());
+            all = all.substring(all.indexOf(", " + name) + name.length() + 2);
         attr.put("children", all);
         children--;
     }
@@ -496,13 +497,11 @@ public class Player {
     public Vector<Item> getInventory() {
         Vector<Item> inventory = new Vector<>();
         Item item;
-
         for (int i = 0, j = items.size(); i < j; i++) {
             item = items.elementAt(i);
             if (item.inventory)
                 inventory.add(item);
         }
-
         return inventory;
     }
 
