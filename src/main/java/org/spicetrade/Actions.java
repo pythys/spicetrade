@@ -31,9 +31,6 @@ import org.spicetrade.tools.Drawable;
 import org.spicetrade.tools.MapEntry;
 import org.spicetrade.tools.Spicebean;
 
-/**
- * @author holjuh
- */
 public class Actions extends Collection {
 
     Mainframe f;

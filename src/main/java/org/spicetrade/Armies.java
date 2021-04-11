@@ -22,9 +22,6 @@ package org.spicetrade;
 
 import org.spicetrade.tools.Collection;
 
-/**
- * @author holjuh
- */
 public class Armies extends Collection {
 
     public static final String xml = "/data/armies.xml";

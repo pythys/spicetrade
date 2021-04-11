@@ -26,9 +26,6 @@ import org.spicetrade.Mainframe;
 
 import bsh.Interpreter;
 
-/**
- * @author holjuh
- */
 public class Task implements Runnable {
 
     String action = "";

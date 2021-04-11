@@ -25,14 +25,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import javax.swing.UIManager;
 
-/**
- * Spice Trade
- * This is the main class that starts the whole application.
- *
- * @author Juha Holopainen
- * @version 1.0
- */
-
 public class Game {
 
     public Game() {

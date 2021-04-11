@@ -22,10 +22,6 @@ package org.spicetrade.tools;
 
 import org.spicetrade.Mainframe;
 
-/**
- * @author holjuh
- *  
- */
 public class LogItem {
     public String id = null;
     public String action = null;

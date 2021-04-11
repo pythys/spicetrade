@@ -24,9 +24,6 @@ import bsh.Interpreter;
 
 import org.spicetrade.Mainframe;
 
-/**
- * @author holjuh
- */
 public class MapEntry {
 
     public String nice = "";

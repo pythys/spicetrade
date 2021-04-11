@@ -20,10 +20,6 @@
 
 package org.spicetrade.tools;
 
-/**
- * @author holjuh
- *
- */
 public class Settings {
     public int difficulty = 1;
     public String savePath = "./";

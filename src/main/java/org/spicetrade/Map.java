@@ -26,13 +26,6 @@ import java.util.Vector;
 import org.spicetrade.tools.Collection;
 import org.spicetrade.tools.MapEntry;
 
-/*
- * Created on 9.2.2005
- */
-
-/**
- * @author holjuh
- */
 public class Map extends Collection {
 
     public static final String background = "/pics/maps/world_maps/world.jpg";
