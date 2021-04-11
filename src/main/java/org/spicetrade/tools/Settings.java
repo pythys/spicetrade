@@ -22,7 +22,6 @@ package org.spicetrade.tools;
 
 public class Settings {
     public int difficulty = 1;
-    public String savePath = "./";
     public boolean musicOn = true;
     public boolean fullScreen = false;
 }
