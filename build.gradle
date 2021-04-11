@@ -47,7 +47,7 @@ jar {
         attributes 'Implementation-Title': 'Spice Trade'
         attributes 'Implementation-Version': '2.0'
         attributes 'Implementation-Vendor': 'pythys.com'
-        attributes 'Implementation-URL': 'https://www.pythys.com/spicetrade'
+        attributes 'Implementation-URL': 'https://www.pythys.com'
     }
     from {
         configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
