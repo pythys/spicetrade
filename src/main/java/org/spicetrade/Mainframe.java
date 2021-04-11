@@ -2483,16 +2483,16 @@ public class Mainframe extends Frame {
                 System.out.println("Getting image from cache: " + name);
             else
                 System.out.println("Getting image: " + image);
-        Image i = null;
+        Image i;
         try {
             if (name == null || name.equals(""))
                 name = image;
             if (images.containsKey(name) && !removeCache)
-                return (Image) images.get(name);
+                return images.get(name);
             else {
                 i = tools.loadImage(this, image);
                 if (i == null) {
-                    i = (Image) images.get("notavailable");
+                    i = images.get("notavailable");
                     System.out.println("Image " + image + " not available.");
                 }
                 images.remove(name);
@@ -2502,7 +2502,7 @@ public class Mainframe extends Frame {
             }
         } catch (Exception ex) {
             ex.printStackTrace();
-            i = (Image) images.get("notavailable");
+            i = images.get("notavailable");
         }
         return i;
     }
