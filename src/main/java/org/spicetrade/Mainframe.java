@@ -40,7 +40,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Iterator;
 import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -405,10 +404,10 @@ public class Mainframe extends Frame {
             // post-draw.. if we would
             // have a true event mechanism, that is
             player.place = old;
-            Vector events = places.getEvents(to);
+            Vector<Spicebean> events = places.getEvents(to);
             if (events != null && events.size() > 0) {
                 for (int i = 0, j = events.size(); i < j; i++) {
-                    Spicebean sb = (Spicebean) events.elementAt(i);
+                    Spicebean sb = events.elementAt(i);
                     // I love BeanShell ;-)
                     sb.doAction();
                 }
