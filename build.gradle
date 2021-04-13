@@ -6,17 +6,8 @@ buildscript {
         classpath 'io.github.fvarrui:javapackager:1.5.1'
     }
 }
-apply plugin: 'groovy'
 apply plugin: 'application'
 apply plugin: 'io.github.fvarrui.javapackager.plugin'
-
-sourceSets {
-    main {
-        // joint-compilation
-        java { srcDirs = [] }
-        groovy { srcDirs += ['src/main/java'] }
-    }
-}
 
 repositories {
     mavenCentral()
@@ -26,12 +17,11 @@ dependencies {
     implementation 'com.github.trilarion:java-vorbis-support:1.2.1'
     implementation 'com.thoughtworks.xstream:xstream:1.4.16'
     implementation 'org.beanshell:bsh:2.0b5'
-    implementation 'org.codehaus.groovy:groovy-all:3.0.7'
 }
 
 mainClassName = 'org.spicetrade.Game'
 
-tasks.withType(GroovyCompile) {
+tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:unchecked"
     options.compilerArgs << "-Xlint:deprecation"
 }
