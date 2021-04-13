@@ -23,9 +23,9 @@ package org.spicetrade.tools;
 import org.spicetrade.Mainframe;
 
 public class LogItem {
-    public String id = null;
-    public String action = null;
-    public int when = 0;    
+    public String id;
+    public String action;
+    public int when;
 
     public LogItem(String id, String action, int when) {
         if (Mainframe.DEBUG==1) System.out.println("Logging: " + when + " (" + action + "): " + id);
@@ -42,9 +42,9 @@ public class LogItem {
     }
     
     public String getDate() {
-        int year = (int)(when/360);
-        int month = (int)((when - (360*year)) / 30);
-        int day = (int)(when - (30*month) - (360*year));
+        int year = (when/360);
+        int month = ((when - (360*year)) / 30);
+        int day = (when - (30*month) - (360*year));
         return (day + "." + month + "." + year);
     }
     

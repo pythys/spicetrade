@@ -20,35 +20,16 @@
 
 package org.spicetrade;
 
-import java.util.Enumeration;
 import java.util.Hashtable;
 
 import org.spicetrade.tools.Sound;
 
 public class Sounds {
 
-    Hashtable<String, Sound> sounds = new Hashtable<>();
     public boolean musicOn = true;
-    public String lastMusic = "";
-    public String currentMusic = "";
+    private Hashtable<String, Sound> sounds = new Hashtable<>();
 
     public Sounds() { }
-
-    public void playSound(String file, boolean loop) {
-        if (Mainframe.DEBUG == 1) System.out.println("starting to play: " + file + ", loop: " + loop);
-        if (!musicOn) return;
-        try {
-            if (isPlaying(file))
-                return;
-            else if (has(file))
-                sounds.remove(file);
-            Sound sound = new Sound();
-            sound.start(file, loop);
-            sounds.put(file, sound);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
 
     public void playSound(String file) {
         playSound(file, false);
@@ -75,8 +56,6 @@ public class Sounds {
         try {
             if (isPlaying(file))
                 return;
-            lastMusic = currentMusic;
-            currentMusic = file;
             stopAll();
             loopSound(file);
         } catch (Exception ex) {
@@ -84,34 +63,32 @@ public class Sounds {
         }
     }
 
-    public void stopSound(String file) {
+    public void stopAll() {
+        sounds.entrySet().forEach(entry -> entry.getValue().stop());
+        sounds = new Hashtable<>();
+    }
+
+    private void playSound(String file, boolean loop) {
+        if (Mainframe.DEBUG == 1) System.out.println("starting to play: " + file + ", loop: " + loop);
+        if (!musicOn) return;
         try {
-            if (!isPlaying(file))
+            if (isPlaying(file))
                 return;
-            Sound sound = sounds.get(file);
-            sound.stop();
-            sounds.remove(file);
+            else if (has(file))
+                sounds.remove(file);
+            Sound sound = new Sound();
+            sound.start(file, loop);
+            sounds.put(file, sound);
         } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
-    public void stopAll() {
-        Sound sound;
-        Enumeration<Sound> enumeration = sounds.elements();
-        while (enumeration.hasMoreElements()) {
-            sound = enumeration.nextElement();
-            sound.stop();
-            sounds.remove(sound.name);
-        }
-        sounds = new Hashtable<>();
-    }
-
-    public boolean has(String file) {
+    private boolean has(String file) {
         return sounds.containsKey(file);
     }
-    
-    public boolean isPlaying(String file) {
+
+    private boolean isPlaying(String file) {
         if(has(file)) {
             Sound sound = sounds.get(file);
             return sound.playing;

@@ -20,8 +20,8 @@
 
 package org.spicetrade;
 
-import java.util.Iterator;
 import java.util.Vector;
+import java.util.stream.Collectors;
 
 import org.spicetrade.tools.Collection;
 import org.spicetrade.tools.MapEntry;
@@ -44,16 +44,9 @@ public class Map extends Collection {
     }
 
     public Vector<MapEntry> getEntries(String place, int transport, boolean european) {
-        Vector<MapEntry> ret = new Vector<>();
         Vector<MapEntry> entries = getVector(place);
-
-        for (Object o : entries) {
-            MapEntry entry = (MapEntry) o;
-            if (!(!european && entry.european))
-                if (entry.getLength(transport) > 0)
-                    ret.add(entry);
-        }
-
-        return ret;
+        return entries.stream().filter(entry ->
+                !(!european && entry.european) && entry.getLength(transport) > 0)
+                .collect(Collectors.toCollection(Vector::new));
     }
 }

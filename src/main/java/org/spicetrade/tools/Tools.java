@@ -39,14 +39,6 @@ public class Tools {
     public Tools() {
     }
 
-    public void showMessage(Frame f, String s) {
-        try {
-            JOptionPane.showMessageDialog(f, s);
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-    }
-
     public boolean askYesNo(Frame f, String s) {
         try {
             int ret = JOptionPane.showConfirmDialog(Mainframe.me, s, "Warning", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);

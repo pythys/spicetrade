@@ -43,7 +43,7 @@ public class Collection {
     @SuppressWarnings("unchecked")
     public void readXML(String s) {
         collection = new Hashtable<>();
-        String xml = null;
+        String xml;
         XStream xstream = new XStream();
         XStream.setupDefaultSecurity(xstream);
         xstream.addPermission(AnyTypePermission.ANY);

@@ -45,10 +45,6 @@ public class Traders extends Collection {
         return getString(s, "Display");
     }
 
-    public int getDescription(String s) {
-        return getInt(s, "Description");
-    }
-
     public double getBuyFactor(String s) {
         return getDouble(s, "Buy factor");
     }
@@ -79,7 +75,7 @@ public class Traders extends Collection {
         return getItems("Sell items", who, true);
     }
 
-    public Vector<Item> getItems(String what, String who, boolean selling) {
+    private Vector<Item> getItems(String what, String who, boolean selling) {
         Mainframe mf = Mainframe.me;
         Vector<Item> res = new Vector<>();
         try {
