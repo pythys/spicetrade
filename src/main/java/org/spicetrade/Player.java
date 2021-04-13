@@ -495,14 +495,9 @@ public class Player {
     }
 
     public Vector<Item> getInventory() {
-        Vector<Item> inventory = new Vector<>();
-        Item item;
-        for (int i = 0, j = items.size(); i < j; i++) {
-            item = items.elementAt(i);
-            if (item.inventory)
-                inventory.add(item);
-        }
-        return inventory;
+        return items.stream()
+                .filter(item -> item.inventory)
+                .collect(Collectors.toCollection(Vector::new));
     }
 
     public void buyItem(String id) {
