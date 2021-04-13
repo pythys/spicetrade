@@ -29,7 +29,6 @@ public class Game {
 
     public Game() {
         Frame frame = new Mainframe();
-        // I heard that macs have problems with this undecorated setting, will look into that
         frame.setUndecorated(true);
         frame.setLayout(null);
         Dimension d = Toolkit.getDefaultToolkit().getScreenSize();
@@ -39,11 +38,9 @@ public class Game {
         frame.setTitle("Spice Trade");
         frame.setBackground(Color.lightGray);
         frame.addWindowListener(new WindowAdapter() {
-
             public void windowClosing(WindowEvent e) {
                 System.exit(0);
             }
-
         });
         frame.setVisible(true);
         // start at the intro page
