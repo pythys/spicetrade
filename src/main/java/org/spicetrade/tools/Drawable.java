@@ -167,10 +167,7 @@ public class Drawable extends Rectangle {
         this.image = image;
         this.image2 = image2;
         this.text = text;
-        if (action == null || action.equals(""))
-            this.action = null;
-        else
-            this.action = action;
+        this.action = action == null || action.equals("") ? null : action;
         this.niceText = niceText;
         this.alpha = alpha;
         this.font = font;
@@ -261,7 +258,7 @@ public class Drawable extends Rectangle {
                 g2.setComposite(old);
                 break;
 
-            case 1: // buttons (not used anymore
+            case 1: // buttons (not used anymore)
                 g2.setComposite(AlphaComposite.getInstance(3, 0.74F));
                 g.setColor(Color.gray);
                 g2.fillRoundRect(x + 4, y + 4, width, height, xarc, yarc);
