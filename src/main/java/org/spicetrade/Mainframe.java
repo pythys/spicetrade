@@ -237,16 +237,16 @@ public class Mainframe extends Frame {
 
             // draw base objects
             for (int i = 0, j = objects.size(); i < j; i++)
-                ((Drawable) objects.elementAt(i)).draw(bg);
+                objects.elementAt(i).draw(bg);
 
             // draw modal "dialog"
             if (isModal)
                 for (int i = 0, j = panel.size(); i < j; i++)
-                    ((Drawable) panel.elementAt(i)).draw(bg);
+                    panel.elementAt(i).draw(bg);
 
             // draw status etc..
             for (int i = 0, j = glass.size(); i < j; i++)
-                ((Drawable) glass.elementAt(i)).draw(bg);
+                glass.elementAt(i).draw(bg);
 
             // draw flyover
             if (flyover != null)
@@ -330,11 +330,16 @@ public class Mainframe extends Frame {
         player.journal.done("permit1");
         player.journal.open("permit5");
 
-        // if we have agricultural produce, don't let the player get out of
-        // Baghdad
-        if ((player.hasItem("10100") || player.hasItem("10110") || player.hasItem("10120") || player.hasItem("10130") || player.hasItem("10200")
-                || player.hasItem("10210") || player.hasItem("10220") || player.hasItem("10230"))
-                && !player.hasItem("10640"))
+        // if we have agricultural produce, don't let the player get out of Baghdad
+        if ((player.hasItem("10100") ||
+                player.hasItem("10110") ||
+                player.hasItem("10120") ||
+                player.hasItem("10130") ||
+                player.hasItem("10200") ||
+                player.hasItem("10210") ||
+                player.hasItem("10220") ||
+                player.hasItem("10230")) &&
+                !player.hasItem("10640"))
             gotoDialog("1680");
 
         if (Mainframe.DEBUG == 1)
@@ -346,8 +351,7 @@ public class Mainframe extends Frame {
             System.out.println("gotoPlace " + System.currentTimeMillis());
         if (!doActionOnEntering.equals("")) {
             try {
-                // if there was something to run once entering a place, do it
-                // now
+                // if there was something to run once entering a place, do it now
                 String action = doActionOnEntering;
                 doActionOnEntering = "";
                 player.place = to;
