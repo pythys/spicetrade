@@ -64,7 +64,7 @@ public class Sounds {
     }
 
     public void stopAll() {
-        sounds.entrySet().forEach(entry -> entry.getValue().stop());
+        sounds.forEach((key, value) -> value.stop());
         sounds = new Hashtable<>();
     }
 
