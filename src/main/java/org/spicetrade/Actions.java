@@ -1,18 +1,18 @@
 /* Spice Trade
  * Copyright (C) 2005 spicetrade.org
- *  
+ *
  * Author: Juha Holopainen, juhah@spicetrade.org
- *   
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License
  * as published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- 
+
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Library General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -52,7 +52,7 @@ public class Actions extends Collection {
             // Anyway, this piece of ugliness calculates the line across the map by taking in the vector with the
             // coordinates, the number of steps (==days) in the line and the current step (==i) and then calculates
             // the lines required to be drawn
-            
+
             int[] start = coords.elementAt(0);
             int[] end = coords.elementAt(coords.size() - 1);
 
@@ -173,10 +173,10 @@ public class Actions extends Collection {
 
             if (done) {
                 // once we are done, move to the appropriate city etc..
-                
+
                 if (f.player.transport == MapEntry.TRANSPORT3) {
                     // Caravan is a one way ticket
-                    // these kinds of checks should really be refactored straight into the items, and not used here                    
+                    // these kinds of checks should really be refactored straight into the items, and not used here
                     f.player.removeItem("10320");
                     f.player.removeItem("10325");
                     f.player.transport = MapEntry.TRANSPORT1;

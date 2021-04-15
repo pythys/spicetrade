@@ -1,18 +1,18 @@
 /* Spice Trade
  * Copyright (C) 2005 spicetrade.org
- *  
+ *
  * Author: Juha Holopainen, juhah@spicetrade.org
- *   
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License
  * as published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- 
+
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Library General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -42,7 +42,7 @@ public class Task implements Runnable {
     public Task(String action, int times, boolean gotoPlace, String doAfter, int delay) {
         this(action, times, gotoPlace, doAfter, delay, 0);
     }
-    
+
     public Task(String action, int times, boolean gotoPlace, String doAfter, int delay, int delayBefore) {
         this.action = action;
         this.times = times;
@@ -55,11 +55,11 @@ public class Task implements Runnable {
     public void add(String n) {
         add(n, "");
     }
-    
+
     public void add(String n, String v) {
         attr.put(n, v);
     }
-    
+
     public String get(String n) {
         if(has(n)) return attr.get(n); else return null;
     }
@@ -72,15 +72,15 @@ public class Task implements Runnable {
         }
         return 0;
     }
-    
+
     public boolean has(String n) {
         return attr.containsKey(n);
-    }        
-    
+    }
+
     public boolean contains(String n, String v) {
         if (!has(n)) return false;else return (get(n).contains(v));
     }
-    
+
     public void start() {
         this.paused = false;
         if (task == null) {
@@ -133,12 +133,12 @@ public class Task implements Runnable {
     public void pause() {
         this.paused = true;
     }
-    
+
     public void reset() {
         this.stop();
         this.start();
     }
-    
+
     public void stop() {
         try {
             this.task = null;

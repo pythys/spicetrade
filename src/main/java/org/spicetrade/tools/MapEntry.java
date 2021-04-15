@@ -1,18 +1,18 @@
 /* Spice Trade
  * Copyright (C) 2005 spicetrade.org
- *  
+ *
  * Author: Juha Holopainen, juhah@spicetrade.org
- *   
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License
  * as published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- 
+
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Library General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -50,7 +50,7 @@ public class MapEntry {
     public static final int TRANSPORT5 = 4;
     public static final int TRANSPORT6 = 5;
     public static final int TRANSPORT7 = 6;
-    
+
     public static final String[] TRANSPORTS = {
             "walk",
             "horse",
@@ -66,7 +66,7 @@ public class MapEntry {
     public String getDescription(int type) {
         return "Travel to " + nice + "\u00A7" + "This will take you " + getLength(type) + " days.";
     }
-    
+
     public int getLength(int type) {
         int length = 0;
         switch (type) {
@@ -94,7 +94,7 @@ public class MapEntry {
         }
         return length;
     }
-    
+
     public String getAction(int type) {
         String action = "";
 
@@ -142,8 +142,8 @@ public class MapEntry {
     private boolean getBoolean(Boolean b) {
         return b.booleanValue();
     }
-    
+
     public String toString() {
-        return nice + " (" + this.x + ", " + this.y + ") - feet: " + days1 + ", horse: " + days2 + ", caravan: " + days3 + ", flying: " + days4 + ", boat: " + days5; 
+        return nice + " (" + this.x + ", " + this.y + ") - feet: " + days1 + ", horse: " + days2 + ", caravan: " + days3 + ", flying: " + days4 + ", boat: " + days5;
     }
 }

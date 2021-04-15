@@ -1,18 +1,18 @@
 /* Spice Trade
  * Copyright (C) 2005 spicetrade.org
- *  
+ *
  * Author: Juha Holopainen, juhah@spicetrade.org
- *   
+ *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License
  * as published by the Free Software Foundation; either version 2 of
  * the License, or (at your option) any later version.
- 
+
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Library General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Library General Public
  * License along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
@@ -57,22 +57,22 @@ import org.spicetrade.tools.Tools;
 /**
  * Spice Trade The frame for the application, essentially this runs the whole
  * show.
- * 
+ *
  * There are groups of functions, the "goto"-functions serve as the entry points
  * for various elements in the game, ie. gotoPlace renders a place for the
  * player, gotoCity starts moving the player towards a designated city etc.
- * 
+ *
  * The "goto"-functions use the "paint"-functions, which contain the UI/layout
  * logic.
- * 
+ *
  * Then there are the "doAction"-functions that trigger a new thread that starts
  * to do something in the game world, ie. grow a plant, show the movement of the
  * player on the map while going to a new city and so on.
- * 
+ *
  * Then of course there are a bunch of helper functions, like getImage, load,
  * save. The rB() function is used in a lot of scripts, since ' <' and '>'
  * characters are _not_ fun to write when they are stored in XML files :-/
- * 
+ *
  * @author Juha Holopainen
  * @version 1.0
  */
@@ -176,7 +176,7 @@ public class Mainframe extends Frame {
             getImage("statusHashish", "/pics/navigation/icons/hashish_addiction.png", true);
             getImage("statusOpium", "/pics/navigation/icons/opium_addiction.png", true);
             getImage("statusPlague", "/pics/navigation/icons/health.png", true);
-            getImage("playerIcon", "/pics/navigation/icons/abusmall.png", true);            
+            getImage("playerIcon", "/pics/navigation/icons/abusmall.png", true);
             getImage("logoIntro", "/pics/navigation/icons/logos/logo_intro.png", true);
             getImage("logoEvil", "/pics/navigation/icons/logos/logo_bad.png", true);
             getImage("logoAmulet", "/pics/navigation/icons/logos/logo_fatima.png", true);
@@ -376,8 +376,8 @@ public class Mainframe extends Frame {
 
         // CHANGE 26.4.2005 support for full screen mode
         if (player.fullScreen && GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getFullScreenWindow() == null) GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(this);
-        if (!player.fullScreen && GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getFullScreenWindow() != null) GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);        
-        
+        if (!player.fullScreen && GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getFullScreenWindow() != null) GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
+
         isModal = modal;
         this.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         if (to.equals("map")) {
@@ -966,7 +966,7 @@ public class Mainframe extends Frame {
                 panel.add(new Drawable(810, 570, 80, 20, Drawable.LABEL, "Next round", nextTurn.replaceAll("!weapon", "0")));
             } else {
                 player.inBattle = false;
-                
+
                 if (!endTask.equals(""))
                     panel.add(new Drawable(810, 570, 80, 20, Drawable.LABEL, "End battle", "mf.sounds.loopMusic(mf.sounds.lastMusic);mf.player.chooseFace();" + endTask));
                 else if (!endDo.equals(""))
@@ -1002,7 +1002,7 @@ public class Mainframe extends Frame {
             //int x = 980;
             // left side of the window
             int y = getHeight() - 565;
-            int x = 50; 
+            int x = 50;
 
             for (int i = 0, j = items.size(); i < j; i++) {
                 item = items.elementAt(i);
@@ -2107,7 +2107,7 @@ public class Mainframe extends Frame {
                 task = "";
                 int looper = 0;
                 while (tasks.hasMoreElements()) {
-                    
+
                     task = (String) tasks.nextElement();
                     if (looper >= more) {
                         panel.add(new Drawable(x, y, 180, 20, Drawable.LABEL, player.journal.getString(task, "Display"), "res=false;", player.journal
@@ -2439,7 +2439,7 @@ public class Mainframe extends Frame {
             fd.setFile("spicetrade.sav");
             fd.setVisible(true);
             // FIX: 12.4.2005 Changed the loading and save routine so that the directory information is used also
-            String file = fd.getDirectory() + fd.getFile();            
+            String file = fd.getDirectory() + fd.getFile();
             if (fd.getFile() == null) return;
             String load = tools.readFile(file, false);
             sounds.playSound("/music/fx_signal_bell_hitlink.ogg");
@@ -2684,7 +2684,7 @@ public class Mainframe extends Frame {
     }
 
     public void refresh() {
-        // FIX 10.04.2005 - the journal.refresh() is required when loading game 
+        // FIX 10.04.2005 - the journal.refresh() is required when loading game
         player.journal.refresh();
         // this is not really required during non debugging situation
         if (Mainframe.DEBUG > 0) {
