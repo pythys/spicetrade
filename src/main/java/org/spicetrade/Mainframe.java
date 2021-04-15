@@ -542,15 +542,7 @@ public class Mainframe extends Frame {
         isModal = true;
         player.inBattle = true;
         panel.clear();
-//        objects.clear();					// FIX 29.4.2005 No need to repaint the background
         player.chooseFace("16");
-/*
- * FIX 29.4.2005 No need to repaint the background
- *      if (player.place.equals("map"))
- *          paintMap(true);
- *      else
- *          paintPlace();
- */
         paintBattle(who, round, weapon, enemyMight, endTask);
         doLayout();
         repaint();
@@ -584,15 +576,7 @@ public class Mainframe extends Frame {
         nextInt = random.nextInt(100);
         isModal = true;
         panel.clear();
-//        objects.clear();				// FIX 29.4.2005 No need to repaint the background
         player.chooseFace("02");
-/*
- * FIX 29.4.2005 No need to repaint the background
- *      if (player.place.equals("map"))
- *          paintMap(true);
- *      else
- *          paintPlace();
- */
         paintShop(who, state, id, name, price, pageLeft, pageRight);
         doLayout();
         repaint();
@@ -659,7 +643,7 @@ public class Mainframe extends Frame {
         x = 200;
         y = 250;
         int counter = 0;
-        Image image = null;
+        Image image;
 
         // first we paint the items we can buy..
         if (buyItems.size() > per) {
@@ -667,7 +651,7 @@ public class Mainframe extends Frame {
                 panel.add(new Drawable(160, 219, 80, 20, Drawable.LABEL, "<< Previous", "mf.gotoShop(\"" + who + "\", " + state + ", \"" + id + "\", \"" + name
                         + "\", " + price + ", " + (pageLeft - 1) + ", " + pageRight + ");", "Goto previous page"));
 
-            String strPage = "";
+            String strPage;
             int i = 0;
             for (int j = (int) ((buyItems.size() - 1) / per); i <= j; i++) {
                 if (i == j)
