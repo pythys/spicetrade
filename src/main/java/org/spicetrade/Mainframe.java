@@ -25,14 +25,7 @@ import bsh.Interpreter;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.security.AnyTypePermission;
 
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.FileDialog;
-import java.awt.Font;
-import java.awt.Frame;
-import java.awt.Graphics;
-import java.awt.GraphicsEnvironment;
-import java.awt.Image;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
@@ -374,10 +367,15 @@ public class Mainframe extends Frame {
             nextInt = random.nextInt(100);
         }
 
-        // CHANGE 26.4.2005 support for full screen mode
-        if (player.fullScreen && GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getFullScreenWindow() == null) GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(this);
-        if (!player.fullScreen && GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().getFullScreenWindow() != null) GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice().setFullScreenWindow(null);
-
+        boolean fullScreen = player.fullScreen && GraphicsEnvironment
+                .getLocalGraphicsEnvironment()
+                .getDefaultScreenDevice()
+                .getFullScreenWindow() == null;
+        Window gameWindow = fullScreen ? this : null;
+        GraphicsEnvironment
+                .getLocalGraphicsEnvironment()
+                .getDefaultScreenDevice()
+                .setFullScreenWindow(gameWindow);
         isModal = modal;
         this.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
         if (to.equals("map")) {
