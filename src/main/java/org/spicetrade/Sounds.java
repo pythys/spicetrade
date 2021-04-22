@@ -27,6 +27,8 @@ import org.spicetrade.tools.Sound;
 public class Sounds {
 
     public boolean musicOn = true;
+    public String lastMusic = "";
+    public String currentMusic = "";
     private Hashtable<String, Sound> sounds = new Hashtable<>();
 
     public Sounds() { }
@@ -56,6 +58,8 @@ public class Sounds {
         try {
             if (isPlaying(file))
                 return;
+            lastMusic = currentMusic;
+            currentMusic = file;
             stopAll();
             loopSound(file);
         } catch (Exception ex) {
