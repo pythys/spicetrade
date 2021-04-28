@@ -28,17 +28,20 @@ public class LogItem {
     public int when;
 
     public LogItem(String id, String action, int when) {
-        if (Mainframe.DEBUG==1) System.out.println("Logging: " + when + " (" + action + "): " + id);
+        if (Mainframe.DEBUG==1) {
+            System.out.println("Logging: " + when + " (" + action + "): " + id);
+        }
         this.id = id;
         this.action = action;
         this.when = when;
     }
 
     public String getText() {
-        if (id.charAt(0) == '!')
+        if (id.charAt(0) == '!') {
             return Mainframe.me.dialogs.getText(id.substring(1, 5));
-        else
+        } else {
             return id;
+        }
     }
 
     public String getDate() {

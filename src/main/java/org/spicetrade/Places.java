@@ -61,8 +61,9 @@ public class Places extends Collection {
     }
 
     public String getBackground(String place) {
-        if (Mainframe.DEBUG == 1)
+        if (Mainframe.DEBUG == 1) {
             System.out.println("Getting background for: " + place);
+        }
         try {
             Vector<Spicebean> v = getVector(place, "Backgrounds");
             if (v != null && v.size() > 0) {
@@ -93,7 +94,7 @@ public class Places extends Collection {
             Interpreter bsh = new Interpreter();
             bsh.set("mf", Mainframe.me);
 
-            Spicebean sb = new Spicebean();
+            Spicebean sb;
             Drawable d;
 
             for (int i = 0, j = drawables.size(); i < j; i++) {

@@ -98,7 +98,9 @@ public class Task implements Runnable {
             Mainframe mf = Mainframe.me;
             Thread myThread = Thread.currentThread();
             Thread.sleep(delayBefore);
-            if (Mainframe.DEBUG==1) System.out.println("Running thread " + this.task + " (" + myThread.hashCode() + ") - " + System.currentTimeMillis());
+            if (Mainframe.DEBUG==1) {
+                System.out.println("Running thread " + this.task + " (" + myThread.hashCode() + ") - " + System.currentTimeMillis());
+            }
             while (task == myThread) {
                 if (!paused) {
                     String a = action.replaceAll("!counter", String.valueOf(counter++));

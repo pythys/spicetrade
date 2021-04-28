@@ -82,7 +82,15 @@ public class Traders extends Collection {
             Vector<String> v = getVector(who, what);
             for (String s : v) {
                 Item item = mf.market.getItem(s);
-                if (!selling && (item.id.equals("10100") || item.id.equals("10110") || item.id.equals("10120") || item.id.equals("10130") || item.id.equals("10200") || item.id.equals("10210") || item.id.equals("10220") || item.id.equals("10230")) && !mf.player.has(item.id))
+                if (!selling && (item.id.equals("10100") ||
+                        item.id.equals("10110") ||
+                        item.id.equals("10120") ||
+                        item.id.equals("10130") ||
+                        item.id.equals("10200") ||
+                        item.id.equals("10210") ||
+                        item.id.equals("10220") ||
+                        item.id.equals("10230")) &&
+                        !mf.player.has(item.id))
                     res.add(item);
                 else if (mf.player.hasItem(item.id) && selling && !mf.player.hasSold(item.id))
                     res.add(item);

@@ -31,7 +31,6 @@ public class Journal extends Collection {
     Hashtable<String,String> tasksClosed;
     Hashtable<String,String> timestamp;
 
-    // ADD 10.04.2005 -- Want to see the book of life events in the order they happen in
     Vector<String> tasks = new Vector<>();
 
     public static final String xml = "/data/journal.xml";
@@ -63,15 +62,17 @@ public class Journal extends Collection {
 
     public boolean contains(String task, String value) {
         String compare = get(task);
-        if (Mainframe.DEBUG == 1) System.out.println("Checking if task " + task + " contains " + value + " == " + compare.contains(value));
+        if (Mainframe.DEBUG == 1) {
+            System.out.println("Checking if task " + task + " contains " + value + " == " + compare.contains(value));
+        }
         return compare.contains(value);
     }
 
     public String get(String task) {
         if (tasksOpen.containsKey(task))
-            return (String) tasksOpen.get(task);
+            return tasksOpen.get(task);
         else if (tasksClosed.containsKey(task))
-            return (String) tasksClosed.get(task);
+            return tasksClosed.get(task);
         else
             return "";
     }
@@ -95,7 +96,6 @@ public class Journal extends Collection {
             if (!replace)
                 newValue = get(task) + value;
             mf.sounds.playSound("/music/fx_famous_ending.ogg");
-            // ADD 10.04.2005 -- Want the book of life happenings should be in the order they happen in
             tasks.add(task);
             tasksClosed.put(task, newValue);
             tasksOpen.remove(task);
@@ -104,12 +104,16 @@ public class Journal extends Collection {
     }
 
     public boolean isDone(String task) {
-        if (Mainframe.DEBUG == 1) System.out.println("Is task " + task + " done? == " + tasksClosed.containsKey(task));
+        if (Mainframe.DEBUG == 1) {
+            System.out.println("Is task " + task + " done? == " + tasksClosed.containsKey(task));
+        }
         return tasksClosed.containsKey(task);
     }
 
     public void remove(String task) {
-        if (Mainframe.DEBUG == 1) System.out.println("Removing task: " + task);
+        if (Mainframe.DEBUG == 1) {
+            System.out.println("Removing task: " + task);
+        }
         if (has(task)) tasksOpen.remove(task);
     }
 
@@ -118,8 +122,9 @@ public class Journal extends Collection {
     }
 
     public void put(String task, String value) {
-        if (Mainframe.DEBUG == 1) System.out.println("Putting " + value + " to task " + task);
-        // FIX 10.04.2005 -- redundant check for exact value in task
+        if (Mainframe.DEBUG == 1) {
+            System.out.println("Putting " + value + " to task " + task);
+        }
         if (tasksOpen.containsKey(task)) {
             tasksOpen.put(task, value);
             stamp(task);

@@ -63,19 +63,17 @@ public class Market extends Collection {
 
     public Vector<Item> getHelp(String firstLetter) {
         Vector<Item> v = new Vector<>();
-
         try {
             Enumeration<String> items = collection.keys();
             while (items.hasMoreElements()) {
                 Item item = this.getItem(items.nextElement());
-                if (item.id.length()==4)
-                    if (item.name.substring(0,1).toLowerCase().equals(firstLetter.toLowerCase()))
+                if (item.id.length()==4 && item.name.substring(0,1).equalsIgnoreCase(firstLetter)) {
                     v.add(item);
+                }
             }
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-
         return v;
     }
 }
