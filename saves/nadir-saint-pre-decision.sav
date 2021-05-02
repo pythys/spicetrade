@@ -1,0 +1,815 @@
+<org.spicetrade.Player>
+  <attr>
+    <entry>
+      <string>culturevienna</string>
+      <string>-59</string>
+    </entry>
+    <entry>
+      <string>culturebaghdad</string>
+      <string>94</string>
+    </entry>
+    <entry>
+      <string>culturelatakia</string>
+      <string>65</string>
+    </entry>
+    <entry>
+      <string>culturenajaf</string>
+      <string>84</string>
+    </entry>
+    <entry>
+      <string>Name</string>
+      <string>Abu Mansur &apos;abd ar-Rahman al-Qazzaz</string>
+    </entry>
+    <entry>
+      <string>children</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>cultureparis</string>
+      <string>-83</string>
+    </entry>
+    <entry>
+      <string>Special</string>
+      <string>Navigation</string>
+    </entry>
+    <entry>
+      <string>culturebaku</string>
+      <string>75</string>
+    </entry>
+    <entry>
+      <string>culturemadrid</string>
+      <string>-98</string>
+    </entry>
+    <entry>
+      <string>culturebudapest</string>
+      <string>-75</string>
+    </entry>
+    <entry>
+      <string>culturevenice</string>
+      <string>-91</string>
+    </entry>
+    <entry>
+      <string>cultureanjoudan</string>
+      <string>60</string>
+    </entry>
+    <entry>
+      <string>culturelondon</string>
+      <string>-97</string>
+    </entry>
+    <entry>
+      <string>Timeunit</string>
+      <string>AH</string>
+    </entry>
+    <entry>
+      <string>Moneyunit</string>
+      <string>Dirham</string>
+    </entry>
+    <entry>
+      <string>cultureconstantinopol</string>
+      <string>19</string>
+    </entry>
+    <entry>
+      <string>wifes</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturemoscow</string>
+      <string>-87</string>
+    </entry>
+    <entry>
+      <string>highwaymenwon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturelisboa</string>
+      <string>-61</string>
+    </entry>
+    <entry>
+      <string>culturehamburg</string>
+      <string>-93</string>
+    </entry>
+    <entry>
+      <string>dateAndPlace</string>
+      <string>C. 500 AH, Baghdad</string>
+    </entry>
+    <entry>
+      <string>cultureamsterdam</string>
+      <string>-84</string>
+    </entry>
+    <entry>
+      <string>culturekonya</string>
+      <string>51</string>
+    </entry>
+    <entry>
+      <string>abdullahfirst</string>
+      <string></string>
+    </entry>
+  </attr>
+  <soldItems/>
+  <items>
+    <org.spicetrade.tools.Item>
+      <condition>res=false;</condition>
+      <name>Your home</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <id>12050</id>
+      <description>Your home in Baghdad</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <condition>res=false;</condition>
+      <name>Food</name>
+      <picture>/pics/objects/basicfood1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <id>10000</id>
+      <description>Your monthly food diet (costs 5 silver dirhams per month)</description>
+      <helpId>9203</helpId>
+      <pictureBig>/pics/objects/basicfood1_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/basicfood1_25.png</pictureStatus>
+      <price>50</price>
+      <happiness>0</happiness>
+      <monthlyCost>-3</monthlyCost>
+      <health>-2</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <condition>if (mf.player.inPlace(&quot;map&quot;,true)) {res=true;} else {res=false;}</condition>
+      <name>Walk</name>
+      <action>mf.player.transport = MapEntry.TRANSPORT1;mf.gotoMap();</action>
+      <picture>/pics/navigation/icons/walking.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <id>10300</id>
+      <description>Walking is the slowest way of moving</description>
+      <helpId>5090</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/navigation/icons/walking.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field01im.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <id>14005</id>
+      <description>You have mortgaged your field outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_mortgaged_25.png</pictureStatus>
+      <price>2000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <condition>res=false;</condition>
+      <name>Travel permit: Asia</name>
+      <picture>/pics/objects/travelling_license_inland_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <id>10620</id>
+      <description>You are allowed to travel all around in Asia</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/travelling_license_inland_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+    </org.spicetrade.tools.Item>
+  </items>
+  <log>
+    <org.spicetrade.tools.LogItem>
+      <id>I will go to the bank and mortgage my farm.</id>
+      <action>mf.gotoDialog(&quot;1141&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1141</id>
+      <action>mf.gotoDialog(&quot;1141&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Ok</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Uncle Abdullah&apos;s home</id>
+      <action>mf.player.to(184,187);mf.gotoPlace(&quot;brideshome&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to uncle Abdullah</id>
+      <action>mf.player.add(&quot;abdullahfirst&quot;);mf.gotoDialog(&quot;4500&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!4500</id>
+      <action>mf.gotoDialog(&quot;4500&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>I am in desperate need of money, uncle!</id>
+      <action>mf.gotoDialog(&quot;4580&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!4580</id>
+      <action>mf.gotoDialog(&quot;4580&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Please lend me the money</id>
+      <action>mf.player.journal.open(&quot;abdullah1&quot;, &quot;§- I must pay Abdullah 300 silver dirhams back&quot;);mf.player.money+=300;mf.gotoPlace(mf.player.place);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bazaar</id>
+      <action>mf.player.to(396,430);mf.gotoPlace(&quot;bazaar&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bank</id>
+      <action>mf.player.to(518,336);mf.gotoPlace(&quot;bank&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>mf.gotoDialog(&quot;3800&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!3800</id>
+      <action>mf.gotoDialog(&quot;3800&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Mortgage land</id>
+      <action>mf.gotoDialog(&quot;3801&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!3801</id>
+      <action>mf.gotoDialog(&quot;3801&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Ok</id>
+      <action>mf.player.addMoney(400);mf.player.removeItem(&quot;14000&quot;);mf.player.buyItem(&quot;14005&quot;,0);mf.gotoPlace(mf.player.place);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Palace of Baghdad</id>
+      <action>mf.player.to(277,384);mf.gotoPlace(&quot;palace&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to kings official</id>
+      <action>mf.gotoDialog(&quot;1690&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1690</id>
+      <action>mf.gotoDialog(&quot;1690&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Travel permit?</id>
+      <action>mf.gotoDialog(&quot;1692&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1692</id>
+      <action>mf.gotoDialog(&quot;1692&quot;, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Ok, I will come back in nine months</id>
+      <action>if(mf.player.journal.has(&quot;permit1&quot;))mf.player.journal.add(&quot;permit1&quot;, &quot;!9&quot;);else mf.player.journal.open(&quot;permit1&quot;, &quot;!9&quot;);mf.player.money-=mf.market.getPrice(&quot;10620&quot;);mf.gotoPlace(mf.player.place);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bazaar</id>
+      <action>mf.player.to(396,430);mf.gotoPlace(&quot;bazaar&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Do business with merchant</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb§Spice you can grow§Price: 30 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 1, &quot;10100&quot;, &quot;Saffron bulb&quot;,  30, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb (Price: 30)</id>
+      <action>mf.player.buyItem(&quot;10100&quot;, 30);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb§Spice you can grow§Price: 30 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 1, &quot;10100&quot;, &quot;Saffron bulb&quot;,  30, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb (Price: 30)</id>
+      <action>mf.player.buyItem(&quot;10100&quot;, 30);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb§Spice you can grow§Price: 30 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 1, &quot;10100&quot;, &quot;Saffron bulb&quot;,  30, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Buy Saffron bulb (Price: 30)</id>
+      <action>mf.player.buyItem(&quot;10100&quot;, 30);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your fields</id>
+      <action>mf.player.to(572,134);mf.gotoPlace(&quot;fields&quot;);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Saffron bulb§Spice you can grow</id>
+      <action>mf.player.removeItem(&quot;10100&quot;);mf.gotoPlace(mf.player.place,true);mf.player.nextDay(90);if(mf.player.hasItem(&quot;14000&quot;)||mf.player.hasItem(&quot;14005&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14010&quot;)||mf.player.hasItem(&quot;14015&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14020&quot;)||mf.player.hasItem(&quot;14025&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14030&quot;)||mf.player.hasItem(&quot;14035&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14040&quot;)||mf.player.hasItem(&quot;14045&quot;))mf.player.buyItem(&quot;10200&quot;, 0);String dialog = null; int storages = 0;if(mf.player.hasItem(&quot;12000&quot;))storages++;if(mf.player.hasItem(&quot;12001&quot;))storages++;if(mf.player.hasItem(&quot;12002&quot;))storages++;if(mf.player.hasItem(&quot;12003&quot;))storages++;if(mf.player.hasItem(&quot;12004&quot;))storages++;if(mf.player.hasItem(&quot;10200&quot;, 16)&amp;&amp;storages&lt;5){while(mf.player.hasItem(&quot;10200&quot;, 16))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 13)&amp;&amp;storages&lt;4){while(mf.player.hasItem(&quot;10200&quot;, 13))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 10)&amp;&amp;storages&lt;3){while(mf.player.hasItem(&quot;10200&quot;, 10))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 7)&amp;&amp;storages&lt;2){while(mf.player.hasItem(&quot;10200&quot;, 7))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 4)&amp;&amp;storages&lt;1){while(mf.player.hasItem(&quot;10200&quot;, 4))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}String after = &quot;&quot;;if(!mf.doActionOnEntering.equals(&quot;&quot;))after=mf.doActionOnEntering;else if(dialog==null)after=&quot;mf.gotoPlace(mf.player.place);&quot;;else after=&quot;mf.gotoDialog(\&quot;&quot; + dialog + &quot;\&quot;);&quot;;mf.player.health-=5;mf.doAction(&quot;growsaffron&quot;, 304,461, 5, 400, 1500, after);</action>
+      <when>180127</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Saffron bulb§Spice you can grow</id>
+      <action>mf.player.removeItem(&quot;10100&quot;);mf.gotoPlace(mf.player.place,true);mf.player.nextDay(90);if(mf.player.hasItem(&quot;14000&quot;)||mf.player.hasItem(&quot;14005&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14010&quot;)||mf.player.hasItem(&quot;14015&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14020&quot;)||mf.player.hasItem(&quot;14025&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14030&quot;)||mf.player.hasItem(&quot;14035&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14040&quot;)||mf.player.hasItem(&quot;14045&quot;))mf.player.buyItem(&quot;10200&quot;, 0);String dialog = null; int storages = 0;if(mf.player.hasItem(&quot;12000&quot;))storages++;if(mf.player.hasItem(&quot;12001&quot;))storages++;if(mf.player.hasItem(&quot;12002&quot;))storages++;if(mf.player.hasItem(&quot;12003&quot;))storages++;if(mf.player.hasItem(&quot;12004&quot;))storages++;if(mf.player.hasItem(&quot;10200&quot;, 16)&amp;&amp;storages&lt;5){while(mf.player.hasItem(&quot;10200&quot;, 16))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 13)&amp;&amp;storages&lt;4){while(mf.player.hasItem(&quot;10200&quot;, 13))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 10)&amp;&amp;storages&lt;3){while(mf.player.hasItem(&quot;10200&quot;, 10))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 7)&amp;&amp;storages&lt;2){while(mf.player.hasItem(&quot;10200&quot;, 7))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 4)&amp;&amp;storages&lt;1){while(mf.player.hasItem(&quot;10200&quot;, 4))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}String after = &quot;&quot;;if(!mf.doActionOnEntering.equals(&quot;&quot;))after=mf.doActionOnEntering;else if(dialog==null)after=&quot;mf.gotoPlace(mf.player.place);&quot;;else after=&quot;mf.gotoDialog(\&quot;&quot; + dialog + &quot;\&quot;);&quot;;mf.player.health-=5;mf.doAction(&quot;growsaffron&quot;, 304,461, 5, 400, 1500, after);</action>
+      <when>180217</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your home</id>
+      <action>mf.player.to(142,421);mf.gotoPlace(&quot;homepublic&quot;);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to your bedroom</id>
+      <action>mf.gotoPlace(&quot;home&quot;);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest</id>
+      <action>mf.gotoDialog(&quot;8120&quot;);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!8120</id>
+      <action>mf.gotoDialog(&quot;8120&quot;, 0, 0);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest for one month</id>
+      <action>String after = &quot;mf.player.nextMonth();&quot;;if(mf.player.children&lt;3&amp;&amp;mf.player.hasWife(&quot;Umm&quot;)){if(mf.rB(0,5)) {mf.doAction(&quot;makelove&quot;, after);mf.player.addChild(&quot;Anis&quot;);}else mf.doAction(&quot;sleep&quot;, after);}else mf.doAction(&quot;sleep&quot;, after);mf.player.health+=100;mf.gotoPlace(mf.player.place);</action>
+      <when>180307</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180331</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your fields</id>
+      <action>mf.player.to(572,134);mf.gotoPlace(&quot;fields&quot;);</action>
+      <when>180331</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Saffron bulb§Spice you can grow</id>
+      <action>mf.player.removeItem(&quot;10100&quot;);mf.gotoPlace(mf.player.place,true);mf.player.nextDay(90);if(mf.player.hasItem(&quot;14000&quot;)||mf.player.hasItem(&quot;14005&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14010&quot;)||mf.player.hasItem(&quot;14015&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14020&quot;)||mf.player.hasItem(&quot;14025&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14030&quot;)||mf.player.hasItem(&quot;14035&quot;))mf.player.buyItem(&quot;10200&quot;, 0);if(mf.player.hasItem(&quot;14040&quot;)||mf.player.hasItem(&quot;14045&quot;))mf.player.buyItem(&quot;10200&quot;, 0);String dialog = null; int storages = 0;if(mf.player.hasItem(&quot;12000&quot;))storages++;if(mf.player.hasItem(&quot;12001&quot;))storages++;if(mf.player.hasItem(&quot;12002&quot;))storages++;if(mf.player.hasItem(&quot;12003&quot;))storages++;if(mf.player.hasItem(&quot;12004&quot;))storages++;if(mf.player.hasItem(&quot;10200&quot;, 16)&amp;&amp;storages&lt;5){while(mf.player.hasItem(&quot;10200&quot;, 16))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 13)&amp;&amp;storages&lt;4){while(mf.player.hasItem(&quot;10200&quot;, 13))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 10)&amp;&amp;storages&lt;3){while(mf.player.hasItem(&quot;10200&quot;, 10))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 7)&amp;&amp;storages&lt;2){while(mf.player.hasItem(&quot;10200&quot;, 7))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}else if(mf.player.hasItem(&quot;10200&quot;, 4)&amp;&amp;storages&lt;1){while(mf.player.hasItem(&quot;10200&quot;, 4))mf.player.removeItem(&quot;10200&quot;);dialog = &quot;9150&quot;;}String after = &quot;&quot;;if(!mf.doActionOnEntering.equals(&quot;&quot;))after=mf.doActionOnEntering;else if(dialog==null)after=&quot;mf.gotoPlace(mf.player.place);&quot;;else after=&quot;mf.gotoDialog(\&quot;&quot; + dialog + &quot;\&quot;);&quot;;mf.player.health-=5;mf.doAction(&quot;growsaffron&quot;, 304,461, 5, 400, 1500, after);</action>
+      <when>180331</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Palace of Baghdad</id>
+      <action>mf.player.to(277,384);mf.gotoPlace(&quot;palace&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to kings official</id>
+      <action>mf.gotoDialog(&quot;1690&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1690</id>
+      <action>mf.gotoDialog(&quot;1690&quot;, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your processed travel permit</id>
+      <action>mf.player.journal.done(&quot;permit1&quot;, &quot;§- I finally got my travel permit&quot;);mf.showMapGlobe=true;mf.player.buyItem(&quot;10620&quot;, 0);mf.gotoPlace(mf.player.place);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1680</id>
+      <action>mf.gotoDialog(&quot;1680&quot;, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Ok, I will go back to the palace of Baghdad</id>
+      <action>mf.gotoPlace(&quot;palace&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bazaar</id>
+      <action>mf.player.to(396,430);mf.gotoPlace(&quot;bazaar&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Do business with merchant</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron§Spice you can buy and sell§Price: 67 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 2, &quot;10200&quot;, &quot;Saffron&quot;,  67, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron (Price: 67)</id>
+      <action>mf.player.sellItem(&quot;10200&quot;, 67);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron§Spice you can buy and sell§Price: 67 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 2, &quot;10200&quot;, &quot;Saffron&quot;,  67, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron (Price: 67)</id>
+      <action>mf.player.sellItem(&quot;10200&quot;, 67);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron§Spice you can buy and sell§Price: 67 silver dr</id>
+      <action>mf.gotoShop(&quot;baghdad&quot;, 2, &quot;10200&quot;, &quot;Saffron&quot;,  67, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sell Saffron (Price: 67)</id>
+      <action>mf.player.sellItem(&quot;10200&quot;, 67);mf.gotoShop(&quot;baghdad&quot;, 0, &quot;&quot;, &quot;&quot;, 0, 0, 0);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace(&quot;baghdad&quot;);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Najaf</id>
+      <action>mf.gotoCity(&quot;najaf&quot;, &quot;Vector v = new Vector();int[] c1 = {253,138};int[] c2 = {262,96};v.add(c1);v.add(c2);mf.actions.perform(\&quot;walk\&quot;, v, 16, \&quot;najaf\&quot;, \&quot;Najaf\&quot;, !counter, 760, 20, !donep); &quot;, 611, 327, 16);</action>
+      <when>180421</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Nadir the saint</id>
+      <action>mf.player.to(201,472);mf.gotoPlace(&quot;saint&quot;);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to Nadir</id>
+      <action>if (mf.player.journal.isDone(&quot;nadir1&quot;)&amp;&amp;!mf.player.journal.isDone(&quot;nadir2&quot;)) {mf.gotoDialog(&quot;1170&quot;);} else if (mf.player.journal.isDone(&quot;nadir2&quot;)&amp;&amp; !mf.player.journal.isDone(&quot;nadir4&quot;)) {if (!mf.player.journal.isDone(&quot;nadir3&quot;))mf.gotoDialog(&quot;1173&quot;);else mf.gotoDialog(&quot;1172&quot;);} else if (mf.player.journal.isDone(&quot;nadir4&quot;)&amp;&amp; !mf.player.journal.isDone(&quot;nadir6&quot;)) {if (!mf.player.journal.isDone(&quot;nadir5&quot;))mf.gotoDialog(&quot;1175&quot;);else mf.gotoDialog(&quot;1174&quot;);} else if (mf.player.journal.isDone(&quot;nadir6&quot;)&amp;&amp; !mf.player.journal.isDone(&quot;nadir8&quot;)) {if (!mf.player.journal.isDone(&quot;nadir7&quot;))mf.gotoDialog(&quot;1177&quot;);else mf.gotoDialog(&quot;1176&quot;);} else if(mf.player.journal.isDone(&quot;nadir8&quot;))mf.gotoDialog(&quot;1179&quot;);else mf.gotoDialog(&quot;1171&quot;);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1171</id>
+      <action>mf.gotoDialog(&quot;1171&quot;, 0, 0);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Ok</id>
+      <action>mf.player.journal.open(&quot;nadir1&quot;);mf.gotoPlace(mf.player.place);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Najaf</id>
+      <action>mf.gotoPlace(&quot;najaf&quot;);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Najaf</id>
+      <action>mf.gotoPlace(&quot;najaf&quot;);</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Pray in the Shrine of Ali</id>
+      <action>mf.player.to(714,221);mf.player.nextDay(3);mf.doAction(&quot;pray&quot;);mf.player.addGood(1);mf.player.nextDay(3);if(mf.player.journal.has(&quot;nadir1&quot;)){mf.player.journal.add(&quot;nadir1&quot;, &quot;§- You prayed in Najaf&apos;s mosque&quot;);mf.player.addGood(2);}</action>
+      <when>180429</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180435</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Baghdad</id>
+      <action>mf.gotoCity(&quot;baghdad&quot;, &quot;Vector v = new Vector();int[] c1 = {262,96};int[] c2 = {253,138};v.add(c1);v.add(c2);mf.actions.perform(\&quot;walk\&quot;, v, 16, \&quot;baghdad\&quot;, \&quot;Baghdad\&quot;, !counter, 760, 20, !donep); &quot;, 156, 187, 16);</action>
+      <when>180435</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>The Al-Qadirya Shrine</id>
+      <action>mf.player.to(292,278);mf.gotoPlace(&quot;mosque&quot;);</action>
+      <when>180443</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Pray</id>
+      <action>mf.doAction(&quot;pray&quot;);mf.player.addGood(1);mf.player.health+=5;mf.player.nextDay(3);if(mf.player.journal.has(&quot;nadir1&quot;)){mf.player.journal.add(&quot;nadir1&quot;, &quot;§- You prayed in the Baghdad&apos;s mosque&quot;);mf.player.addGood(2);}</action>
+      <when>180443</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180446</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Anjudan</id>
+      <action>mf.gotoCity(&quot;anjoudan&quot;, &quot;Vector v = new Vector();int[] c1 = {253,138};int[] c2 = {176,153};v.add(c1);v.add(c2);mf.actions.perform(\&quot;walk\&quot;, v, 32, \&quot;anjoudan\&quot;, \&quot;Anjudan\&quot;, !counter, 760, 20, !donep); &quot;, 551, 363, 32);</action>
+      <when>180446</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Next round</id>
+      <action>mf.player.nextDay();mf.gotoBattle(&quot;highwaymen&quot;, 2, 0, 11, &quot;&quot;);</action>
+      <when>180448</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Next round</id>
+      <action>mf.player.nextDay();mf.gotoBattle(&quot;highwaymen&quot;, 3, 0, 4, &quot;&quot;);</action>
+      <when>180449</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>End battle</id>
+      <action>mf.sounds.loopMusic(mf.sounds.lastMusic);mf.player.chooseFace();mf.gotoPlace(mf.player.place);</action>
+      <when>180450</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Exit battleground</id>
+      <action>mf.objects.clear();mf.paintMap(false);mf.timer2.start();</action>
+      <when>180450</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Pray in the Mausoleum of Imam Mustansir</id>
+      <action>mf.player.to(833,335);mf.player.health+=5;mf.doAction(&quot;pray&quot;);mf.player.addGood(1);mf.player.nextDay(3);if(mf.player.journal.has(&quot;nadir1&quot;)){mf.player.journal.add(&quot;nadir1&quot;, &quot;§- You prayed in Anjudan&apos;s mosque&quot;);mf.player.addGood(2);}</action>
+      <when>180464</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180467</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Baghdad</id>
+      <action>mf.gotoCity(&quot;baghdad&quot;, &quot;Vector v = new Vector();int[] c1 = {176,153};int[] c2 = {253,138};v.add(c1);v.add(c2);mf.actions.perform(\&quot;walk\&quot;, v, 32, \&quot;baghdad\&quot;, \&quot;Baghdad\&quot;, !counter, 760, 20, !donep); &quot;, 156, 187, 32);</action>
+      <when>180467</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Next round</id>
+      <action>mf.player.nextDay();mf.gotoBattle(&quot;highwaymen&quot;, 2, 0, 2, &quot;&quot;);</action>
+      <when>180480</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>End battle</id>
+      <action>mf.sounds.loopMusic(mf.sounds.lastMusic);mf.player.chooseFace();mf.gotoPlace(mf.player.place);</action>
+      <when>180481</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Exit battleground</id>
+      <action>mf.objects.clear();mf.paintMap(false);mf.timer2.start();</action>
+      <when>180481</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your home</id>
+      <action>mf.player.to(142,421);mf.gotoPlace(&quot;homepublic&quot;);</action>
+      <when>180484</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to your bedroom</id>
+      <action>mf.gotoPlace(&quot;home&quot;);</action>
+      <when>180484</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest</id>
+      <action>mf.gotoDialog(&quot;8120&quot;);</action>
+      <when>180484</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!8120</id>
+      <action>mf.gotoDialog(&quot;8120&quot;, 0, 0);</action>
+      <when>180484</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest for one month</id>
+      <action>String after = &quot;mf.player.nextMonth();&quot;;if(mf.player.children&lt;3&amp;&amp;mf.player.hasWife(&quot;Umm&quot;)){if(mf.rB(0,5)) {mf.doAction(&quot;makelove&quot;, after);mf.player.addChild(&quot;Anis&quot;);}else mf.doAction(&quot;sleep&quot;, after);}else mf.doAction(&quot;sleep&quot;, after);mf.player.health+=100;mf.gotoPlace(mf.player.place);</action>
+      <when>180484</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>180511</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Najaf</id>
+      <action>mf.gotoCity(&quot;najaf&quot;, &quot;Vector v = new Vector();int[] c1 = {253,138};int[] c2 = {262,96};v.add(c1);v.add(c2);mf.actions.perform(\&quot;walk\&quot;, v, 16, \&quot;najaf\&quot;, \&quot;Najaf\&quot;, !counter, 760, 20, !donep); &quot;, 611, 327, 16);</action>
+      <when>180511</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Nadir the saint</id>
+      <action>mf.player.to(201,472);mf.gotoPlace(&quot;saint&quot;);</action>
+      <when>180519</when>
+    </org.spicetrade.tools.LogItem>
+  </log>
+  <fullScreen>false</fullScreen>
+  <x>201</x>
+  <y>472</y>
+  <xHomeCountry>262</xHomeCountry>
+  <yHomeCountry>96</yHomeCountry>
+  <year>501</year>
+  <month>5</month>
+  <day>9</day>
+  <age>18</age>
+  <ageType>young</ageType>
+  <health>135.5</health>
+  <money>297</money>
+  <happiness>30</happiness>
+  <moral>9</moral>
+  <force>5</force>
+  <baseForce>5</baseForce>
+  <culture>-22</culture>
+  <economy>0</economy>
+  <wifes>0</wifes>
+  <children>0</children>
+  <place>saint</place>
+  <city>najaf</city>
+  <nicecity>Nadir the saint</nicecity>
+  <lastPlace>najaf</lastPlace>
+  <logo>logoIntro</logo>
+  <lastWords></lastWords>
+  <inGame>true</inGame>
+  <inBattle>false</inBattle>
+  <inGameOver>false</inGameOver>
+  <transport>0</transport>
+  <journal>
+    <tasksOpen>
+      <entry>
+        <string>permit5</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>abdullah1</string>
+        <string>§- I must pay Abdullah 300 silver dirhams back</string>
+      </entry>
+      <entry>
+        <string>nadir1</string>
+        <string>§- You prayed in Najaf&apos;s mosque§- You prayed in the Baghdad&apos;s mosque§- You prayed in Anjudan&apos;s mosque</string>
+      </entry>
+    </tasksOpen>
+    <tasksClosed>
+      <entry>
+        <string>permit1</string>
+        <string>§- The permit can be retrieved from the sultan&apos;s official§- I finally got my travel permit</string>
+      </entry>
+    </tasksClosed>
+    <timestamp>
+      <entry>
+        <string>permit5</string>
+        <string>180421</string>
+      </entry>
+      <entry>
+        <string>abdullah1</string>
+        <string>180127</string>
+      </entry>
+      <entry>
+        <string>permit1</string>
+        <string>180421</string>
+      </entry>
+      <entry>
+        <string>nadir1</string>
+        <string>180467</string>
+      </entry>
+    </timestamp>
+    <tasks>
+      <string>permit1</string>
+    </tasks>
+  </journal>
+  <addictedHashish>false</addictedHashish>
+  <addictedOpium>false</addictedOpium>
+  <sickPlague>false</sickPlague>
+  <sickGeneral>false</sickGeneral>
+  <sickPoisoned>false</sickPoisoned>
+  <deathType>0</deathType>
+  <difficulty>1</difficulty>
+  <statusFace>/pics/navigation/abus/abu_young11.png</statusFace>
+</org.spicetrade.Player>
