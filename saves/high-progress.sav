@@ -1,0 +1,3958 @@
+<org.spicetrade.Player>
+  <attr>
+    <entry>
+      <string>11680</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturelondon</string>
+      <string>-69</string>
+    </entry>
+    <entry>
+      <string>madriddinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>loverfemale</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>pirateswon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>londondinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>musicians</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>londondaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>wifes</string>
+      <string>Umm, Maria, Sofia-Maria, Klara</string>
+    </entry>
+    <entry>
+      <string>Moneyunit</string>
+      <string>Dirham</string>
+    </entry>
+    <entry>
+      <string>culturebaku</string>
+      <string>22</string>
+    </entry>
+    <entry>
+      <string>11610</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturemadrid</string>
+      <string>-85</string>
+    </entry>
+    <entry>
+      <string>loverparis</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>mahdilove</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>parisdaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>moscowwife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>worker</string>
+      <string>Otto</string>
+    </entry>
+    <entry>
+      <string>loverbudapest</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturemoscow</string>
+      <string>-82</string>
+    </entry>
+    <entry>
+      <string>mahdiwealth</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturevenice</string>
+      <string>-79</string>
+    </entry>
+    <entry>
+      <string>Timeunit</string>
+      <string>AH</string>
+    </entry>
+    <entry>
+      <string>dateAndPlace</string>
+      <string>C. 500 AH, Baghdad</string>
+    </entry>
+    <entry>
+      <string>lovermale</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturevienna</string>
+      <string>-59</string>
+    </entry>
+    <entry>
+      <string>culturelisboa</string>
+      <string>-53</string>
+    </entry>
+    <entry>
+      <string>madriddaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturebaghdad</string>
+      <string>72</string>
+    </entry>
+    <entry>
+      <string>constantinopolwife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>loverhamburg</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>constantinopoldinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>abdullahfirst</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>loverlondon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturelatakia</string>
+      <string>27</string>
+    </entry>
+    <entry>
+      <string>culturekonya</string>
+      <string>46</string>
+    </entry>
+    <entry>
+      <string>loveramsterdam</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>10740</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturenajaf</string>
+      <string>33</string>
+    </entry>
+    <entry>
+      <string>cultureparis</string>
+      <string>-93</string>
+    </entry>
+    <entry>
+      <string>Special</string>
+      <string>Navigation</string>
+    </entry>
+    <entry>
+      <string>11640</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>venicedaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>11051</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>moscowshop</string>
+      <string>0</string>
+    </entry>
+    <entry>
+      <string>parisdinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>umm1</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>wrongbuckle</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturebudapest</string>
+      <string>-60</string>
+    </entry>
+    <entry>
+      <string>lisboadinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>highwaymenwon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>viennawife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>children</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>Name</string>
+      <string>Abu Mansur 'abd ar-Rahman al-Qazzaz</string>
+    </entry>
+    <entry>
+      <string>pariswife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>barhooliganwon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>lovermoscow</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>lovervenice</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>culturehamburg</string>
+      <string>-94</string>
+    </entry>
+    <entry>
+      <string>mahdifirst</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>weddingmusic</string>
+      <string>/music/10_its_time.ogg</string>
+    </entry>
+    <entry>
+      <string>viennadinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>constantinopolshop</string>
+      <string>0</string>
+    </entry>
+    <entry>
+      <string>weddingparty</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>lisboadaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>lovervienna</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>venicedinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>moscowdinner</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>constantinopoldaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>anjoudanwon</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>loverlisboa</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>cultureanjoudan</string>
+      <string>75</string>
+    </entry>
+    <entry>
+      <string>mahdihealth</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>cultureamsterdam</string>
+      <string>-51</string>
+    </entry>
+    <entry>
+      <string>londonwife</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>viennadaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>moscowdaughter</string>
+      <string></string>
+    </entry>
+    <entry>
+      <string>cultureconstantinopol</string>
+      <string>27</string>
+    </entry>
+  </attr>
+  <soldItems/>
+  <items>
+    <org.spicetrade.tools.Item>
+      <id>12050</id>
+      <description>Your home in Baghdad</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Your home</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10300</id>
+      <description>Walking is the slowest way of moving</description>
+      <helpId>5090</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/navigation/icons/walking.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>if (mf.player.inPlace("map",true)) {res=true;} else {res=false;}</condition>
+      <name>Walk</name>
+      <action>mf.player.transport = MapEntry.TRANSPORT1;mf.gotoMap();</action>
+      <picture>/pics/navigation/icons/walking.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10620</id>
+      <description>You are allowed to travel all around in Asia</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/travelling_license_inland_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Travel permit: Asia</name>
+      <picture>/pics/objects/travelling_license_inland_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11015</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5070</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>2</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111010")||mf.player.itemHere("111011")||mf.player.itemHere("111012")||mf.player.itemHere("111013")||mf.player.itemHere("111014")||mf.player.itemHere("111015"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s hand</name>
+      <action>mf.player.switchItem("11015", "111015");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11000</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5071</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>1</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111000")||mf.player.itemHere("111001")||mf.player.itemHere("111002")||mf.player.itemHere("111003")||mf.player.itemHere("111004")||mf.player.itemHere("111005"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s eye</name>
+      <action>mf.player.switchItem("11000", "111000");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10800</id>
+      <description>Books of Ibn Rushd al-Hafid vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110800"))||(mf.player.inPlace("parismuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110800"))){res=true;}else{res=false;}</condition>
+      <name>Books of Ibn Rushd al-Hafid vol I</name>
+      <action>mf.player.switchItem("10800", "110800");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10830</id>
+      <description>A masterpiece by handicraft guild of Najaf</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/miniature_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110830")||mf.player.itemHere("11083§"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Miniature painting</name>
+      <action>mf.player.switchItem("10830", "110830");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/miniature_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11050</id>
+      <description>The buckle of the ear god Geshtu-e protects you from the Evil Eye</description>
+      <helpId>5029</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/belt1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111050"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Buckle of Geshtu-e</name>
+      <action>mf.player.switchItem("11050", "111050");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/belt1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11010</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5070</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>2</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111010")||mf.player.itemHere("111011")||mf.player.itemHere("111012")||mf.player.itemHere("111013")||mf.player.itemHere("111014")||mf.player.itemHere("111015"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s hand</name>
+      <action>mf.player.switchItem("11010", "111010");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10640</id>
+      <description>You are allowed to work and trade in Hamburg</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_export_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Export permit: Baghdad</name>
+      <picture>/pics/objects/license_export_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10652</id>
+      <description>You are allowed to work and trade in Constantinople</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Constantinople</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>14000</id>
+      <description>Your fields in outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field00i.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10315</id>
+      <description>You can move faster than caravan</description>
+      <helpId>5090</helpId>
+      <pictureBig>/pics/objects/horse_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/horse_25.png</pictureStatus>
+      <price>3000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Horse</name>
+      <picture>/pics/objects/horse_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10310</id>
+      <description>You can move faster than caravan</description>
+      <helpId>5090</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/navigation/icons/horse.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>if (mf.player.inPlace("map",true)) {res=true;} else {res=false;}</condition>
+      <name>Horse</name>
+      <action>mf.player.transport = MapEntry.TRANSPORT2;mf.gotoMap();</action>
+      <picture>/pics/navigation/icons/horse.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12082</id>
+      <description>Your shop in Constantinople (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Constantinople</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12062</id>
+      <description>Your home in Constantinople</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Constantinople</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10630</id>
+      <description>You are allowed to travel to Europe</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/travelling_license_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Travel permit: Europe</name>
+      <picture>/pics/objects/travelling_license_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10657</id>
+      <description>You are allowed to work and trade in London</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: London</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12087</id>
+      <description>Your shop in Moscow (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Moscow</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12067</id>
+      <description>Your home in Moscow</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Moscow</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10365</id>
+      <description>The vehicle that you can travel with to Europe</description>
+      <helpId>5090</helpId>
+      <pictureBig>/pics/objects/boat_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/boat_25.png</pictureStatus>
+      <price>30000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Boat</name>
+      <picture>/pics/objects/boat_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10360</id>
+      <description>The vehicle that you can travel with to Europe</description>
+      <helpId>5090</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/navigation/icons/boat.png</pictureStatus>
+      <price>5000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>if (mf.player.inPlace("map",true)) {res=true;} else {res=false;}</condition>
+      <name>Boat</name>
+      <action>mf.player.transport = MapEntry.TRANSPORT5;mf.gotoMap();</action>
+      <picture>/pics/navigation/icons/boat.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12083</id>
+      <description>Your shop in Hamburg (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Hamburg</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12063</id>
+      <description>Your home in Hamburg</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Hamburg</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10653</id>
+      <description>A permit for working and doing business in Hamburg</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Permit, working</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>16000</id>
+      <description>Head of your fields</description>
+      <helpId>3690</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/farmer02_25.png</pictureStatus>
+      <price>5000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>res=false;</condition>
+      <name>Farmer, Hieronymus</name>
+      <picture>/pics/objects/farmer01_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12080</id>
+      <description>Your shop in Amsterdam (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Amsterdam</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12060</id>
+      <description>Your home in Amsterdam</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Amsterdam</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10650</id>
+      <description>You are allowed to work and trade in Amsterdam</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Amsterdam</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>16010</id>
+      <description>Head of your business</description>
+      <helpId>5150</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/merchant_25.png</pictureStatus>
+      <price>5000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>res=false;</condition>
+      <name>Merchant, Wlric</name>
+      <picture>/pics/objects/merchant_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12085</id>
+      <description>Your shop in London (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in London</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12065</id>
+      <description>Your home in London</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in London</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10655</id>
+      <description>You are allowed to work and trade in London</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: London</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>16020</id>
+      <description>Head of your army</description>
+      <helpId>9201</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/soldier_25.png</pictureStatus>
+      <price>5000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>res=false;</condition>
+      <name>Soldier, Mark</name>
+      <picture>/pics/objects/soldier03_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>16030</id>
+      <description>Head of your art collection</description>
+      <helpId>9202</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/purveyor_25.png</pictureStatus>
+      <price>5000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>false</inventory>
+      <condition>res=false;</condition>
+      <name>Purveyor, Peter</name>
+      <picture>/pics/objects/purveyor_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12088</id>
+      <description>Your shop in Paris (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Paris</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12068</id>
+      <description>Your home in Paris</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Paris</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10658</id>
+      <description>You are allowed to work and trade in Paris</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Paris</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12086</id>
+      <description>Your shop in Madrid (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Madrid</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12066</id>
+      <description>Your home in Madrid</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Madrid</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10656</id>
+      <description>You are allowed to work and trade in London</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: London</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12084</id>
+      <description>Your shop in Lisbon (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Lisbon</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12064</id>
+      <description>Your home in Lisbon</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Lisbon</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10654</id>
+      <description>You are allowed to work and trade in Lisbon</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Lisbon</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12089</id>
+      <description>Your shop in Venice (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Venice</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12069</id>
+      <description>Your home in Venice</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Venice</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10659</id>
+      <description>You are allowed to work and trade in Venice</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Venice</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10751</id>
+      <description>A glorious carpet from Afghanistan</description>
+      <helpId>5230</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/carpet_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110750")||mf.player.itemHere("110751"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Carpet </name>
+      <action>mf.player.switchItem("10751", "110751");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/carpet_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10733</id>
+      <description>Luxurious wool from India</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/fabric_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110730")||mf.player.itemHere("110731")||mf.player.itemHere("110732")||mf.player.itemHere("110733"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Wool</name>
+      <action>mf.player.switchItem("10733", "110733");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/fabric_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12090</id>
+      <description>Your shop in Vienna (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Vienna</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12070</id>
+      <description>Your home in Vienna</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Vienna</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10660</id>
+      <description>You are allowed to work and trade in Vienna</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Working permit: Vienna</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12081</id>
+      <description>Your shop in Budapest (upkeep is 100 silver dirhams per month)</description>
+      <helpId>3460</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/shop_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Shop in Budapest</name>
+      <picture>/pics/objects/shop_abroad_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12061</id>
+      <description>Your home in Budapest</description>
+      <helpId>3430</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/home_abroad_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Home in Budapest</name>
+      <picture>/pics/objects/home_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10651</id>
+      <description>A permit for working and doing business in Budapest</description>
+      <helpId>3510</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/license_working_status.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Permit, working</name>
+      <picture>/pics/objects/license_working_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12001</id>
+      <description>Storage for your agricultural produce</description>
+      <helpId>3660</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/storage_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Warehouse</name>
+      <picture>/pics/objects/storage_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12002</id>
+      <description>Storage for your agricultural produce</description>
+      <helpId>3660</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/storage_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Warehouse </name>
+      <picture>/pics/objects/storage_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12030</id>
+      <description>You have built a gazebo to entertain your guest and family</description>
+      <helpId>3350</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/pavillion_25.png</pictureStatus>
+      <price>400</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Gazebo</name>
+      <picture>/pics/objects/pavillion_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12004</id>
+      <description>Storage for your agricultural produce</description>
+      <helpId>3660</helpId>
+      <pictureBig>/pics/objects/storage_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/storage_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Warehouse </name>
+      <picture>/pics/objects/storage_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12003</id>
+      <description>Storage for your agricultural produce</description>
+      <helpId>3660</helpId>
+      <pictureBig>/pics/objects/storage_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/storage_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Warehouse </name>
+      <picture>/pics/objects/storage_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>12000</id>
+      <description>Storage for your agricultural produce</description>
+      <helpId>3660</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/storage_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Warehouse</name>
+      <picture>/pics/objects/storage_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>14010</id>
+      <description>Your fields in outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field02i.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>14020</id>
+      <description>Your fields in outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field03i.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>14030</id>
+      <description>Your fields in outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field04i.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>14040</id>
+      <description>Your fields in outside of Baghdad</description>
+      <helpId>3670</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/field01_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Fields</name>
+      <picture>/pics/objects/field01i.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11500</id>
+      <description>Your first piece of the map</description>
+      <helpId>5140</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/mappiece1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Piece of map #1</name>
+      <picture>/pics/objects/mappiece1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item reference="../org.spicetrade.tools.Item[66]"/>
+    <org.spicetrade.tools.Item reference="../org.spicetrade.tools.Item[66]"/>
+    <org.spicetrade.tools.Item>
+      <id>10750</id>
+      <description>A splendid carpet from Bijar</description>
+      <helpId>5230</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/carpet_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110750")||mf.player.itemHere("110751"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Carpet </name>
+      <action>mf.player.switchItem("10750", "110750");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/carpet_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10801</id>
+      <description>Books of Ibn Rushd al-Hafid vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110801"))||(mf.player.inPlace("parismuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110801"))){res=true;}else{res=false;}</condition>
+      <name>Books of Ibn Rushd al-Hafid vol II</name>
+      <action>mf.player.switchItem("10801", "110801");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10802</id>
+      <description>Poetry books of Nizami of Gandja vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110802"))||(mf.player.inPlace("venicemuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110802"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Nizami of Gandja vol I</name>
+      <action>mf.player.switchItem("10802", "110802");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10803</id>
+      <description>Poetry books of Nizami of Gandja vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110803"))||(mf.player.inPlace("amsterdammuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110803"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Nizami of Gandja vol II</name>
+      <action>mf.player.switchItem("10803", "110803");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10804</id>
+      <description>Books of Dzalaladdin Rumi vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110804"))||(mf.player.inPlace("budapestmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110804"))){res=true;}else{res=false;}</condition>
+      <name>Books of Dzalaladdin Rumi vol I</name>
+      <action>mf.player.switchItem("10804", "110804");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10805</id>
+      <description>Books of Dzalaladdin Rumi vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110805"))||(mf.player.inPlace("hamburgmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110805"))){res=true;}else{res=false;}</condition>
+      <name>Books of Dzalaladdin Rumi vol II</name>
+      <action>mf.player.switchItem("10805", "110805");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10806</id>
+      <description>Studies of Omar Khayyam vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110806"))||(mf.player.inPlace("hamburgmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110806"))){res=true;}else{res=false;}</condition>
+      <name>Studies of Omar Khayyam vol I</name>
+      <action>mf.player.switchItem("10806", "110806");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10807</id>
+      <description>Studies of Omar Khayyam vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110807"))||(mf.player.inPlace("londonmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110807"))){res=true;}else{res=false;}</condition>
+      <name>Studies of Omar Khayyam vol II</name>
+      <action>mf.player.switchItem("10807", "110807");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10808</id>
+      <description>Poetry books of Sa’adi of Shiraz vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110808"))||(mf.player.inPlace("viennamuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110808"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Sa’adi of Shiraz vol I</name>
+      <action>mf.player.switchItem("10808", "110808");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10809</id>
+      <description>Poetry books of Sa’adi of Shiraz vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110809"))||(mf.player.inPlace("lisboamuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110809"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Sa’adi of Shiraz vol II</name>
+      <action>mf.player.switchItem("10809", "110809");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10832</id>
+      <description>Philosophical texts of Ibn al-Arabi vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110832"))||(mf.player.inPlace("lisboamuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110832"))){res=true;}else{res=false;}</condition>
+      <name>Philosophical texts of Ibn al-Arabi vol I</name>
+      <action>mf.player.switchItem("10832", "110832");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10833</id>
+      <description>Philosofical texts of Ibn al-Arabi vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110833"))||(mf.player.inPlace("madridmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110833"))){res=true;}else{res=false;}</condition>
+      <name>Philosophical texts of Ibn al-Arabi vol II</name>
+      <action>mf.player.switchItem("10833", "110833");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10834</id>
+      <description>Poetry books of Yunus Emre vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110834"))||(mf.player.inPlace("venicemuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110834"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Yunus Emre vol I</name>
+      <action>mf.player.switchItem("10834", "110834");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10835</id>
+      <description>Poetry books of Yunus Emre vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110835"))||(mf.player.inPlace("budapestmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110835"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Yunus Emre vol II</name>
+      <action>mf.player.switchItem("10835", "110835");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10836</id>
+      <description>Poetry books of Khwaju vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110836"))||(mf.player.inPlace("moscowmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110836"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Khwaju vol I</name>
+      <action>mf.player.switchItem("10836", "110836");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10837</id>
+      <description>Poetry books of Khwaju vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110837"))||(mf.player.inPlace("amsterdammuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110837"))){res=true;}else{res=false;}</condition>
+      <name>Poetry books of Khwaju vol II</name>
+      <action>mf.player.switchItem("10837", "110837");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10838</id>
+      <description>World history of Ibn al-Athir vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110838"))||(mf.player.inPlace("moscowmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110838"))){res=true;}else{res=false;}</condition>
+      <name>World history of Ibn al-Athir vol I</name>
+      <action>mf.player.switchItem("10838", "110838");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10839</id>
+      <description>World history of Ibn al-Athir vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110839"))||(mf.player.inPlace("viennamuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110839"))){res=true;}else{res=false;}</condition>
+      <name>World history of Ibn al-Athir vol II</name>
+      <action>mf.player.switchItem("10839", "110839");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10840</id>
+      <description>Studies of Ibn Tufayl vol I</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110840"))||(mf.player.inPlace("londonmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110840"))){res=true;}else{res=false;}</condition>
+      <name>Studies of Ibn Tufayl vol I</name>
+      <action>mf.player.switchItem("10840", "110840");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10841</id>
+      <description>Studies of Ibn Tufayl vol II</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bookstand_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if((mf.player.inPlace("library", true)&amp;&amp;mf.player.itemsHere()&lt;10)||(mf.player.inPlace("library")&amp;&amp;!mf.player.inPlace("library",true)&amp;&amp;!mf.player.itemHere("110841"))||(mf.player.inPlace("madridmuseum")&amp;&amp;!mf.player.inPlace("museum",true)&amp;&amp;!mf.player.itemHere("110841"))){res=true;}else{res=false;}</condition>
+      <name>Studies of Ibn Tufayl vol II</name>
+      <action>mf.player.switchItem("10841", "110841");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/poem_book_50.jpg</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11001</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5071</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>1</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111000")||mf.player.itemHere("111001")||mf.player.itemHere("111002")||mf.player.itemHere("111003")||mf.player.itemHere("111004")||mf.player.itemHere("111005"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s eye</name>
+      <action>mf.player.switchItem("11001", "111001");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11681</id>
+      <description>Another set of golden plates from the grave of Tiglath-Pileser I</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/coin_25.png</pictureStatus>
+      <price>665</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111680")||mf.player.itemHere("111681"))res=false;else res=true;}else{res=false;}</condition>
+      <name>More golden plates</name>
+      <action>mf.player.switchItem("11681", "111681");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/coin_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11700</id>
+      <description>There is good dzinn inside the Magic lamp...</description>
+      <helpId>3630</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/lamp_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>0</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>The Magic Lamp</name>
+      <picture>/pics/objects/lamp_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11011</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5070</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>2</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111010")||mf.player.itemHere("111011")||mf.player.itemHere("111012")||mf.player.itemHere("111013")||mf.player.itemHere("111014")||mf.player.itemHere("111015"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s hand</name>
+      <action>mf.player.switchItem("11011", "111011");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10770</id>
+      <description>A steady supply of coffee from Africa (costs 50 silver dirhams per month)</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/coffee_25.png</pictureStatus>
+      <price>1000</price>
+      <happiness>1</happiness>
+      <monthlyCost>-50</monthlyCost>
+      <health>1</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Coffee</name>
+      <picture>/pics/objects/coffee_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10745</id>
+      <description>A luxury product from India</description>
+      <helpId>5300</helpId>
+      <pictureBig>/pics/objects/parfume_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/parfume_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>2</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Lily perfume</name>
+      <picture>/pics/objects/parfume_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10720</id>
+      <description>A delicious food diet (costs 100 silver dirhams per month)</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/basicfood3_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>-100</monthlyCost>
+      <health>2</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Luxurious food</name>
+      <picture>/pics/objects/basicfood3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11671</id>
+      <description>The golden goblet of Eriba-Adad I</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/chalet_25.png</pictureStatus>
+      <price>340</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111670")||mf.player.itemHere("111671")||mf.player.itemHere("111672")||mf.player.itemHere("111673"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Goblet of Eriba-Adad I</name>
+      <action>mf.player.switchItem("11671", "111671");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/chalet_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11670</id>
+      <description>The golden goblet of Eriba-Adad I</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/chalet_25.png</pictureStatus>
+      <price>320</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111670")||mf.player.itemHere("111671")||mf.player.itemHere("111672")||mf.player.itemHere("111673"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Goblet of Eriba-Adad I</name>
+      <action>mf.player.switchItem("11670", "111670");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/chalet_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10811</id>
+      <description>A masterpiece by handicraft guild of Anjudan</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/statue_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110810")||mf.player.itemHere("110811")||mf.player.itemHere("110812"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Statue</name>
+      <action>mf.player.switchItem("10811", "110811");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/statue_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10741</id>
+      <description>A luxury product from India</description>
+      <helpId>5300</helpId>
+      <pictureBig>/pics/objects/parfume_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/parfume_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Jasmine perfume</name>
+      <picture>/pics/objects/parfume_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11052</id>
+      <description>The buckle of the growth god Tammuz protects you from the Evil Eye</description>
+      <helpId>5029</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/belt3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111052"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Buckle of Tammuz</name>
+      <action>mf.player.switchItem("11052", "111052");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/belt3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10710</id>
+      <description>A luxury product from Oman</description>
+      <helpId>5420</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/incense_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>1</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Incense</name>
+      <picture>/pics/objects/incense_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11012</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5070</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>2</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111010")||mf.player.itemHere("111011")||mf.player.itemHere("111012")||mf.player.itemHere("111013")||mf.player.itemHere("111014")||mf.player.itemHere("111015"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s hand</name>
+      <action>mf.player.switchItem("11012", "111012");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11002</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5071</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>1</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111000")||mf.player.itemHere("111001")||mf.player.itemHere("111002")||mf.player.itemHere("111003")||mf.player.itemHere("111004")||mf.player.itemHere("111005"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s eye</name>
+      <action>mf.player.switchItem("11002", "111002");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10810</id>
+      <description>A masterpiece of Baghdad scholarship</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/statue_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110810")||mf.player.itemHere("110811")||mf.player.itemHere("110812"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Statue</name>
+      <action>mf.player.switchItem("10810", "110810");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/statue_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10731</id>
+      <description>Luxurious silk from China</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/fabric_25.png</pictureStatus>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110730")||mf.player.itemHere("110731")||mf.player.itemHere("110732")||mf.player.itemHere("110733"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Silk</name>
+      <action>mf.player.switchItem("10731", "110731");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/fabric_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11650</id>
+      <description>A very fragile and valuable crystal bottle</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/bowl1_25.png</pictureStatus>
+      <price>200</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111650")||mf.player.itemHere("111651")||mf.player.itemHere("111652"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Crystal bottle</name>
+      <action>mf.player.switchItem("11650", "111650");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/bowl1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10730</id>
+      <description>Luxurious wool from Kashmir</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/fabric_25.png</pictureStatus>
+      <who>moscowmarket</who>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110730")||mf.player.itemHere("110731")||mf.player.itemHere("110732")||mf.player.itemHere("110733"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Wool</name>
+      <action>mf.player.switchItem("10730", "110730");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/fabric_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10732</id>
+      <description>Luxurious silk from Korea</description>
+      <helpId>5370</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/fabric_25.png</pictureStatus>
+      <who>moscowmarket</who>
+      <price>500</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110730")||mf.player.itemHere("110731")||mf.player.itemHere("110732")||mf.player.itemHere("110733"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Silk</name>
+      <action>mf.player.switchItem("10732", "110732");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/fabric_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10740</id>
+      <description>Perfume found in the tomb of Ashurbanipal</description>
+      <helpId>5300</helpId>
+      <pictureBig>/pics/objects/parfume_100.png</pictureBig>
+      <pictureStatus>/pics/objects/status/parfume_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>1</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Ashurbanipal's perfume</name>
+      <picture>/pics/objects/parfume_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11510</id>
+      <description>Your second piece of the map</description>
+      <helpId>5140</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/mappiece2_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Piece of map #2</name>
+      <picture>/pics/objects/mappiece2_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11520</id>
+      <description>Your third piece of the map</description>
+      <helpId>5140</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/mappiece3_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Piece of map #3</name>
+      <picture>/pics/objects/mappiece3_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11003</id>
+      <description>This amulet protects you from the Evil Eye</description>
+      <helpId>5071</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/amulet1_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>1</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111000")||mf.player.itemHere("111001")||mf.player.itemHere("111002")||mf.player.itemHere("111003")||mf.player.itemHere("111004")||mf.player.itemHere("111005"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Fatima’s eye</name>
+      <action>mf.player.switchItem("11003", "111003");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/amulet1_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11600</id>
+      <description>Golden pair of candlesticks</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/candlestick_25.png</pictureStatus>
+      <price>300</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111600")||mf.player.itemHere("111601")||mf.player.itemHere("111602")||mf.player.itemHere("111603")||mf.player.itemHere("111604"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Candle stick</name>
+      <action>mf.player.switchItem("11600", "111600");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/candlestick_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10760</id>
+      <description>A luxurious set of porcelain from China</description>
+      <helpId>5210</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/ceramic_25.png</pictureStatus>
+      <price>700</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110760"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Porcelain</name>
+      <action>mf.player.switchItem("10760", "110760");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/ceramic_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11030</id>
+      <description>You can turn somebody’s mind with potion of love</description>
+      <helpId>5200</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/love_potion_25.png</pictureStatus>
+      <price>100</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>res=false;</condition>
+      <name>Potion of love</name>
+      <picture>/pics/objects/love_potion_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11053</id>
+      <description>The buckle of the god Urshamb protects you from the Evil Eye</description>
+      <helpId>5029</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/belt4_25.png</pictureStatus>
+      <price>0</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111053"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Buckle of Urshamb</name>
+      <action>mf.player.switchItem("11053", "111053");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/belt4_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>10812</id>
+      <description>A masterpiece by handicraft guild of Baku</description>
+      <helpId>3620</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/statue_25.png</pictureStatus>
+      <price>1500</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("110810")||mf.player.itemHere("110811")||mf.player.itemHere("110812"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Statue</name>
+      <action>mf.player.switchItem("10812", "110812");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/statue_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+    <org.spicetrade.tools.Item>
+      <id>11620</id>
+      <description>The chest of Puzur-Ashur III</description>
+      <helpId>3330</helpId>
+      <pictureBig></pictureBig>
+      <pictureStatus>/pics/objects/status/treasure2_25.png</pictureStatus>
+      <price>400</price>
+      <happiness>0</happiness>
+      <monthlyCost>0</monthlyCost>
+      <health>0</health>
+      <force>0</force>
+      <culture>0</culture>
+      <economy>0</economy>
+      <amount>1</amount>
+      <random>0</random>
+      <inventory>true</inventory>
+      <condition>if(mf.player.inPlace("museum",true)||mf.player.inPlace("museum")){if(mf.player.itemHere("111620"))res=false;else res=true;}else{res=false;}</condition>
+      <name>Treasure chest</name>
+      <action>mf.player.switchItem("11620", "111620");mf.gotoPlace(mf.player.place);</action>
+      <picture>/pics/objects/treasure2_50.png</picture>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+    </org.spicetrade.tools.Item>
+  </items>
+  <log>
+    <org.spicetrade.tools.LogItem>
+      <id>!5030</id>
+      <action>mf.gotoDialog("5030", 0, 0);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("amsterdam");mf.gotoPlace(mf.player.place);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.rB(0,5))mf.gotoDialog("5000");else mf.gotoDialog("5030");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!5030</id>
+      <action>mf.gotoDialog("5030", 0, 0);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("amsterdam");mf.gotoPlace(mf.player.place);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.rB(0,5))mf.gotoDialog("5000");else mf.gotoDialog("5030");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!5030</id>
+      <action>mf.gotoDialog("5030", 0, 0);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("amsterdam");mf.gotoPlace(mf.player.place);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.rB(0,5))mf.gotoDialog("5000");else mf.gotoDialog("5030");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!5030</id>
+      <action>mf.gotoDialog("5030", 0, 0);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("amsterdam");mf.gotoPlace(mf.player.place);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Amsterdam</id>
+      <action>mf.gotoPlace("amsterdam");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Palace</id>
+      <action>mf.player.to(681,537);mf.gotoPlace("amsterdampalace");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to dutch official</id>
+      <action>mf.gotoDialog("4800");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!4800</id>
+      <action>mf.gotoDialog("4800", 0, 0);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Nothing</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Amsterdam</id>
+      <action>mf.gotoPlace("amsterdam");</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Hamburg</id>
+      <action>mf.gotoCity("hamburg", "Vector v = new Vector();int[] c1 = {604,543};int[] c2 = {575,568};int[] c3 = {570,532};v.add(c1);v.add(c2);v.add(c3);mf.actions.perform(\"boat\", v, 4, \"hamburg\", \"Hamburg\", !counter, 760, 20, !donep); ", 514, 341, 4);</action>
+      <when>183274</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Visit St. Michaelis</id>
+      <action>mf.player.to(516,380);mf.player.nextDay(3, true);mf.doAction("hamburgchurch");</action>
+      <when>183276</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Visit Museum für Vor- und Frühgeschichte</id>
+      <action>mf.player.to(609,266);mf.player.nextDay(3, true);mf.doAction("hamburgmuseum");</action>
+      <when>183279</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>183282</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Al-ladhiqiyah</id>
+      <action>mf.gotoCity("latakia", "Vector v = new Vector();int[] c1 = {570,532};int[] c2 = {575,568};int[] c3 = {629,549};int[] c4 = {695,572};int[] c5 = {806,448};int[] c6 = {692,333};int[] c7 = {574,212};int[] c8 = {452,196};v.add(c1);v.add(c2);v.add(c3);v.add(c4);v.add(c5);v.add(c6);v.add(c7);v.add(c8);mf.actions.perform(\"boat\", v, 54, \"latakia\", \"Al-ladhiqiyah\", !counter, 760, 20, !donep); ", 554, 306, 54);</action>
+      <when>183282</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>End battle</id>
+      <action>mf.sounds.loopMusic(mf.sounds.lastMusic);mf.player.chooseFace();mf.gotoPlace(mf.player.place);</action>
+      <when>183287</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Exit battle</id>
+      <action>mf.objects.clear();mf.paintMap(false);mf.timer2.start();</action>
+      <when>183287</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Al-ladhiqiyah</id>
+      <action>mf.gotoPlace("latakia");</action>
+      <when>183309</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Al-ladhiqiyah</id>
+      <action>mf.gotoPlace("latakia");</action>
+      <when>183309</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>183309</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Horse§You can move faster than caravan</id>
+      <action>mf.player.transport = MapEntry.TRANSPORT2;mf.gotoMap();</action>
+      <when>183309</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Konya</id>
+      <action>mf.gotoCity("konya", "Vector v = new Vector();int[] c1 = {452,196};int[] c2 = {440,205};int[] c3 = {486,241};v.add(c1);v.add(c2);v.add(c3);mf.actions.perform(\"horse\", v, 4, \"konya\", \"Konya\", !counter, 760, 20, !donep); ", 384, 388, 4);</action>
+      <when>183309</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>183311</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Constantinople</id>
+      <action>mf.gotoCity("constantinopol", "Vector v = new Vector();int[] c1 = {486,241};int[] c2 = {505,354};v.add(c1);v.add(c2);mf.actions.perform(\"horse\", v, 14, \"constantinopol\", \"Constantinople\", !counter, 760, 20, !donep); ", 528, 303, 14);</action>
+      <when>183311</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bank</id>
+      <action>mf.player.to(134,208);mf.gotoPlace("constantinopolbank");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.player.has(mf.player.city+"wife"))mf.gotoDialog("6030"); else if(mf.player.has(mf.player.city+"daughter"))mf.gotoDialog("6020"); else mf.gotoDialog("6010");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!6020</id>
+      <action>mf.gotoDialog("6020", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Sorry, but no</id>
+      <action>mf.gotoPlace(mf.player.place);mf.player.add(mf.player.city + "wife");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.player.has(mf.player.city+"wife"))mf.gotoDialog("6030"); else if(mf.player.has(mf.player.city+"daughter"))mf.gotoDialog("6020"); else mf.gotoDialog("6010");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!6030</id>
+      <action>mf.gotoDialog("6030", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("constantinopol");mf.gotoPlace(mf.player.place);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>if(mf.player.has(mf.player.city+"wife"))mf.gotoDialog("6030"); else if(mf.player.has(mf.player.city+"daughter"))mf.gotoDialog("6020"); else mf.gotoDialog("6010");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!6030</id>
+      <action>mf.gotoDialog("6030", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Yes. Please give me the money generated by the shop.</id>
+      <action>mf.player.getShopMoney("constantinopol");mf.gotoPlace(mf.player.place);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Constantinople</id>
+      <action>mf.gotoPlace("constantinopol");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Palace</id>
+      <action>mf.player.to(519,185);mf.gotoPlace("constantinopolpalace");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to constanopolis official</id>
+      <action>mf.gotoDialog("3970");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!3970</id>
+      <action>mf.gotoDialog("3970", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Nothing, thank you</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Constantinople</id>
+      <action>mf.gotoPlace("constantinopol");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Harbor</id>
+      <action>mf.player.to(153,319);mf.gotoPlace("constantinopolharbor");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Enter pub</id>
+      <action>mf.gotoPlace("constantinopolpub");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to stranger</id>
+      <action>mf.gotoDialog("7000");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!7000</id>
+      <action>mf.gotoDialog("7000", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>I would like to buy your services</id>
+      <action>mf.player.add("worker", "Otto");mf.gotoShop("workerfarmer");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk with pub owner</id>
+      <action>mf.gotoDialog("9220");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!9220</id>
+      <action>mf.gotoDialog("9220", 0, 0);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>I would like to see your stock, maybe I could by something</id>
+      <action>mf.gotoShop(mf.player.city + "pub");</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of the world</id>
+      <action>mf.gotoMap();</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to Baghdad</id>
+      <action>mf.gotoCity("baghdad", "Vector v = new Vector();int[] c1 = {505,354};int[] c2 = {486,241};int[] c3 = {253,138};v.add(c1);v.add(c2);v.add(c3);mf.actions.perform(\"horse\", v, 48, \"baghdad\", \"Baghdad\", !counter, 760, 20, !donep); ", 156, 187, 48);</action>
+      <when>183318</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your home</id>
+      <action>mf.player.to(142,421);mf.gotoPlace("homepublic");</action>
+      <when>183342</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to your bedroom</id>
+      <action>mf.gotoPlace("home");</action>
+      <when>183342</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest</id>
+      <action>mf.gotoDialog("8120");</action>
+      <when>183342</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!8120</id>
+      <action>mf.gotoDialog("8120", 0, 0);</action>
+      <when>183342</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Rest for one month</id>
+      <action>String after = "mf.player.nextMonth();";if(mf.player.children&lt;3&amp;&amp;mf.player.hasWife("Umm")){if(mf.rB(0,5)) {mf.doAction("makelove", after);mf.player.addChild("Anis");}else mf.doAction("sleep", after);}else mf.doAction("sleep", after);mf.player.health+=100;mf.gotoPlace(mf.player.place);</action>
+      <when>183342</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your home</id>
+      <action>mf.player.to(142,421);mf.gotoPlace("homepublic");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Call Soldier</id>
+      <action>mf.gotoDialog("5560");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!5560</id>
+      <action>mf.gotoDialog("5560", 0, 0);</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Nothing thank you</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Your pavillion</id>
+      <action>mf.player.to(951,531);mf.gotoPlace("pavilion");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Doctor</id>
+      <action>mf.player.to(412,215);mf.gotoPlace("doctor");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to doctor</id>
+      <action>mf.gotoDialog("1281");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1281</id>
+      <action>mf.gotoDialog("1281", 0, 0);</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Please check my health (20 silver dirhams)</id>
+      <action>mf.player.nextDay(3);mf.gotoDialog("1282");</action>
+      <when>183361</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1282</id>
+      <action>mf.gotoDialog("1282", 0, 0);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>You are completely fine.</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to doctor</id>
+      <action>mf.gotoDialog("1281");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!1281</id>
+      <action>mf.gotoDialog("1281", 0, 0);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Do nothing</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Bank</id>
+      <action>mf.player.to(518,336);mf.gotoPlace("bank");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to bank manager</id>
+      <action>mf.gotoDialog("3800");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!3800</id>
+      <action>mf.gotoDialog("3800", 0, 0);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Do nothing</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Harbor</id>
+      <action>mf.player.to(600,410);mf.gotoPlace("harbor");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Talk to employers</id>
+      <action>mf.gotoDialog("3710");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>!3710</id>
+      <action>mf.gotoDialog("3710", 0, 0);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>No</id>
+      <action>mf.gotoPlace(mf.player.place);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>The grave of Puzur-Ashur III</id>
+      <action>mf.player.to(755,50);mf.gotoPlace("grave4");mf.player.journal.done("grave4", "§- Found the grave in Baghdad", true);</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Eye of Fatima</id>
+      <action>mf.player.buyItem("11003",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Candlestick</id>
+      <action>mf.player.buyItem("11600",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Porcelain</id>
+      <action>mf.player.buyItem("10760",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Love potion</id>
+      <action>mf.player.buyItem("11030",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>The buckle of the god Urshamb</id>
+      <action>mf.player.buyItem("11053",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Statue</id>
+      <action>mf.player.buyItem("10812",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Treasure chest</id>
+      <action>mf.player.buyItem("11620",0);mf.gotoPlace("grave4");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+    <org.spicetrade.tools.LogItem>
+      <id>Go to map of Baghdad</id>
+      <action>mf.gotoPlace("baghdad");</action>
+      <when>183364</when>
+    </org.spicetrade.tools.LogItem>
+  </log>
+  <fullScreen>false</fullScreen>
+  <x>755</x>
+  <y>50</y>
+  <xHomeCountry>253</xHomeCountry>
+  <yHomeCountry>138</yHomeCountry>
+  <year>509</year>
+  <month>4</month>
+  <day>4</day>
+  <age>26</age>
+  <ageType>young</ageType>
+  <health>224.3999999999997</health>
+  <money>253831</money>
+  <happiness>250</happiness>
+  <moral>84</moral>
+  <force>29</force>
+  <baseForce>29</baseForce>
+  <culture>-21</culture>
+  <economy>0</economy>
+  <wifes>4</wifes>
+  <children>0</children>
+  <place>baghdad</place>
+  <city>baghdad</city>
+  <nicecity>Baghdad</nicecity>
+  <lastPlace>grave4</lastPlace>
+  <logo>logoIntro</logo>
+  <lastWords></lastWords>
+  <inGame>true</inGame>
+  <inBattle>false</inBattle>
+  <inGameOver>false</inGameOver>
+  <transport>1</transport>
+  <journal>
+    <tasksOpen>
+      <entry>
+        <string>permit11</string>
+        <string>!7!9!9!9!9!9</string>
+      </entry>
+      <entry>
+        <string>hafaza1</string>
+        <string></string>
+      </entry>
+    </tasksOpen>
+    <tasksClosed>
+      <entry>
+        <string>marriage3</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>nadir4</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>marriage2</string>
+        <string>§- My wealth impressed uncle Abdullah</string>
+      </entry>
+      <entry>
+        <string>nadir3</string>
+        <string>§- You prayed in Al-ladhiqiyah's mosque§- You prayed in Konya's mosque</string>
+      </entry>
+      <entry>
+        <string>nadir2</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>nadir1</string>
+        <string>§- You prayed in Anjudan's mosque§- You prayed in the Baghdad's mosque§- You prayed in Najaf's mosque</string>
+      </entry>
+      <entry>
+        <string>permit5</string>
+        <string>§- I did an expensive journey in Constantinople</string>
+      </entry>
+      <entry>
+        <string>permit4</string>
+        <string>§- The permit can be retrieved from the sultan's official§- I finally got my export permit</string>
+      </entry>
+      <entry>
+        <string>wifevienna</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>permit1</string>
+        <string>§- The permit can be retrieved from the sultan's official§- I finally got my travel permit</string>
+      </entry>
+      <entry>
+        <string>abdullah2</string>
+        <string>§- Umm al-Khair Amat al-Jabbar asked me to come back later and see her§- Uncle Abdullah asked me to come to see him later§- I waited one month to see Umm again§- I'm soon married, I just have to find this buckle of guardian god Ningizzia§- I brought back the buckle§- Very soon, Umm will be mine. I only have to get rid of Hasan-i-Sabah§- Hasan-i-Sabah will worry Abdullah no more§- There is only the wedding party to arrange and then Umm will be my wife§- I should go and see the tavern keeper about the wedding preparations§- I arranged a grand wedding party§- I finally got married with Umm</string>
+      </entry>
+      <entry>
+        <string>abdullah1</string>
+        <string>§- I must pay Abdullah 300 silver dirhams back§- I paid Abdullah his money back</string>
+      </entry>
+      <entry>
+        <string>nadir11</string>
+        <string>§- I drank the holy shahdanag potion</string>
+      </entry>
+      <entry>
+        <string>permit12</string>
+        <string>§- The permit can be retrieved from the king's official§- I finally got my travel permit</string>
+      </entry>
+      <entry>
+        <string>wifemoscow</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>mahdi1</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>wifeparis</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>grave4</string>
+        <string>§- Found the grave in Baghdad</string>
+      </entry>
+      <entry>
+        <string>nadir8</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>nadir7</string>
+        <string>§- You prayed in Baku's mosque</string>
+      </entry>
+      <entry>
+        <string>grave3</string>
+        <string>§- Found the grave in Baku</string>
+      </entry>
+      <entry>
+        <string>marriage5</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>grave2</string>
+        <string>§- Found the grave in Constantinople</string>
+      </entry>
+      <entry>
+        <string>nadir6</string>
+        <string></string>
+      </entry>
+      <entry>
+        <string>nadir5</string>
+        <string>§- You prayed in Constantinople's mosque</string>
+      </entry>
+      <entry>
+        <string>grave1</string>
+        <string>§- Mahdi had Borak take me to the grave site in Baku</string>
+      </entry>
+    </tasksClosed>
+    <timestamp>
+      <entry>
+        <string>marriage3</string>
+        <string>182871</string>
+      </entry>
+      <entry>
+        <string>nadir4</string>
+        <string>182245</string>
+      </entry>
+      <entry>
+        <string>marriage2</string>
+        <string>182248</string>
+      </entry>
+      <entry>
+        <string>nadir3</string>
+        <string>182245</string>
+      </entry>
+      <entry>
+        <string>nadir2</string>
+        <string>180525</string>
+      </entry>
+      <entry>
+        <string>nadir1</string>
+        <string>180525</string>
+      </entry>
+      <entry>
+        <string>permit5</string>
+        <string>181454</string>
+      </entry>
+      <entry>
+        <string>permit4</string>
+        <string>181381</string>
+      </entry>
+      <entry>
+        <string>wifevienna</string>
+        <string>183178</string>
+      </entry>
+      <entry>
+        <string>permit1</string>
+        <string>180409</string>
+      </entry>
+      <entry>
+        <string>abdullah2</string>
+        <string>182874</string>
+      </entry>
+      <entry>
+        <string>abdullah1</string>
+        <string>182131</string>
+      </entry>
+      <entry>
+        <string>nadir11</string>
+        <string>182466</string>
+      </entry>
+      <entry>
+        <string>hafaza1</string>
+        <string>182424</string>
+      </entry>
+      <entry>
+        <string>permit12</string>
+        <string>182272</string>
+      </entry>
+      <entry>
+        <string>permit11</string>
+        <string>183114</string>
+      </entry>
+      <entry>
+        <string>wifemoscow</string>
+        <string>183060</string>
+      </entry>
+      <entry>
+        <string>mahdi1</string>
+        <string>182466</string>
+      </entry>
+      <entry>
+        <string>wifeparis</string>
+        <string>182971</string>
+      </entry>
+      <entry>
+        <string>grave4</string>
+        <string>183364</string>
+      </entry>
+      <entry>
+        <string>nadir8</string>
+        <string>182466</string>
+      </entry>
+      <entry>
+        <string>grave3</string>
+        <string>183127</string>
+      </entry>
+      <entry>
+        <string>nadir7</string>
+        <string>182466</string>
+      </entry>
+      <entry>
+        <string>nadir6</string>
+        <string>182424</string>
+      </entry>
+      <entry>
+        <string>grave2</string>
+        <string>182831</string>
+      </entry>
+      <entry>
+        <string>marriage5</string>
+        <string>182874</string>
+      </entry>
+      <entry>
+        <string>nadir5</string>
+        <string>182424</string>
+      </entry>
+      <entry>
+        <string>grave1</string>
+        <string>180525</string>
+      </entry>
+    </timestamp>
+    <tasks>
+      <string>permit1</string>
+      <string>nadir1</string>
+      <string>nadir2</string>
+      <string>grave1</string>
+      <string>permit4</string>
+      <string>permit5</string>
+      <string>abdullah1</string>
+      <string>nadir3</string>
+      <string>nadir4</string>
+      <string>marriage2</string>
+      <string>permit12</string>
+      <string>nadir5</string>
+      <string>nadir6</string>
+      <string>nadir7</string>
+      <string>nadir8</string>
+      <string>nadir11</string>
+      <string>mahdi1</string>
+      <string>grave2</string>
+      <string>marriage3</string>
+      <string>marriage5</string>
+      <string>abdullah2</string>
+      <string>wifeparis</string>
+      <string>wifemoscow</string>
+      <string>grave3</string>
+      <string>wifevienna</string>
+      <string>grave4</string>
+    </tasks>
+  </journal>
+  <addictedHashish>false</addictedHashish>
+  <addictedOpium>false</addictedOpium>
+  <sickPlague>false</sickPlague>
+  <sickGeneral>false</sickGeneral>
+  <sickPoisoned>false</sickPoisoned>
+  <deathType>0</deathType>
+  <difficulty>1</difficulty>
+  <statusFace>/pics/navigation/abus/abu_young17.png</statusFace>
+</org.spicetrade.Player>
