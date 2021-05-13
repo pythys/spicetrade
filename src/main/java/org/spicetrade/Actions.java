@@ -45,13 +45,20 @@ public class Actions extends Collection {
         this.refresh(xml);
     }
 
-    public void perform(String action, Vector<int[]> coords, int days, String to, String nicecity, int i, int x, int y, boolean done) {
+    public void perform(String action,
+                        Vector<int[]> coords,
+                        int days, // number of steps
+                        String to,
+                        String nicecity,
+                        int i, // current step
+                        int x,
+                        int y,
+                        boolean done) {
         try {
-            // I'm sure there is a wonderful algorithm that does this in a more clean and elegant way, but no time to fix
-            // something that seems to work ok.
-            // Anyway, this piece of ugliness calculates the line across the map by taking in the vector with the
-            // coordinates, the number of steps (==days) in the line and the current step (==i) and then calculates
-            // the lines required to be drawn
+            // calculate the line across the map by taking in the vector with
+            // the coordinates, the number of steps (==days) in the line and
+            // the current step (==i) and then calculate the lines required to
+            // be drawn
 
             int[] start = coords.elementAt(0);
             int[] end = coords.elementAt(coords.size() - 1);
