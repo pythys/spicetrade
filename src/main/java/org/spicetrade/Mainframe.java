@@ -210,9 +210,8 @@ public class Mainframe extends Frame {
 
     public void paint(Graphics g) {
         // the paint routine is pretty simple, we just loop through the drawable
-        // items
-        // and draw them in the buffer. once we are done, the buffer is drawn to
-        // the screen
+        // items and draw them in the buffer. once we are done, the buffer is
+        // drawn to the screen
 
         if (Mainframe.DEBUG == 2)
             System.out.println("Painting screen " + System.currentTimeMillis());
@@ -249,10 +248,8 @@ public class Mainframe extends Frame {
             g.drawImage(offscreen, 0, 0, this);
         } catch (Exception ex) {
             // once in a while the drawable vectors are out of sync and we don't
-            // want to
-            // show that error message to the player, since it does not matter,
-            // everything
-            // just gets drawn again, if there was a problem
+            // want to show that error message to the player, since it does not
+            // matter, everything just gets drawn again, if there was a problem
             if (Mainframe.DEBUG == 1)
                 ex.printStackTrace();
         }
@@ -394,11 +391,9 @@ public class Mainframe extends Frame {
             doLayout();
             repaint();
 
-            // the "events" in a place are triggered "before" entering the
-            // place, but after
-            // drawing. so it's sort of like pre-enter place event, but
-            // post-draw.. if we would
-            // have a true event mechanism, that is
+            // the "events" in a place are triggered "before" entering the place
+            // but after drawing. so it's sort of like pre-enter place event,
+            // but post-draw, if we would have a true event mechanism, that is
             player.place = old;
             Vector<Spicebean> events = places.getEvents(to);
             if (events != null && events.size() > 0) {
@@ -427,7 +422,7 @@ public class Mainframe extends Frame {
             paintMap(false);
             player.to(xcity, ycity);
             //createTimer(action, 1000, 200, days);
-            // evevntually this is done using the Actions class, which is run by
+            // eventually this is done using the Actions class, which is run by
             // the Task threading thingy
             createTask(action, 1000, 200, days);
         }
@@ -486,8 +481,7 @@ public class Mainframe extends Frame {
         String[] cities = { "!Baghdad", "!Najaf", "!Anjudan", "!Konya", "!Al-ladhiqiyah", "!Baku", "!Constantinople" };
         if (player.hasItem("11500") && player.hasItem("11510") && player.hasItem("11520") && player.hasItem("11530")) {
             // if we have four map pieces then open a new "find the grave with
-            // treasures" quest
-            // this should not really be in the game engine
+            // treasures" quest this should not really be in the game engine
             int which = 0;
             if (rB(0, 14))
                 which = 0;
@@ -965,8 +959,7 @@ public class Mainframe extends Frame {
     public void paintMap(boolean showIcon) {
         try {
             // first we get the active map entries, which depend on the
-            // transport type and also if we have a travel
-            // permit to europe
+            // transport type and also if we have a travel permit to europe
             objects.add(new Drawable(0, 0, getHeight(), getWidth(), Drawable.IMAGE, getImage(map.getBackground())));
             MapEntry entry = new MapEntry();
             Vector<MapEntry> entries = map.getEntries(player.city, player.transport, (player.hasItem("10630") && player.transport != MapEntry.TRANSPORT3));
