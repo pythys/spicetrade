@@ -52,11 +52,8 @@ Once build is complete. The system can run using below command:
 
 ## Revival Initiative
 
-   This game almost went out of existence and the original website spicetrade.org
-   went offline. Thankfully the maintainer had a copy of the original source code
-   which was upgraded to more modern versions of Java and now people can continue
-   to enjoy this game.
+The original game was hosted in spicetrace.org but it discontinued and the copy
+that remains is in [sourceforge](https://sourceforge.net/projects/spicetrade)
 
-   This initiative was taken because otherwise that game would no longer exist in
-   source code form, and hence never have the ability to fix bugs and make
-   improvements.
+Moreover, the game source code no longer compiles with later versions of Java.
+So it was updated to work with the newer versions of the Java.
