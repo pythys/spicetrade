@@ -55,18 +55,21 @@ task copyProps(type: Copy) {
     into 'build/spicetrade'
 }
 
-task packageLinux(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+task packageLinux(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
+    dependsOn build
     platform = 'linux'
     createTarball = true
     jrePath = file(System.properties['java.home'])
     finalizedBy copyProps
 }
-task packageMac(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+task packageMac(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
+    dependsOn build
     platform = 'mac'
     createTarball = true
     finalizedBy copyProps
 }
-task packageWindows(type: io.github.fvarrui.javapackager.gradle.PackageTask, dependsOn: build) {
+task packageWindows(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
+    dependsOn build
     platform = 'windows'
     createZipball = true
     finalizedBy copyProps
