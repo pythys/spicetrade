@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'io.github.fvarrui:javapackager:1.5.1'
+        classpath 'io.github.fvarrui:javapackager:1.7.2'
     }
 }
 apply plugin: 'application'
