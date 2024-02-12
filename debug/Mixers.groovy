@@ -3,7 +3,7 @@ import javax.sound.sampled.DataLine
 import groovy.json.JsonOutput
 
 def mixerInfos = AudioSystem.getMixerInfo() as List
-mixerInfos.findAll{info -> info.getName().contains('Generic_1')}.each { mixerInfo ->
+mixerInfos.each { mixerInfo ->
     def mixerMap = [
         name: mixerInfo.getName(),
         vendor: mixerInfo.getVendor(),
