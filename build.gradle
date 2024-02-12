@@ -11,9 +11,15 @@ apply plugin: 'io.github.fvarrui.javapackager.plugin'
 
 repositories {
     mavenCentral()
+    maven {
+        url 'https://mvn.0110.be/releases'
+        name 'TarsosDSP repository'
+    }
 }
 
 dependencies {
+    implementation 'be.tarsos.dsp:core:2.5'
+    implementation 'be.tarsos.dsp:jvm:2.5'
     implementation 'com.github.trilarion:java-vorbis-support:1.2.1'
     implementation 'com.thoughtworks.xstream:xstream:1.4.16'
     implementation 'org.beanshell:bsh:2.0b5'
