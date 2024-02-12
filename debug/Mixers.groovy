@@ -8,13 +8,13 @@ def infoMaps = mixerInfos.stream().map { mixerInfo ->
     def sourceFormats = AudioSystem.getMixer(mixerInfo)
             .getSourceLineInfo()
             .stream()
-            .filter { it instanceof DataLine.Info}
+            .filter { it instanceof DataLine.Info }
             .map { it.formats }
             .collect(Collectors.toList())
     def targetFormats = AudioSystem.getMixer(mixerInfo)
             .getTargetLineInfo()
             .stream()
-            .filter { it instanceof DataLine.Info}
+            .filter { it instanceof DataLine.Info }
             .map { it.formats }
             .collect(Collectors.toList())
     def fullInfo = [
