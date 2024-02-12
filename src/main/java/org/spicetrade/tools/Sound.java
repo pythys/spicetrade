@@ -74,7 +74,7 @@ public class Sound implements Runnable {
                 AudioInputStream dataIn = AudioSystem.getAudioInputStream(targetFormat, fileIn);
                 DataLine.Info info = new DataLine.Info(SourceDataLine.class, targetFormat);
                 List<Mixer.Info> mixerInfos = Arrays.asList(AudioSystem.getMixerInfo());
-                Mixer mixer = AudioSystem.getMixer(mixerInfos.get(10));
+                Mixer mixer = AudioSystem.getMixer(mixerInfos.get(mixerInfos.size() - 1));
                 SourceDataLine line = (SourceDataLine) mixer.getLine(info);
                 if (line == null) { stop(); return; }
                 this.playing = true;
