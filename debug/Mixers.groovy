@@ -1,33 +1,31 @@
+import groovy.json.JsonOutput
+import java.util.stream.Collectors
 import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.DataLine
-import groovy.json.JsonOutput
 
 def mixerInfos = AudioSystem.getMixerInfo() as List
-mixerInfos.each { mixerInfo ->
-    def mixerMap = [
+def infoMaps = mixerInfos.stream().map { mixerInfo ->
+    def sourceFormats = AudioSystem.getMixer(mixerInfo)
+            .getSourceLineInfo()
+            .stream()
+            .filter { it instanceof DataLine.Info}
+            .map { it.formats }
+            .collect(Collectors.toList())
+    def targetFormats = AudioSystem.getMixer(mixerInfo)
+            .getTargetLineInfo()
+            .stream()
+            .filter { it instanceof DataLine.Info}
+            .map { it.formats }
+            .collect(Collectors.toList())
+    def fullInfo = [
         name: mixerInfo.getName(),
+        description: mixerInfo.getDescription(),
         vendor: mixerInfo.getVendor(),
         version: mixerInfo.getVersion(),
-        description: mixerInfo.getDescription()
+        sourceFormats: sourceFormats,
+        targetFormats: targetFormats
     ]
-    def mixer = AudioSystem.getMixer(mixerInfo)
-    def sourceLineInfo = mixer.getSourceLineInfo()
-    sourceLineInfo.each { info ->
-        if (info instanceof DataLine.Info) {
-            def dataLineInfo = (DataLine.Info) info
-            def supportedFormats = dataLineInfo.formats
-            supportedFormats.each { format ->
-                def formatMap = [
-                    *:mixerMap,
-                    sampleRate: format.sampleRate,
-                    sampleSizeInBits: format.sampleSizeInBits,
-                    channels: format.channels,
-                    frameSize: format.frameSize,
-                    frameRate: format.frameRate,
-                    bigEndian: format.bigEndian
-                ]
-            println(JsonOutput.prettyPrint(JsonOutput.toJson(formatMap)))
-            }
-        }
-    }
-}
+    return fullInfo
+}.collect(Collectors.toList())
+
+println(JsonOutput.prettyPrint(JsonOutput.toJson(infoMaps)))
