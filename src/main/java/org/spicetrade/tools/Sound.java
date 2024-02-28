@@ -75,6 +75,9 @@ public class Sound implements Runnable {
                 DataLine.Info info = new DataLine.Info(SourceDataLine.class, targetFormat);
                 List<Mixer.Info> mixerInfos = Arrays.asList(AudioSystem.getMixerInfo());
                 Mixer mixer = AudioSystem.getMixer(mixerInfos.get(mixerInfos.size() - 1));
+                /* TODO switch to default mixer if none selected using below code
+                 * which requires adding a mixer option in Settings.java
+                 * SourceDataLine line = (SourceDataLine) AudioSystem.getLine(info); */
                 SourceDataLine line = (SourceDataLine) mixer.getLine(info);
                 if (line == null) { stop(); return; }
                 this.playing = true;
