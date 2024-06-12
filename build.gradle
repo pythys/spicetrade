@@ -19,7 +19,9 @@ dependencies {
     implementation 'org.beanshell:bsh:2.0b5'
 }
 
-mainClassName = 'org.spicetrade.Game'
+application {
+    mainClass = 'org.spicetrade.Game'
+}
 
 tasks.withType(JavaCompile) {
     options.compilerArgs << "-Xlint:unchecked"
