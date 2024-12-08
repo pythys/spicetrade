@@ -32,7 +32,7 @@ How? You decide!
 
 ### prerequisites
 
-Java JRE version 8 is required for this game to run
+Java JRE version 8 or above
 
 ### Building
 
