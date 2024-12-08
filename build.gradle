@@ -20,12 +20,11 @@ dependencies {
 }
 
 application {
-    mainClass = 'org.spicetrade.Game'
+    mainClass.set('org.spicetrade.Game')
 }
 
-tasks.withType(JavaCompile) {
-    options.compilerArgs << "-Xlint:unchecked"
-    options.compilerArgs << "-Xlint:deprecation"
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs.addAll(["-Xlint:unchecked", "-Xlint:deprecation"])
 }
 
 tasks.withType(Jar) {
@@ -34,22 +33,24 @@ tasks.withType(Jar) {
 
 jar {
     manifest {
-        attributes 'Built-By': 'Taher Alkhateeb'
-        attributes 'Main-Class': 'org.spicetrade.Game'
-        attributes 'Implementation-Title': 'Spice Trade'
-        attributes 'Implementation-Version': '2.0'
-        attributes 'Implementation-Vendor': 'pythys.com'
-        attributes 'Implementation-URL': 'https://www.pythys.com'
+        attributes (
+            'Built-By': 'Taher Alkhateeb',
+            'Main-Class': 'org.spicetrade.Game',
+            'Implementation-Title': 'Spice Trade',
+            'Implementation-Version': '2.0',
+            'Implementation-Vendor': 'pythys.com',
+            'Implementation-URL': 'https://www.pythys.com'
+        )
     }
     from {
-        configurations.runtimeClasspath.collect {
+        configurations.runtimeClasspath.get().collect {
             it.isDirectory() ? it : zipTree(it)
         }
     }
 }
 
 javapackager {
-    mainClass = mainClassName
+    mainClass = application.mainClass.get()
     bundleJre = true
     generateInstaller = true
 }
