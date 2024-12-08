@@ -42,7 +42,9 @@ jar {
         attributes 'Implementation-URL': 'https://www.pythys.com'
     }
     from {
-        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
+        configurations.runtimeClasspath.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
     }
 }
 

@@ -1,7 +1,7 @@
 /* Spice Trade
- * Copyright (C) 2005 spicetrade.org
+ * Copyright (C) 2024 pythys
  *
- * Author: Juha Holopainen, juhah@spicetrade.org
+ * Author: Taher Alkhateeb, taher@pythys.com
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Library General Public License
