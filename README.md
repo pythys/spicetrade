@@ -38,7 +38,7 @@ How? You decide!
 
 ### prerequisites
 
-Java JRE version 8 or above
+Java JRE version 21 or above
 
 ### Building
 
@@ -62,5 +62,5 @@ The original game was hosted in spicetrace.org but it discontinued and the copy
 that remains is in [sourceforge](https://sourceforge.net/projects/spicetrade)
 
 Moreover, the game source code no longer compiles with later versions of Java.
-So it was updated to work with the newer versions of the Java and the sound
-system was improved and simplified.
+So it was updated to work with newer Java versions and the sound system was
+improved and simplified.
