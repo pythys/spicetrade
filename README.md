@@ -22,6 +22,12 @@ beat out the Europeans in the spice trade?
 Could Europe have been different?
 How? You decide!
 
+![main menu](./images/main-menu.png)
+![traveling](./images/traveling.png)
+![saint nadir](./images/saint-nadir.png)
+![market trade](./images/market-trade.png)
+![battle](./images/battle.png)
+
 ## Table of Contents
 
 - [Setup](#setup)
@@ -56,4 +62,5 @@ The original game was hosted in spicetrace.org but it discontinued and the copy
 that remains is in [sourceforge](https://sourceforge.net/projects/spicetrade)
 
 Moreover, the game source code no longer compiles with later versions of Java.
-So it was updated to work with the newer versions of the Java.
+So it was updated to work with the newer versions of the Java and the sound
+system was improved and simplified.
