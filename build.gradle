@@ -1,13 +1,9 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'io.github.fvarrui:javapackager:1.7.2'
-    }
+plugins {
+    id 'application'
+    id 'org.panteleyev.jpackageplugin' version '1.7.3'
 }
-apply plugin: 'application'
-apply plugin: 'io.github.fvarrui.javapackager.plugin'
+
+group = 'com.pythys'
 
 repositories {
     mavenCentral()
@@ -24,20 +20,16 @@ application {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    options.compilerArgs.addAll(["-Xlint:unchecked", "-Xlint:deprecation"])
+    options.compilerArgs.addAll(['-Xlint:unchecked', '-Xlint:deprecation'])
 }
 
-tasks.withType(Jar) {
+tasks.withType(Jar).configureEach {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
-}
-
-jar {
     manifest {
-        attributes (
+        attributes(
             'Built-By': 'Taher Alkhateeb',
             'Main-Class': 'org.spicetrade.Game',
             'Implementation-Title': 'Spice Trade',
-            'Implementation-Version': '2.0',
             'Implementation-Vendor': 'pythys.com',
             'Implementation-URL': 'https://www.pythys.com'
         )
@@ -49,35 +41,31 @@ jar {
     }
 }
 
-javapackager {
-    mainClass = application.mainClass.get()
-    bundleJre = true
-    generateInstaller = true
-}
+import org.panteleyev.jpackage.ImageType
 
-task copyProps(type: Copy) {
-    from 'spicetrade.properties'
-    into 'build/spicetrade'
-}
+jpackage {
+    input = file("$buildDir/install/spicetrade")
+    appName = 'SpiceTrade'
+    appVersion = project.version
+    mainClass = 'org.spicetrade.Game'
+    mainJar = "$buildDir/libs/spicetrade.jar"
+    javaOptions = ['-Xmx512m']
+    destination = layout.buildDirectory.dir("dist")
 
-task packageLinux(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
-    dependsOn build
-    platform = 'linux'
-    createTarball = true
-    jrePath = file(System.properties['java.home'])
-    finalizedBy copyProps
+    windows {
+        type        = ImageType.MSI
+        winMenu     = true
+        winShortcut = true
+        licenseFile = file('LICENSE')
+    }
+    mac {
+        type        = ImageType.PKG
+        icon        = layout.projectDirectory.file('images/spicetrade_logo.gif')
+        macAppStore = false
+        licenseFile = file('LICENSE')
+    }
+    linux {
+        type             = ImageType.APP_IMAGE
+    }
 }
-task packageMac(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
-    dependsOn build
-    platform = 'mac'
-    createTarball = true
-    finalizedBy copyProps
-}
-task packageWindows(type: io.github.fvarrui.javapackager.gradle.PackageTask) {
-    dependsOn build
-    platform = 'windows'
-    createZipball = true
-    finalizedBy copyProps
-}
-
-task packageAll(dependsOn: [ packageLinux, packageMac, packageWindows ])
+tasks.jpackage.dependsOn installDist
