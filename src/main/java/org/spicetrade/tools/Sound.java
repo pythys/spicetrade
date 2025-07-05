@@ -56,6 +56,24 @@ public class Sound implements Runnable {
         }
     }
 
+    private void openLine(SourceDataLine line) throws LineUnavailableException {
+        final int maxRetries = 10;
+        for (int i = 0; i <= maxRetries; i++) {
+            try {
+                line.open();
+                break;
+            } catch (LineUnavailableException e) {
+                if (i == maxRetries) { throw e; }
+                try {
+                    Thread.sleep(100 + 100 * i);
+                } catch (InterruptedException ie) {
+                    Thread.currentThread().interrupt();
+                    throw new RuntimeException("Line Retry Interrupted", ie);
+                }
+            }
+        }
+    }
+
     public void run() {
         do {
             try {
@@ -81,7 +99,7 @@ public class Sound implements Runnable {
                 SourceDataLine line = (SourceDataLine) mixer.getLine(info);
                 if (line == null) { stop(); return; }
                 this.playing = true;
-                line.open();
+                openLine(line);
                 line.start();
                 byte[] buffer = new byte[4096];
                 int nBytesRead = 0;
