@@ -19,16 +19,21 @@
  */
 package org.spicetrade.tools;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.Mixer;
 import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class SoundManager {
     private static final int CHANNELS = 2;
@@ -42,6 +47,8 @@ public class SoundManager {
             false);
     private static final List<Sound> sounds = new CopyOnWriteArrayList<>();
     private static SourceDataLine line;
+    private static Thread mixerThread;
+    private static volatile boolean running = false;
 
     public static synchronized void init() throws LineUnavailableException {
         if (line != null) {
@@ -53,6 +60,103 @@ public class SoundManager {
         line = (SourceDataLine) mixer.getLine(info);
         line.open();
         line.start();
+        running = true;
+        mixerThread = new Thread(SoundManager::mixLoop, "SoundMixer");
+        mixerThread.start();
+    }
+
+    public static void playSound(String file, boolean loop) {
+        boolean alreadyPlaying = sounds.stream()
+            .anyMatch(s -> !s.finished && s.path.equals(file));
+        if (alreadyPlaying) { return; }
+        try {
+            byte[] pcm = decodeToPCM(file);
+            sounds.add(new Sound(file, pcm, loop));
+        } catch (Exception e) {
+            System.out.println("Unable to decode audio file " + file);
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public static void stopAll() {
+        sounds.clear();
+    }
+
+    private static void mixLoop() {
+        byte[] mixBuf = new byte[4096];
+        byte[] temp = new byte[4096];
+        while (running) {
+            Arrays.fill(mixBuf, (byte)0);
+            int bytesReadAny = 0;
+            for (Sound sound: sounds) {
+                int read = sound.read(temp, 0, temp.length);
+                if (read > 0) {
+                    mixBytes(mixBuf, temp, read);
+                    bytesReadAny = Math.max(bytesReadAny, read);
+                } else if (sound.finished) {
+                    sounds.remove(sound);
+                }
+            }
+            if (bytesReadAny > 0) {
+                line.write(mixBuf, 0, bytesReadAny);
+            } else {
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException ignored) {}
+            }
+        }
+    }
+
+    private static void mixBytes(byte[] mixBuf, byte[] src, int len) {
+        for (int i = 0; i < len; i+=2) {
+           short acc = (short)(((mixBuf[i+1] << 8) | (mixBuf[i] & 0xFF))
+                                + ((src[i+1] << 8) | (src[i] & 0xFF)));
+           if (acc > Short.MAX_VALUE) acc = Short.MAX_VALUE;
+           if (acc < Short.MIN_VALUE) acc = Short.MIN_VALUE;
+           mixBuf[i]   = (byte)(acc & 0xFF);
+           mixBuf[i+1] = (byte)((acc >> 8) & 0xFF);
+        }
+    }
+
+    private static byte[] decodeToPCM(String resourcePath)
+            throws IOException, UnsupportedAudioFileException {
+
+        URL url = SoundManager.class.getResource(resourcePath);
+        if (url == null) throw new IOException("Resource not found: " + resourcePath);
+        AudioInputStream sourceIn = AudioSystem.getAudioInputStream(url);
+
+        AudioFormat baseFormat = sourceIn.getFormat();
+        AudioFormat intermediateFmt = new AudioFormat(
+            AudioFormat.Encoding.PCM_SIGNED,
+            FORMAT.getSampleRate(),
+            FORMAT.getSampleSizeInBits(),
+            baseFormat.getChannels(),
+            baseFormat.getChannels() * 2,
+            FORMAT.getSampleRate(),
+            false
+        );
+        AudioInputStream pcmIn = AudioSystem.getAudioInputStream(intermediateFmt, sourceIn);
+        ByteArrayOutputStream monoBaos = new ByteArrayOutputStream();
+        byte[] buf = new byte[4096];
+        int read;
+        while ((read = pcmIn.read(buf)) != -1) {
+            monoBaos.write(buf, 0, read);
+        }
+        pcmIn.close();
+        sourceIn.close();
+        byte[] monoData = monoBaos.toByteArray();
+        if (intermediateFmt.getChannels() == 2) {
+            return monoData;
+        }
+        ByteArrayOutputStream stereoBaos = new ByteArrayOutputStream();
+        for (int i = 0; i < monoData.length; i += 2) {
+            short sample = (short) ((monoData[i] & 0xFF) | (monoData[i+1] << 8));
+            stereoBaos.write(monoData[i]);
+            stereoBaos.write(monoData[i+1]);
+            stereoBaos.write(monoData[i]);
+            stereoBaos.write(monoData[i+1]);
+        }
+        return stereoBaos.toByteArray();
     }
 
 }

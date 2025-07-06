@@ -20,92 +20,34 @@
 
 package org.spicetrade.tools;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.Arrays;
-import java.util.List;
+public class Sound {
+    final String path;
+    final byte[] pcmData;
+    int readPos = 0;
+    final boolean loop;
+    boolean finished = false;
 
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.DataLine;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.Mixer.Info;
-import javax.sound.sampled.Mixer;
-import javax.sound.sampled.SourceDataLine;
-import javax.sound.sampled.UnsupportedAudioFileException;
-
-public class Sound implements Runnable {
-
-    public String name = "";
-    public volatile boolean playing;
-
-    private boolean loop;
-    private Thread thread = null;
-
-    public void start(String afile) {
-        start(afile, false);
+    Sound(String path, byte[] pcmData, boolean loop) {
+        this.path = path;
+        this.pcmData = pcmData;
+        this.loop = loop;
     }
 
-    public void start(String afile, boolean loop) {
-        if (thread == null) {
-            thread = new Thread(this, (afile + System.currentTimeMillis()));
-            this.name = afile;
-            this.loop = loop;
-            thread.start();
+    int read(byte[] dst, int dstOff, int len) {
+        if (finished) {
+            return -1;
         }
-    }
-
-    public void run() {
-        do {
-            try {
-                URL url = getClass().getResource(this.name);
-                AudioInputStream fileIn = AudioSystem.getAudioInputStream(url.openStream());
-                if (fileIn == null) { stop(); return; }
-                AudioFormat sourceFormat = fileIn.getFormat();
-                AudioFormat targetFormat = new AudioFormat(
-                        AudioFormat.Encoding.PCM_SIGNED,
-                        sourceFormat.getSampleRate(),
-                        16,
-                        sourceFormat.getChannels(),
-                        sourceFormat.getChannels() * 2,
-                        sourceFormat.getSampleRate(),
-                        false);
-                AudioInputStream dataIn = AudioSystem.getAudioInputStream(targetFormat, fileIn);
-                DataLine.Info info = new DataLine.Info(SourceDataLine.class, targetFormat);
-                List<Mixer.Info> mixerInfos = Arrays.asList(AudioSystem.getMixerInfo());
-                Mixer mixer = AudioSystem.getMixer(mixerInfos.get(mixerInfos.size() - 1));
-                /* TODO switch to default mixer if none selected using below code
-                 * which requires adding a mixer option in Settings.java
-                 * SourceDataLine line = (SourceDataLine) AudioSystem.getLine(info); */
-                SourceDataLine line = (SourceDataLine) mixer.getLine(info);
-                if (line == null) { stop(); return; }
-                this.playing = true;
-                line.open();
-                line.start();
-                byte[] buffer = new byte[4096];
-                int nBytesRead = 0;
-                while (nBytesRead != -1 && playing) {
-                    nBytesRead = dataIn.read(buffer, 0, buffer.length);
-                    if (nBytesRead != -1) {
-                        line.write(buffer, 0, nBytesRead);
-                    }
-                }
-                line.drain();
-                line.stop();
-                line.close();
-                dataIn.close();
-                fileIn.close();
-            } catch (IOException | UnsupportedAudioFileException | LineUnavailableException e) {
-                System.out.println("Unable to play audio file: " + this.name);
-                stop();
+        int available = pcmData.length - readPos;
+        int toCopy = Math.min(available, len);
+        System.arraycopy(pcmData, readPos, dst, dstOff, toCopy);
+        readPos += toCopy;
+        if (readPos >= pcmData.length) {
+            if (loop) {
+                readPos = 0;
+            } else {
+                finished = true;
             }
-        } while (this.loop);
-        stop();
-    }
-
-    public void stop() {
-        this.loop = false;
-        this.playing = false;
+        }
+        return toCopy;
     }
 }
