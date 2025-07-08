@@ -48,7 +48,6 @@ public class SoundManager {
     private static final List<Sound> sounds = new CopyOnWriteArrayList<>();
     private static SourceDataLine line;
     private static Thread mixerThread;
-    private static volatile boolean running = false;
 
     public static synchronized void init() throws LineUnavailableException {
         if (line != null) {
@@ -60,7 +59,6 @@ public class SoundManager {
         line = (SourceDataLine) mixer.getLine(info);
         line.open();
         line.start();
-        running = true;
         mixerThread = new Thread(SoundManager::mixLoop, "SoundMixer");
         mixerThread.start();
     }
@@ -90,7 +88,7 @@ public class SoundManager {
     private static void mixLoop() {
         byte[] mixBuf = new byte[4096];
         byte[] temp = new byte[4096];
-        while (running) {
+        while (true) {
             Arrays.fill(mixBuf, (byte)0);
             int bytesReadAny = 0;
             for (Sound sound: sounds) {
