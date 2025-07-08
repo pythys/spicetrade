@@ -63,4 +63,4 @@ that remains is in [sourceforge](https://sourceforge.net/projects/spicetrade)
 
 Moreover, the game source code no longer compiles with later versions of Java.
 So it was updated to work with newer Java versions and the sound system was
-improved and simplified.
+redesigned and massively improved.
