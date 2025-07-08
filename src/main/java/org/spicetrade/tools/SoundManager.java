@@ -82,6 +82,11 @@ public class SoundManager {
         sounds.clear();
     }
 
+    public static synchronized boolean isPlaying(String file) {
+        return sounds.stream()
+                     .anyMatch(s -> !s.finished && s.path.equals(file));
+    }
+
     private static void mixLoop() {
         byte[] mixBuf = new byte[4096];
         byte[] temp = new byte[4096];

@@ -47,20 +47,23 @@ public class Sounds {
     }
 
     public void playMusic(String file) {
-        if (!musicOn) { return; }
+        if (!musicOn || SoundManager.isPlaying(file)) {
+            return;
+        }
         if (currentMusic != file) {
+            stopAll();
             playSound(file);
-            currentMusic = file;
         }
     }
 
     public void loopMusic(String file) {
-        if (!musicOn) { return; }
-        if (currentMusic != file) {
-            lastMusic = currentMusic;
-            currentMusic = file;
-            loopSound(file);
+        if (!musicOn || SoundManager.isPlaying(file)) {
+            return;
         }
+        lastMusic = currentMusic;
+        currentMusic = file;
+        stopAll();
+        loopSound(file);
     }
 
     public void stopAll() {
