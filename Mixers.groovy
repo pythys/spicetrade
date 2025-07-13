@@ -7,9 +7,11 @@ import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.DataLine
 
 def isVerbose = args.any { it in ['--verbose', '-v'] }
+def realMixerPattern = ~/(?i).*plughw:\d+,0.*/
 
 def mixerInfos = AudioSystem.getMixerInfo() as List
-def infoMaps = mixerInfos.collect { mixerInfo ->
+def realInfos = mixerInfos.findAll { it.name ==~ realMixerPattern }
+def infoMaps = realInfos.collect { mixerInfo ->
     def sourceFormats = AudioSystem.getMixer(mixerInfo)
             .getSourceLineInfo()
             .findAll { it instanceof DataLine.Info }
