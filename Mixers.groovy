@@ -1,31 +1,35 @@
+/*
+ * To show verbose information pass the verbose flag e.g:
+ * groovy Mixers.groovy -v
+ */
 import groovy.json.JsonOutput
-import java.util.stream.Collectors
 import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.DataLine
 
+def isVerbose = args.any { it in ['--verbose', '-v'] }
+
 def mixerInfos = AudioSystem.getMixerInfo() as List
-def infoMaps = mixerInfos.stream().map { mixerInfo ->
+def infoMaps = mixerInfos.collect { mixerInfo ->
     def sourceFormats = AudioSystem.getMixer(mixerInfo)
             .getSourceLineInfo()
-            .stream()
-            .filter { it instanceof DataLine.Info }
-            .map { it.formats }
-            .collect(Collectors.toList())
+            .findAll { it instanceof DataLine.Info }
+            .collect { it.formats }
     def targetFormats = AudioSystem.getMixer(mixerInfo)
             .getTargetLineInfo()
-            .stream()
-            .filter { it instanceof DataLine.Info }
-            .map { it.formats }
-            .collect(Collectors.toList())
-    def fullInfo = [
+            .findAll { it instanceof DataLine.Info }
+            .collect { it.formats }
+    def basicInfo = [
         name: mixerInfo.getName(),
         description: mixerInfo.getDescription(),
         vendor: mixerInfo.getVendor(),
-        version: mixerInfo.getVersion(),
-        sourceFormats: sourceFormats,
-        targetFormats: targetFormats
+        version: mixerInfo.getVersion()
     ]
+    def fullInfo = isVerbose
+            ? [*:basicInfo,
+               sourceFormats: sourceFormats,
+               targetFormats: targetFormats]
+            : basicInfo
     return fullInfo
-}.collect(Collectors.toList())
+}
 
 println(JsonOutput.prettyPrint(JsonOutput.toJson(infoMaps)))
