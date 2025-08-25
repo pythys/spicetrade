@@ -31,7 +31,6 @@ import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.DataLine;
 import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.Mixer;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
@@ -53,10 +52,8 @@ public class SoundManager {
         if (line != null) {
             return;
         }
-        List<Mixer.Info> mixerInfos = Arrays.asList(AudioSystem.getMixerInfo());
-        Mixer mixer = AudioSystem.getMixer(mixerInfos.get(mixerInfos.size() - 1));
         DataLine.Info info = new DataLine.Info(SourceDataLine.class, FORMAT);
-        line = (SourceDataLine) mixer.getLine(info);
+        line = (SourceDataLine) AudioSystem.getLine(info);
         line.open();
         line.start();
         mixerThread = new Thread(SoundManager::mixLoop, "SoundMixer");

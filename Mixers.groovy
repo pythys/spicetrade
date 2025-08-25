@@ -7,10 +7,10 @@ import javax.sound.sampled.AudioSystem
 import javax.sound.sampled.DataLine
 
 def isVerbose = args.any { it in ['--verbose', '-v'] }
-def realMixerPattern = ~/(?i).*plughw:\d+,0.*/
+def mixerPattern = ~/(?i).*(default|pulse|pipewire|dmix|plughw:\d+,\d+).*/
 
 def mixerInfos = AudioSystem.getMixerInfo() as List
-def realInfos = mixerInfos.findAll { it.name ==~ realMixerPattern }
+def realInfos = mixerInfos.findAll { it.name ==~ mixerPattern }
 def infoMaps = realInfos.collect { mixerInfo ->
     def sourceFormats = AudioSystem.getMixer(mixerInfo)
             .getSourceLineInfo()

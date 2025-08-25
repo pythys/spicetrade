@@ -38,6 +38,9 @@ Europeans in the spice trade? Could Europe have been different? How? You decide!
 
 Java JRE version 21 or above
 
+**ON LINUX:** Make sure to install alsa package for your sound server which is
+either `pipewire-alsa` or `pulseaudio-alsa`
+
 ### Building
 
 To build the system issue the below command
