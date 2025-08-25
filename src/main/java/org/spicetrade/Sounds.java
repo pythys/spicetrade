@@ -22,51 +22,80 @@ package org.spicetrade;
 
 import java.util.Hashtable;
 
-import org.spicetrade.tools.SoundManager;
+import org.spicetrade.tools.Sound;
 
 public class Sounds {
 
     public boolean musicOn = true;
     public String lastMusic = "";
     public String currentMusic = "";
+    private Hashtable<String, Sound> sounds = new Hashtable<>();
 
-    public Sounds() {
-        try {
-            SoundManager.init();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
+    public Sounds() { }
 
     public void playSound(String file) {
-        SoundManager.playSound(file, false);
+        playSound(file, false);
     }
 
     public void loopSound(String file) {
-        SoundManager.playSound(file, true);
+        playSound(file, true);
     }
 
     public void playMusic(String file) {
-        if (!musicOn || SoundManager.isPlaying(file)) {
-            return;
-        }
-        if (currentMusic != file) {
+        if (!musicOn) return;
+        try {
+            if (isPlaying(file))
+                return;
             stopAll();
             playSound(file);
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
     }
 
     public void loopMusic(String file) {
-        if (!musicOn || SoundManager.isPlaying(file)) {
-            return;
+        if (!musicOn) return;
+        try {
+            if (isPlaying(file))
+                return;
+            lastMusic = currentMusic;
+            currentMusic = file;
+            stopAll();
+            loopSound(file);
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
-        lastMusic = currentMusic;
-        currentMusic = file;
-        stopAll();
-        loopSound(file);
     }
 
     public void stopAll() {
-        SoundManager.stopAll();
+        sounds.forEach((key, value) -> value.stop());
+        sounds = new Hashtable<>();
+    }
+
+    private void playSound(String file, boolean loop) {
+        if (Mainframe.DEBUG == 1) System.out.println("starting to play: " + file + ", loop: " + loop);
+        if (!musicOn) return;
+        try {
+            if (isPlaying(file))
+                return;
+            else if (has(file))
+                sounds.remove(file);
+            Sound sound = new Sound();
+            sound.start(file, loop);
+            sounds.put(file, sound);
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    private boolean has(String file) {
+        return sounds.containsKey(file);
+    }
+
+    private boolean isPlaying(String file) {
+        if(has(file)) {
+            Sound sound = sounds.get(file);
+            return sound.playing;
+        } else return false;
     }
 }
